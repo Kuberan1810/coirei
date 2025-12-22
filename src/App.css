@@ -9,6 +9,7 @@
     flex-direction: row;
 }
 
+
 @media (max-width: 640px) {
     .bottom-section {
         display: flex;

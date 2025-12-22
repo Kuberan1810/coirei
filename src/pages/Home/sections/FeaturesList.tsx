@@ -2,13 +2,13 @@ import { useState } from "react";
 import img1 from "../../../assets/images/homepage/img1.webp"
 import img2 from "../../../assets/images/homepage/img2.webp"
 import img3 from "../../../assets/images/homepage/img3.jpg"
-import img4 from "../../..//assets/images/homepage/img4.webp"
-import img5 from "../../..//assets/images/homepage/img5.webp"
+import img4 from "../../../assets/images/homepage/img4.webp"
+import img5 from "../../../assets/images/homepage/img5.webp"
 
 
 const FeaturesList = () => {
 
-    const [options, setOptions] = useState<string[]>(["dashboard1","dashboard2","dashboard3","dashboard4","dashboard5","dashboard6","dashboard7" ])
+    const [options] = useState<string[]>(["dashboard1","dashboard2","dashboard3","dashboard4","dashboard5","dashboard6","dashboard7" ])
   const [selected, setSelected] = useState("dashboard1");
 
 

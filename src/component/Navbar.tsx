@@ -18,60 +18,60 @@ function Navbar() {
 
                         <ul className="flex items-center gap-7.5">
                             <li>
-                                <div className="flex items-center justify-center gap-1 p-2.5 rounded  hover:bg-[#7B7B7B20] cursor-pointer transition-all duration-500 ease-out">
-                                    <Link
-                                        to="/features"
-                                        className=" font-medium leading-none"
-                                    >
+                                <Link
+                                    to="/features"
+                                    className="flex items-center justify-center gap-1 p-2.5 rounded   hover:bg-[#7B7B7B20] cursor-pointer  transition-all duration-500 ease-out"
+                                >
+                                    <span className="font-medium leading-none">
                                         Features
-                                    </Link>
+                                    </span>
+
                                     <ChevronRight
                                         size={16}
                                         strokeWidth={2.5}
                                         className="shrink-0 mt-1"
                                     />
-                                </div>
+                                </Link>
                             </li>
 
                             <li>
-                                <div className="flex items-center justify-center gap-1 p-2.5 rounded  hover:bg-[#7B7B7B20] cursor-pointer transition-all duration-500 ease-out">
-                                    <Link
-                                        to="/resources"
-                                        className=" font-medium leading-none"
-                                    >
+                                <Link
+                                    to="/resources"
+                                    className="flex items-center justify-center gap-1 p-2.5 rounded   hover:bg-[#7B7B7B20] cursor-pointer  transition-all duration-500 ease-out"
+                                >
+                                    <span className="font-medium leading-none">
                                         Resources
-                                    </Link>
+                                    </span>
                                     <ChevronRight
                                         size={16}
                                         strokeWidth={2.5}
                                         className="shrink-0 mt-1"
                                     />
-                                </div>
+                                </Link>
                             </li>
 
                             <li>
-                                <div className="flex items-center justify-center gap-1 p-2.5 rounded  hover:bg-[#7B7B7B20] cursor-pointer transition-all duration-500 ease-out">
-                                    <Link
-                                        to="/pricing"
-                                        className=" font-medium leading-none"
-                                    >
+                                <Link
+                                    to="/pricing"
+                                    className="flex items-center justify-center gap-1 p-2.5 rounded   hover:bg-[#7B7B7B20] cursor-pointer  transition-all duration-500 ease-out"
+                                >
+                                    <span className="font-medium leading-none">
                                         Pricing
-                                    </Link>
-
-                                </div>
+                                    </span>
+                                </Link>
                             </li>
+
                             <li>
-                                <div className="flex items-center justify-center gap-1 p-2.5  rounded  hover:bg-[#7B7B7B20] cursor-pointer transition-all duration-500 ease-out">
-                                    <Link
-                                        to="/enterprise"
-                                        className="font-medium leading-none"
-                                    >
+                                <Link
+                                    to="/enterprise"
+                                    className="flex items-center justify-center gap-1 p-2.5 rounded   hover:bg-[#7B7B7B20] cursor-pointer  transition-all duration-500 ease-out"
+                                >
+                                    <span className="font-medium leading-none">
                                         Enterprise
-
-                                    </Link>
-
-                                </div>
+                                    </span>
+                                </Link>
                             </li>
+
 
                         </ul>
                     </div>

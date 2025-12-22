@@ -88,13 +88,13 @@ export default function FeaturesSection(): JSX.Element {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         {/* Left - Image with transition */}
                         <div className="relative">
-                            <div className="bg-gradient-to-br from-teal-600 to-rose-900 rounded-3xl px-8 pt-15 shadow-2xl">
+                            <div className="bg-linear-to-br from-teal-600 to-rose-900 rounded-3xl px-8 pt-15 shadow-2xl">
 
                                 <img
                                     key={activeContent.id}
                                     src={activeContent.image}
                                     alt={activeContent.title}
-                                    className="w-full h-[375px] rounded-t-2xl shadow-xl object-cover transition-opacity duration-500"
+                                    className="w-full h-93.75 rounded-t-2xl shadow-xl object-cover transition-opacity duration-500"
                                 />
                             </div>
                         </div>
@@ -117,7 +117,7 @@ export default function FeaturesSection(): JSX.Element {
 
                             <p
                                 key={`desc-${activeContent.id}`}
-                                className="text-[#ECEBEB] text-sm font-normal leading-relaxed transition-all max-w-[350px] duration-500"
+                                className="text-[#ECEBEB] text-sm font-normal leading-relaxed transition-all max-w-87.5 duration-500"
                             >
                                 {activeContent.description}
                             </p>

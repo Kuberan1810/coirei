@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Ceo from '../../../assets/images/homepage/Ceo-img.png'
 export const CeoSection = () => {
     return (

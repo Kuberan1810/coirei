@@ -25,3 +25,249 @@ body {
   /* border: 1px solid rgba(255, 255, 255, 0.25); */
   /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); */
 }
+
+.cta-image {
+  z-index: -1;
+  width: 100%;
+  max-width: 1440px;
+  position: absolute;
+  inset: auto 0% 0% auto;
+}
+
+.integration-content-wrapper {
+  grid-row-gap: 56px;
+  /* border-right: 1px solid #bababa;
+  border-left: 1px solid #bababa; */
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+}
+
+.integration-content-block {
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 960px;
+  height: 302px;
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.integration-logos-wrapper {
+  text-align: center;
+  width: 100%;
+  height: 186px;
+  position: relative;
+}
+
+.integration-logo-block {
+  background-image: linear-gradient(#f5f5f5, #d4d4d4 50%, #e5e5e5), linear-gradient(#fafafa 5%, #d4d4d4 52%, #e5e5e5);
+  border: 1px solid #d4d4d4;
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  box-shadow: inset 0 -2px 1px #fff6;
+}
+
+.integration-logo-block.left-top {
+  position: absolute;
+  inset: -15% auto auto 0%;
+}
+
+.integration-logo-block.left-bottom {
+  position: absolute;
+  inset: auto auto -15% 0%;
+}
+
+.integration-logo-block.left-middle {
+  position: absolute;
+  inset: 35% auto auto 28%;
+}
+
+.integration-logo-block.right-top {
+  position: absolute;
+  inset: -15% 0% auto auto;
+}
+
+.integration-logo-block.right-middle {
+  position: absolute;
+  inset: 35% 28% auto auto;
+}
+
+.integration-logo-block.right-bottom {
+  position: absolute;
+  inset: auto 0% -15% auto;
+}
+
+.integration-logo-block.bottom-right {
+  position: relative;
+  right: -10%;
+}
+
+.integration-logo-block.bottom-left {
+  position: relative;
+  left: -10%;
+}
+
+.integration-center-logos-wrapper {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 29px;
+  display: flex;
+}
+
+.integration-center-logo-block {
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  position: relative;
+}
+
+.integration-center-logos-block {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 189px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.integration-bottom-block {
+  grid-row-gap: 16px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.integration-bottom-description-block {
+  color: #bababa;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.integration-cta-button {
+  display: inline-block;
+}
+.integration-content-bg {
+  object-fit: contain;
+  object-position: 0% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.integration-content-bg._01 {
+  object-position: 100% 50%;
+}
+
+.integration-content-bg-v2 {
+  width: 189px;
+  height: 104px;
+  position: absolute;
+  inset: auto auto 40px;
+}
+
+.integration-center-animation-block {
+  border: 3px solid #bababa;
+  border-radius: 999px;
+  position: absolute;
+  inset: 0%;
+}
+
+.integration-center-animation-block._02 {
+  border-radius: 999px;
+  position: absolute;
+  inset: 0%;
+}
+
+.integraction-center-logo {
+  z-index: 5;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.integration-content-bg {
+  object-fit: contain;
+  object-position: 0% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.integration-content-bg._01 {
+  object-position: 100% 50%;
+}
+
+.integration-content-bg-v2 {
+  width: 189px;
+  height: 104px;
+  position: absolute;
+  inset: auto auto 40px;
+}
+
+/* Common circle style */
+.circle-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  transform-origin: center;
+  pointer-events: none;
+}
+
+/* Outer ring */
+.animate-ring1 {
+  animation: rippleOne 3s ease-out infinite;
+ 
+}
+
+/* Inner ring */
+.animate-ring2 {
+  animation: rippleTwo 3s ease-out infinite;
+}
+/* Ripple animations */
+@keyframes rippleOne {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rippleTwo {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

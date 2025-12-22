@@ -32,18 +32,18 @@ function ProblemSection() {
                             <div className="inline-flex items-center rounded-md bg-[#2b2b2b] px-3 py-1 text-[14px] text-gray-300">
                                 The Result is
                                 <span className="mx-1 text-orange-400 font-medium tracking-wider">
-                                    <span className="relative top-[1px]">b</span>
-                                    <span className="relative top-[-1px]">r</span>
-                                    <span className="relative top-[2px]">o</span>
-                                    <span className="relative top-[-1px]">k</span>
-                                    <span className="relative top-[1px]">e</span>
-                                    <span className="relative top-[-2px]">n</span>
+                                    <span className="relative top-px">b</span>
+                                    <span className="relative -top-px">r</span>
+                                    <span className="relative top-0.5">o</span>
+                                    <span className="relative -top-px">k</span>
+                                    <span className="relative top-px">e</span>
+                                    <span className="relative -top-0.5">n</span>
                                 </span>
                                 flow.
                             </div>
                         </div>
-                        <div className="image w-[570px] h-[430px]">
-                            <img className="w-[100%] h-[100%]" src={imageFile} alt="" />
+                        <div className="image w-142.5 h-107.5">
+                            <img className="w-full h-full" src={imageFile} alt="" />
                         </div>
                     </div>
                 </div>

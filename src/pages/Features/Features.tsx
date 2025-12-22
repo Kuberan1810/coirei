@@ -7,12 +7,14 @@ import IntegrationSection from "./Sections/IntegrationSection";
 import CTASection from "./Sections/CTASection";
 import WorksFlow from "./Sections/WorksFlow";
 import FeatureContact from "./Sections/FeatureContact";
-
+import "./Features.css"
 
 function Features() {
     return (
         <>
-            <Navbar />
+             <div className="fixed w-full top-0 z-10">
+                <Navbar />
+            </div>
             <FeaturesHero />
             <FeatureCategories />
             <FeatureContent />

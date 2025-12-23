@@ -16,12 +16,12 @@ function Home() {
                 <Navbar />
             </div>
             <Hero />
-            <ProblemSection/>
+            <ProblemSection />
             <FeaturesSection />
-            <FeaturesList/>
+            <FeaturesList />
             <ContentSection />
             <SecondContent />
-            <CeoSection/>
+            <CeoSection />
             <Footer />
         </>
     );

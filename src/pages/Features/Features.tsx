@@ -12,16 +12,16 @@ import "./Features.css"
 function Features() {
     return (
         <>
-             <div className="fixed w-full top-0 z-10">
+            <div className="fixed w-full top-0 z-10">
                 <Navbar />
             </div>
             <FeaturesHero />
             <FeatureCategories />
             <FeatureContent />
-            <WorksFlow/>
+            <WorksFlow />
             <IntegrationSection />
             <CTASection />
-            <FeatureContact/>
+            <FeatureContact />
             <Footer />
         </>
     );

@@ -1,5 +1,5 @@
-import Footer from "../component/Footer";
-import Navbar from "../component/Navbar";
+import Navbar from "../../component/Navbar";
+import Footer from "../../component/Footer";
 
 function Enterprise() {
     return (

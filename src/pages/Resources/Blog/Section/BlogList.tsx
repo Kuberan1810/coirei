@@ -95,30 +95,40 @@ const BlogList: React.FC = () => {
       <div className="main-container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {blogs.map((blog) => (
-            <article key={blog.id} className="group cursor-pointer"  >
+            <article
+              key={blog.id}
+              className="group cursor-pointer rounded-2xl p-5 bg-transparent hover:bg-[#29292950] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 "
+
+            >
               {/* Image */}
               <div className="relative overflow-hidden rounded-xl mb-6">
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="h-50 w-full object-cover
-                  transition-transform duration-500
-                  group-hover:scale-105 "
+                  className="h-50 w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
+
                 />
               </div>
 
               {/* Content */}
-              <div className="">
-                <h3 className="text-xl font-medium text-white leading-snug mb-6">
+              <div>
+                <h3
+                  className="text-xl font-medium text-white leading-snug mb-6 transition-colors duration-500 group-hover:text-white"
+
+                >
                   {blog.title}
                 </h3>
 
-                <span className="inline-block mb-6 text-xl text-white/90
-                bg-white/10 p-2.5 rounded">
+                <span
+                  className="inline-block mb-6 text-sm font-medium text-white/90 bg-white/10 py-2  px-4 rounded transition-all duration-500 group-hover:bg-white/15"
+
+                >
                   By {blog.author}
                 </span>
               </div>
             </article>
+
+
           ))}
         </div>
       </div>

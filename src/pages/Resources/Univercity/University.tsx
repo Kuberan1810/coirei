@@ -1,5 +1,5 @@
 
-import Footer from "../../../component/Footer";
+import Footer from "../../../component/Footer/Footer";
 
 import Navbar from "../../../component/Navbar";
 import UniversityHero from "./section/UniversityHero";

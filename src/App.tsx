@@ -13,6 +13,7 @@ import University from "./pages/Resources/Univercity/University";
 
 // Features pages
 import Code from "./pages/Features/Features";
+import Careers from "./pages/careers/Careers";
 // import Analytics from "./pages/Features/Analytics";
 // import Integrations from "./pages/Features/Integrations";
 
@@ -21,6 +22,7 @@ function App() {
     <Routes>
       {/* MAIN PAGES */}
       <Route path="/" element={<Home />} />
+      <Route path="/careers" element={<Careers />} />
       <Route path="/enterprise" element={<Enterprise />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/contact" element={<Contact />} />

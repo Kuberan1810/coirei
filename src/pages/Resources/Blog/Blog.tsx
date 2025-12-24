@@ -1,6 +1,6 @@
 
 import Navbar from "../../../component/Navbar";
-import Footer from "../../../component/Footer";
+import Footer from "../../../component/Footer/Footer";
 import BlogHero from "./Section/BlogHero";
 import BlogList from "./Section/BlogList";
 import BlogCTA from "./Section/BlogCTA";

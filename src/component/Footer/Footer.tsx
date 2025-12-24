@@ -1,68 +1,53 @@
 import React from "react";
-import logo from "../assets/images/Features/coirei-cirlce-logo.png"
-interface FooterLinksProps {
-    links: { label: string; href: string }[];
-}
+import logo from "../../assets/images/Features/coirei-cirlce-logo.png";
+import { Mail, MessagesSquare, Info, ChevronRight } from "lucide-react";
 
-const FooterLinks: React.FC<FooterLinksProps> = ({ links }) => (
-    <ul className="divide-y divide-white/10">
-        {links.map((link) => (
-            <li key={link.label}>
-                <a
-                    href={link.href}
-                    className="flex items-center justify-between py-4 text-white/80 hover:text-white transition"
-                >
-                    {link.label}
-                    <span className="text-white/40">›</span>
-                </a>
-            </li>
-        ))}
-    </ul>
-);
-
-interface FooterContactProps {
-    icon: React.ReactNode;
-    title: string;
-    value: string;
-}
-
-const FooterContact: React.FC<FooterContactProps> = ({
-    icon,
-    title,
-    value,
-}) => (
-    <div className="flex items-center gap-4 p-8 border border-white/10">
-        <div className="text-white">{icon}</div>
-        <div>
-            <p className="text-white/50 text-sm">{title}</p>
-            <p className="text-white font-medium">{value}</p>
-        </div>
-    </div>
-);
+import FooterLinks from "./FooterLinks";
+import FooterContact from "./FooterContact";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-linear-to-b bg-[#161616] text-white mx-50">
+        <footer className="bg-[#161616] text-white mx-20 pt-20">
+
             {/* TOP BAR */}
-            <div className="border-b border-white/10">
-                <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+            <div className="relative overflow-hidden">
+                {/* Top border animation */}
+                <span className="  pointer-events-none  absolute top-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-white/30 to-transparent
+  " />
+
+                {/* Bottom border animation */}
+                <span className=" pointer-events-none absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white/30 to-transparent
+
+  " />
+
+                <div className="group max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
                     <img
                         src={logo}
                         alt="Logo"
-                        className="w-12.5"
+                        className="w-12 transition-transform duration-500 ease-out group-hover:rotate-180"
                     />
 
                     <a
                         href="/careers"
-                        className="flex items-center gap-2 text-sm tracking-wide hover:opacity-80 transition"
+                        className="flex items-center gap-2 text-sm tracking-wide  text-white/70 hover:text-white transition-all duration-300"
                     >
-                        JOIN OUR TEAM <span>›</span>
+                        JOIN OUR TEAM
+
+                        <span
+                            className="flex items-center text-white/40  transition-all duration-300 ease-out
+                            group-hover:translate-x-2 group-hover:text-white"
+                        >
+                            <ChevronRight size={16} />
+                        </span>
                     </a>
                 </div>
+
             </div>
 
-            {/* MIDDLE */}
+
+            {/* MAIN CONTENT */}
             <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
+
                 {/* LEFT */}
                 <div className="max-w-lg">
                     <h2 className="text-4xl font-medium leading-tight">
@@ -90,17 +75,18 @@ const Footer: React.FC = () => {
                     <FooterLinks
                         links={[
                             { label: "Home", href: "/" },
-                            { label: "About", href: "/about" },
-                            { label: "Contact", href: "/contact" },
+                            { label: "Features", href: "/features/code" },
+                            { label: "Contact Sales", href: "/contactsales" },
                             { label: "Careers", href: "/careers" },
                         ]}
                     />
 
                     <FooterLinks
                         links={[
-                            { label: "Career single", href: "#" },
-                            { label: "Blog", href: "/blog" },
-                            { label: "Blog post", href: "#" },
+
+                            { label: "Blog", href: "/resources/blog" },
+                            { label: "Coirei University", href: "/resources/university" },
+                            { label: "Pricing", href: "/pricing" },
                             { label: "Coming soon", href: "#" },
                         ]}
                     />
@@ -108,36 +94,37 @@ const Footer: React.FC = () => {
             </div>
 
             {/* CONTACT STRIP */}
-            <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 mx-18">
                 <FooterContact
-                    icon={<span>✉</span>}
+                    icon={<Mail />}
                     title="Email address"
-                    value="info@quantumlab.com"
+                    value="info@coirei.com"
                 />
                 <FooterContact
-                    icon={<span>💬</span>}
+                    icon={<MessagesSquare />}
                     title="Live chat with us"
                     value="Chat with us"
                 />
                 <FooterContact
-                    icon={<span>ℹ</span>}
+                    icon={<Info />}
                     title="Support"
-                    value="support@quantumlab.com"
+                    value="support@coirei.com"
                 />
             </div>
 
             {/* BOTTOM */}
-            <div className="border-t border-white/10">
+            <div className="">
                 <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row items-center justify-between text-white/50 text-sm">
-                    <span>More Webflow Templates</span>
+                    <span>Coirei Technologies</span>
                     <span>
-                        Copyright © QuantumLab | Designed by{" "}
-                        <b className="text-white">BRIX Templates</b> and powered by Webflow
+                        © coirei| {" "}
+                        <b className="text-white">Technologies</b>
                     </span>
                 </div>
             </div>
+
         </footer>
     );
 };
 
-export default Footer;  
+export default Footer;

@@ -29,7 +29,7 @@ const BlogHero = () => {
             <div className="absolute inset-0 bg-black/40" />
 
             {/* Glass Card */}
-            <div className="relative z-10 h-full flex items-center justify-center p-6">
+            <div className="relative z-1 h-full flex items-center justify-center p-6">
               <div className="  p-4 max-w-lg w-full">
                 <img
                   src={Code}

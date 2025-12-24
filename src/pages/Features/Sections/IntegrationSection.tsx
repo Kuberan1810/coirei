@@ -1,6 +1,10 @@
 import React from "react";
 import Integration from "../../../assets/images/Features/integration-icon.svg"
-import CoireiLogo from "../../../assets/images/Features//coirei-cirlce-logo.png"
+import CoireiLogo from "../../../assets/images/Features/coirei-cirlce-logo.png"
+import RightLine from "../../../assets/images/Features/right-line.svg"
+import LeftLine from "../../../assets/images/Features/left-line.svg"
+import DownLine from "../../../assets/images/Features/down-line.svg"
+import HosueIocn from "../../../assets/images/Features/house-icon.svg"
 
 const IntegrationsSection: React.FC = () => {
     return (
@@ -32,7 +36,7 @@ const IntegrationsSection: React.FC = () => {
                                 src="https://cdn.prod.website-files.com/68a2a7fda7681f6518b88f0b/68a3fc2efb83364ee531a3ad_Union%20(1).svg"
                                 loading="lazy"
                                 alt=""
-                                className="integration-content-bg _01"
+                                className="integration-content-bg _01 text-[#FF8800]"
                             />
 
                             <div className="integration-logo-block left-top">

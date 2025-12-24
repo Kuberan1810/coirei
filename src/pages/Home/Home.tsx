@@ -1,11 +1,11 @@
 import FeaturesSection from "./sections/FeaturesSection";
-import Footer from "../../component/Footer";
+import Footer from "../../component/Footer/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "../../component/Navbar";
 import ContentSection from "./sections/ContentSection";
 import SecondContent from "./sections/SecondContent";
 import { CeoSection } from "./sections/CeoSection";
-import FeaturesList from "./sections/FeaturesList";
+
 import ProblemSection from "./sections/ProblemSection";
 
 
@@ -18,7 +18,7 @@ function Home() {
             <Hero />
             <ProblemSection />
             <FeaturesSection />
-            <FeaturesList />
+            
             <ContentSection />
             <SecondContent />
             <CeoSection />

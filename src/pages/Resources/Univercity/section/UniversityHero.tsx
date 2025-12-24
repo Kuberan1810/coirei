@@ -1,9 +1,22 @@
-import React from 'react'
-
 const UniversityHero = () => {
   return (
-    <div>UniversityHero</div>
-  )
-}
+    <section className="pt-50 pb-15">
 
-export default UniversityHero
+      <div className="text-center mb-10">
+        <p className="text-[#CECBCB] text-[40px] font-light mb-2">
+          Coirei UNIVERSITY
+        </p>
+
+        <h1 className="text-[74px] font-medium mb-2 text-white ">
+          Become a Coirei power user
+        </h1>
+
+        <p className="text-[26px] text-white font-light">
+          Tutorials to help you work smarter and build faster in Coirei
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default UniversityHero;

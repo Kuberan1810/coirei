@@ -3,11 +3,11 @@ import BlogCtaImg from "../../../../assets/images/Resourses/blog-cta-code.png";
 
 const BlogCTA: React.FC = () => {
   return (
-    <section className="relative pt-24 mb-12.5 overflow-hidden">
+    <section className="relative pt-24 mb-15 overflow-hidden">
       
-      <div className="absolute inset-0 bg-linear-to-b from-[#161616] to-[#7C4817] " />
+      <div className="absolute inset-0 bg-linear-to-b  from-[#161616] via-[#7C4817] to-[#161616] " />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+      <div className="relative max-w-5xl mx-auto px-6 text-center text-white">
       
         <p className="text-xl font-medium text-white mb-7.5">
           Trusted by hundreds of thousands of professional developers
@@ -27,13 +27,18 @@ const BlogCTA: React.FC = () => {
       </div>
 
       
-      <div className="relative z-10 mt-2.5 max-w-6xl mx-auto px-6">
+      <div className="relative  mt-2.5 max-w-6xl mx-auto ">
         <img
           src={BlogCtaImg}
           alt="Blog Cta code"
           className="w-full"
         />
+
+        {/* Bottom fade overlay */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 
+  bg-linear-to-t from-[#161616] to-transparent" />
       </div>
+
     </section>
   );
 };

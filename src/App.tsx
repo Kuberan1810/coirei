@@ -14,6 +14,9 @@ import University from "./pages/Resources/Univercity/University";
 // Features pages
 import Code from "./pages/Features/Features";
 import Careers from "./pages/careers/Careers";
+import Privacy from "./pages/Resources/Privacy/Privacy";
+import ContactSales from "./pages/ContactUs/ContactSales/ContactSales";
+import Company from "./pages/Resources/Company/Company";
 // import Analytics from "./pages/Features/Analytics";
 // import Integrations from "./pages/Features/Integrations";
 
@@ -23,20 +26,21 @@ function App() {
       {/* MAIN PAGES */}
       <Route path="/" element={<Home />} />
       <Route path="/careers" element={<Careers />} />
-      <Route path="/enterprise" element={<Enterprise />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/contact" element={<Contact />} />
 
       {/* RESOURCES (NO parent page) */}
       <Route path="/resources/blog" element={<Blog />} />
-      {/* <Route path="/resources/docs" element={<Docs />} /> */}
+      <Route path="/resources/company" element={<Company />} />
       <Route path="/resources/university" element={<University />} />
-      {/* <Route path="/resources/changelog" element={<Changelog />} /> */}
+      <Route path="contactsales" element={<ContactSales />} />
+      <Route path="/resources/privacy" element={<Privacy />} />
+      <Route path="/resources/contact" element={<Contact />} />
+
 
       {/* FEATURES (NO parent page) */}
       <Route path="/features/code" element={<Code />} />
-      {/* <Route path="/features/analytics" element={<Analytics />} />
-      <Route path="/features/integrations" element={<Integrations />} /> */}
+     
     </Routes>
   );
 }

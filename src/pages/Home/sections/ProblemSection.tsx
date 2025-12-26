@@ -10,23 +10,27 @@ function ProblemSection() {
                             Why Orca AI Exist?
                         </p>
                         <h2 className="leading-none text-[#E3E3E0] text-[30px]  font-small md:text-[60px] max-w-5xl text-center">
-                            Teams build great software but execution gets slowed down
+                            Modern teams don’t fail at coding.
+                            They fail at execution.
                         </h2>
                     </div>
                     <div className="bottom-section h-[70%]">
                         <div className="content w-[50%]">
                             <h3 className="text-[#E3E3E0] text-[48px]  mb-5">
-                                What teams are <br /> missing?
+                                Execution breaks <br />When:
                             </h3>
                             <ul className="list-disc pl-6">
                                 <li className="text-[#B5B4B2] text-[24px] mb-1.5">
-                                    A single place where work actually moves forward
+                                    Decisions live in meetings, not in code
                                 </li>
                                 <li className="text-[#B5B4B2] text-[24px] mb-1.5">
-                                    Real collaboration, not scattered conversations
+                                    Context gets lost between commits, and discussions
+                                </li>
+                                <li className="text-[#B5B4B2] text-[24px] mb-1.5">
+                                    Collaboration creates noise instead of momentum
                                 </li>
                                 <li className="text-[#B5B4B2] text-[24px] mb-7.5">
-                                    Visibility tied to execution, not status reports
+                                    Documentation is written after the fact, if at all
                                 </li>
                             </ul>
                             <div className="inline-flex items-center rounded-md bg-[#2b2b2b] px-3 py-1 text-[14px] text-gray-300">

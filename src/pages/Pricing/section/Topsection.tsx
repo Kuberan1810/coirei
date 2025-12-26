@@ -1,0 +1,53 @@
+import React from "react";
+
+interface TopsectionProps {
+    isAnnual: boolean;
+    setIsAnnual: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Topsection = ({ isAnnual, setIsAnnual }: TopsectionProps) => {
+    return (
+        <section className="text-center mt-16 px-4">
+            <div className="flex justify-center mb-10">
+                <p className="backdrop-blur-md border border-white/20 rounded-full py-3 px-10 text-white">
+                    Pricing
+                </p>
+            </div>
+
+            <h1 className="text-7xl text-[#E3E3E0] font-medium mb-6">
+                Plans that scale with your usage
+            </h1>
+
+            {/* TOGGLE */}
+            <div className="flex items-center justify-center gap-4 text-gray-300">
+
+                <span className={`text-[28px] ${!isAnnual ? "text-white" : "opacity-50"}`}>
+                    Monthly
+                </span>
+
+                <button
+                    onClick={() => setIsAnnual(!isAnnual)}
+                    className={`w-14 h-7 rounded-full relative transition-all duration-300
+            ${isAnnual ? "bg-orange-500" : "bg-gray-700"}
+          `}
+                >
+                    <span
+                        className={`absolute top-1 w-5 h-5 bg-white rounded-full transition-all duration-300
+              ${isAnnual ? "left-8" : "left-1"}
+            `}
+                    />
+                </button>
+
+                <span className={`text-[28px] ${isAnnual ? "text-white" : "opacity-50"}`}>
+                    Annual
+                    {isAnnual && (
+                        <span className="text-orange-500 ml-2">(save 25%)</span>
+                    )}
+                </span>
+
+            </div>
+        </section>
+    );
+};
+
+export default Topsection;

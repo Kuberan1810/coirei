@@ -82,14 +82,11 @@ export default function ResourcesDropdown() {
                 <ul className="py-3 relative z-10">
                     {[
                         { label: "Blog", to: "/resources/blog" },
-                        { label: "Docs", to: "/resources/docs" },
                         { label: "Coirei University", to: "/resources/university" },
-                        { label: "Changelog", to: "/resources/changelog" },
-                        { label: "Company", to: "/company" },
-                        { label: "How We Work", to: "/how-we-work" },
-                        { label: "Careers", to: "/careers" },
-                        { label: "Contact", to: "/contact" },
-                        { label: "Privacy", to: "/privacy" },
+                        { label: "Company", to: "/resources/company" },
+                        { label: "Careers", to: "/resources/careers" },
+                        { label: "Contact", to: "/resources/contact" },
+                        { label: "Privacy", to: "/resources/privacy" },
                     ].map((item, index) => (
                         <li
                             key={item.label}
@@ -114,7 +111,7 @@ export default function ResourcesDropdown() {
                             >
                                 {/* Hover gradient effect */}
                                 <span className="absolute inset-0 opacity-0 group-hover:opacity-100 
-                                    bg-gradient-to-r from-white/5 via-white/8 to-white/5
+                                    bg-linear-to-r from-white/5 via-white/8 to-white/5
                                     transition-opacity duration-300"></span>
 
                                 <span className="relative z-10">{item.label}</span>

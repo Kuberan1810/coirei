@@ -42,25 +42,39 @@ const FeatureCategories = () => {
   ];
 
   return (
-
     <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {features.map((item, index) => (
           <div
             key={index}
             className={`
-              relative rounded-2xl p-8
-              bg-gradient-to-b from-[#0b1220] to-[#05080f]
-              border border-white/5
-              shadow-lg
+              group relative rounded-2xl p-8 overflow-hidden
+              bg-[#292929]/30
+              backdrop-blur-xl
+              border border-white/10
+              shadow-[0_8px_32px_rgba(0,0,0,0.4)]
+              hover:border-white/20
+              transition-all duration-300
+              hover:shadow-[0_8px_32px_rgba(255,255,255,0.1)]
               ${item.size === "large" ? "md:row-span-1" : ""}
               ${item.size === "wide" ? "md:col-span-2" : ""}
             `}
           >
-            {/* Decorative Glow */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-indigo-500/10 via-transparent to-purple-500/10 pointer-events-none" />
-            {item.position == "top" ? <img src={item.source} alt="component1" className='mb-[50px]' /> : ""}
-            <h3 className="relative z-10 text-xl font-semibold text-white">
+            {/* Animated Border Trace */}
+            <div className="border-trace" />
+
+            {/* Liquid Glass Effect - Multiple Layers */}
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 via-transparent to-white/5 pointer-events-none" />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tl from-gray-400/5 via-transparent to-gray-300/5 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+            {/* Inner Glass Border */}
+            <div className="absolute inset-[1px] rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+
+            {item.position === "top" ? (
+              <img src={item.source} alt="component1" className='mb-[50px] relative z-10' />
+            ) : null}
+
+            <h3 className="relative z-10 text-xl font-semibold text-white/90">
               {item.title}
             </h3>
 
@@ -68,11 +82,14 @@ const FeatureCategories = () => {
               {item.description}
             </p>
 
-            <button className="relative z-10 mt-6 inline-flex items-center gap-2 text-sm font-medium text-white hover:text-indigo-400 transition">
+            <button className="relative z-10 mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition-colors duration-300">
               Get Started
-              <span className="text-lg">→</span>
+              <span className="text-lg transform group-hover:translate-x-1 transition-transform duration-300">→</span>
             </button>
-            {item.position == "bottom" ? <img src={item.source} alt="" className='mt[50px]' /> : ""}
+
+            {item.position === "bottom" ? (
+              <img src={item.source} alt="" className='mt-[50px] relative z-10' />
+            ) : null}
           </div>
         ))}
       </div>

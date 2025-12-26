@@ -4,7 +4,6 @@ import CareersHero from "./section/CareersHero";
 import CareersFeature from "./section/CareersFeature";
 import CareersWorkFlow from "./section/CareersWorkFlow";
 import CareersRoles from "./section/CareersRoles";
-import CareersWidgets from "./section/CareersWidgets";
 import Navbar from "../../component/Navbar";
 
 
@@ -18,7 +17,6 @@ function Careers() {
             <CareersFeature />
             <CareersWorkFlow />
             <CareersRoles />
-            <CareersWidgets />
             <Footer />
         </>
     );

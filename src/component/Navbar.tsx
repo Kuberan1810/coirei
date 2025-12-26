@@ -25,14 +25,7 @@ function Navbar() {
                             </Link>
                         </li>
 
-                        <li>
-                            <Link
-                                to="/enterprise"
-                                className="p-2.5 rounded hover:bg-[#7B7B7B20]"
-                            >
-                                Enterprise
-                            </Link>
-                        </li>
+                    
                         <li>
                             <Link
                                 to="/careers"
@@ -45,7 +38,7 @@ function Navbar() {
                 </div>
 
                 <Link
-                    to="/contact"
+                    to="/contactsales"
                     className="bg-white text-[#3E3E3E] rounded-lg py-2.5 px-5 font-medium
           hover:bg-[#3E3E3E] hover:text-white transition"
                 >

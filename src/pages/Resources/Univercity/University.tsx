@@ -8,7 +8,7 @@ import VideoList from "./section/VideoList";
 
 
 
-function Univercity() {
+function University() {
     return (
         <>
             <div className="fixed w-full top-0 z-10">
@@ -22,4 +22,4 @@ function Univercity() {
     );
 };
 
-export default Univercity;
+export default University;

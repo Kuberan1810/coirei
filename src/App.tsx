@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
-import Enterprise from "./pages/Enterprise/Enterprise";
 import Pricing from "./pages/Pricing/Pricing";
 import Contact from "./pages/ContactUs/Contact";
 
@@ -12,11 +11,12 @@ import University from "./pages/Resources/Univercity/University";
 // import Changelog from "./pages/Resources/Changelog";
 
 // Features pages
-import Code from "./pages/Features/Features";
+import Features from "./pages/Features/Features";
 import Careers from "./pages/careers/Careers";
 import Privacy from "./pages/Resources/Privacy/Privacy";
 import ContactSales from "./pages/ContactUs/ContactSales/ContactSales";
 import Company from "./pages/Resources/Company/Company";
+
 // import Analytics from "./pages/Features/Analytics";
 // import Integrations from "./pages/Features/Integrations";
 
@@ -28,6 +28,7 @@ function App() {
       <Route path="/careers" element={<Careers />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/contact-sales" element={<ContactSales />} />
 
       {/* RESOURCES (NO parent page) */}
       <Route path="/resources/blog" element={<Blog />} />
@@ -36,11 +37,12 @@ function App() {
       <Route path="contactsales" element={<ContactSales />} />
       <Route path="/resources/privacy" element={<Privacy />} />
       <Route path="/resources/contact" element={<Contact />} />
+      <Route path="/resources/careers" element={<Careers />} />
 
 
       {/* FEATURES (NO parent page) */}
-      <Route path="/features/code" element={<Code />} />
-     
+      <Route path="/features" element={<Features />} />
+
     </Routes>
   );
 }

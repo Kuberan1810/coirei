@@ -1,4 +1,3 @@
-
 import {
   Fingerprint,
   Briefcase,
@@ -41,37 +40,30 @@ const features = [
   },
 ];
 
-const FeaturesOrange = () => {
+const FeaturesGlass = () => {
   return (
-    <section className="bg-black text-white">
+    <section className="text-white">
 
-      {/* ===== HEADER SECTION ===== */}
-      <div
-        className="py-10 px-6 text-center"
-        
-      >
+      {/* HEADER */}
+      <div className="py-20 px-6 text-center">
         <span
           className="inline-flex items-center justify-center
-          px-4 py-1.5 mb-2
-          text-sm font-medium
-          rounded-full
-          bg-white/5 backdrop-blur-md
-          border border-white/20"
+          text-2xl text-white py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10"
         >
           How it Works
         </span>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2 className="mx-auto leading-18 text-[#E3E3E0] text-[30px] font-normal md:text-[60px] max-w-2xl text-center mb-5">
           Trade Smarter with All-in-One Features
         </h2>
 
-        <p className="text-gray-400 max-w-xl mx-auto">
-          From insights to execution — everything flows smarter.
+        <p className="text-gray-300 max-w-xl mx-auto text-lg">
+          From insights to execution everything flows smarter
         </p>
       </div>
 
-      {/* ===== FEATURES GRID ===== */}
-      <div className="py-20 px-6">
+      {/* FEATURES GRID */}
+      <div className="py-5 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((item, index) => {
             const Icon = item.icon;
@@ -79,44 +71,32 @@ const FeaturesOrange = () => {
               <div
                 key={index}
                 className="relative rounded-2xl p-6
-                bg-linear-to-b from-[#1a0f05] via-[#0f0a06] to-black
-                border border-[#ff8c2a]/30
-                shadow-[inset_0_0_40px_rgba(255,140,42,0.08)]"
+                bg-white/5 backdrop-blur-xl
+                border border-white/15
+                shadow-[0_8px_32px_rgba(0,0,0,0.6)] "
               >
                 {/* ICON + TITLE */}
                 <div className="flex items-center gap-4 mb-4">
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center
-                    bg-linear-to-br from-[#ffb066] via-[#ff8c2a] to-[#d96600]
-                    shadow-[0_0_18px_rgba(255,140,42,0.8)]"
+                    bg-white/10 backdrop-blur-md
+                    border border-white/20"
                   >
-                    <Icon size={25} className="text-black" />
+                    <Icon size={24} className="text-white" />
                   </div>
 
-                  <h3 className="font-semibold text-lg">
+                  <h3 className="font-semibold text-xl text-white/90">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* DIVIDER */}
-                <div className="h-px w-full bg-linear-to-r from-transparent via-[#ff8c2a]/40 to-transparent mb-4" />
+                <div className="h-px w-full bg-white/15 mb-4 " />
 
                 {/* DESCRIPTION */}
-                <p className="text-sm text-gray-300 leading-relaxed mb-10">
+                <p className="text-base text-white/70  leading-relaxed mb-10">
                   {item.desc}
                 </p>
-
-                {/* BOTTOM DOT UI */}
-                <div className="absolute bottom-4 left-6 right-6 opacity-40">
-                  <div className="grid grid-cols-12 gap-1">
-                    {Array.from({ length: 72 }).map((_, i) => (
-                      <span
-                        key={i}
-                        className="w-1 h-1 rounded-full bg-[#ff8c2a]"
-                      />
-                    ))}
-                  </div>
-                </div>
               </div>
             );
           })}
@@ -127,4 +107,4 @@ const FeaturesOrange = () => {
   );
 };
 
-export default FeaturesOrange;
+export default FeaturesGlass;

@@ -1,6 +1,6 @@
 import logo from "../assets/images/homepage/coirei-logo.png";
 import { Link } from "react-router-dom";
-import FeaturesDropdown from "../component/NavDropdown/FeaturesDropdown";
+// import FeaturesDropdown from "../component/NavDropdown/FeaturesDropdown";
 import ResourcesDropdown from "../component/NavDropdown/ResourcesDropdown";
 
 function Navbar() {
@@ -13,7 +13,15 @@ function Navbar() {
                     </Link>
 
                     <ul className="flex items-center gap-7.5">
-                        <FeaturesDropdown />
+                        {/* <FeaturesDropdown /> */}
+                        <li>
+                            <Link
+                                to="/features"
+                                className="p-2.5 rounded hover:bg-[#7B7B7B20]"
+                            >
+                                Features
+                            </Link>
+                        </li>
                         <ResourcesDropdown />
 
                         <li>

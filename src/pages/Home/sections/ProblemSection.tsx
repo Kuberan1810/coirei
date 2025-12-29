@@ -33,7 +33,7 @@ function ProblemSection() {
                                     Documentation is written after the fact, if at all
                                 </li>
                             </ul>
-                            <div className="inline-flex items-center rounded-md bg-[#2b2b2b] px-3 py-1 text-[14px] text-gray-300">
+                            <div className="inline-flex items-center rounded-md bg-[#2b2b2b] px-3 py-1 text-[16px] text-gray-300">
                                 The Result is
                                 <span className="mx-1 text-orange-400 font-medium tracking-wider">
                                     <span className="relative top-px">b</span>

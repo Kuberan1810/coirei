@@ -43,7 +43,7 @@ const IntegrationsSection: React.FC = () => {
                                 className="w-full h-full object-contain object-[100%_50%]"
                             />
 
-                            <div className="absolute -top-[15%] left-0 bg-gradient-to-b bg-[#29292920] border border-[#d4d4d4] rounded-full flex justify-center items-center w-[60px] h-[60px] p-2.5 shadow-[inset_0_-2px_1px_rgba(255,255,255,0.4)]">
+                            <div className="absolute -top-[15%] left-0 bg-gradient-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] rounded-full flex justify-center items-center w-[60px] h-[60px] p-2.5 shadow-[inset_0_-2px_1px_rgba(255,255,255,0.4)]">
                                 <img src={HalftCircleIocn} loading="lazy" alt="Integration Logo"/>
                             </div>
 

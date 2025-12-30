@@ -24,14 +24,14 @@ function Navbar() {
                         </li>
                         <ResourcesDropdown />
 
-                        <li>
+                        {/* <li>
                             <Link
                                 to="/pricing"
                                 className="p-2.5 rounded hover:bg-[#7B7B7B20]"
                             >
                                 Pricing
                             </Link>
-                        </li>
+                        </li> */}
 
                     
                         <li>
@@ -42,6 +42,15 @@ function Navbar() {
                                 Careers
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                to="/Services"
+                                className="p-2.5 rounded hover:bg-[#7B7B7B20]"
+                            >
+                                Services
+                            </Link>
+                        </li>
+
                     </ul>
                 </div>
 

@@ -1,5 +1,7 @@
 import Lottie from "lottie-react";
 import waterfallAnimation from "../../../assets/js/cta-animation-waterfall.json";
+import CodingImg from "../../../../src/assets/images/homepage/coirei_coding.png"
+import BackCoding from "../../../../src/assets/images/homepage/coireimg.png"
 
 
 function Hero() {
@@ -35,15 +37,28 @@ function Hero() {
                     </div>
 
                     {/* RIGHT LOTTIE */}
-                    <div className="cta-image max-w-7xl">
-                        <Lottie
-                            animationData={waterfallAnimation}
-                            autoplay={true}
-                            loop={true}
-
-
-                        />
-                    </div>
+                    <div className="relative h-105 md:h-130 rounded-2xl overflow-hidden">
+                                {/* Background Image */}
+                                <img
+                                  src={BackCoding}
+                                  alt="Background"
+                                  className="absolute inset-0 w-full h-full object-cover"
+                                />
+                    
+                                {/* Dark overlay */}
+                                <div className="absolute inset-0 bg-black/40" />
+                    
+                                {/* Glass Card */}
+                                <div className="relative z-1 h-full flex items-center justify-center p-6">
+                                  <div className="  p-4 max-w-lg w-full">
+                                    <img
+                                      src={CodingImg}
+                                      alt="Code preview"
+                                      className="w-full rounded-xl shadow-2xl"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
 
                 </div>
             </div>

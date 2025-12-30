@@ -16,6 +16,7 @@ import Careers from "./pages/careers/Careers";
 import Privacy from "./pages/Resources/Privacy/Privacy";
 import ContactSales from "./pages/ContactUs/ContactSales/ContactSales";
 import Company from "./pages/Resources/Company/Company";
+import Services from "./pages/services/Services";
 
 // import Analytics from "./pages/Features/Analytics";
 // import Integrations from "./pages/Features/Integrations";
@@ -29,6 +30,7 @@ function App() {
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/contact-sales" element={<ContactSales />} />
+      <Route path="/services" element={<Services />} />
 
       {/* RESOURCES (NO parent page) */}
       <Route path="/resources/blog" element={<Blog />} />

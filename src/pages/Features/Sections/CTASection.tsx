@@ -17,13 +17,14 @@ const CTASection = () => {
               </div>
 
               {/* Heading */}
-              <h1 className="text-3xl md:text-5xl font-semibold text-white mb-4 leading-tight">
-                Ready to Automate Smarter?
-              </h1>
+              <h2 className="text-3xl md:text-5xl font-semibold text-white mb-4 leading-tight">
+                Ready to Execute Smarter?
+              </h2>
 
               {/* Description */}
-              <p className="text-base md:text-lg text-[#d4d4d3] mb-8 leading-relaxed font-normal">
-                Start building powerful workflows in minutes. Whether you're launching a startup or scaling an enterprise, gives you the tools to move faster—no code required.
+              <p className="text-base md:text-lg   text-[#d4d4d3] mb-8 leading-relaxed font-normal">
+                Start building and shipping software in a unified execution environment.Whether you’re a
+                startup or an enterprise, ORCA keeps execution fast, visible, and controlled
               </p>
 
               {/* Buttons */}

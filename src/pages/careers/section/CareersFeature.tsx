@@ -11,7 +11,7 @@ const CareerFeature = () => {
 
         {/* HEADING */}
         <h2 className="text-[#ffffff] text-[64px] text-center text-4xl font-medium mb-15">
-          As a Warper, you’ll get to:
+          At Coirei, you’ll get to:
         </h2>
 
         {/* CONTENT GRID */}
@@ -24,7 +24,7 @@ const CareerFeature = () => {
             </div>
 
             <p className="text-medium text-gray-300 max-w-xs leading-relaxed">
-              Radically change an iconic tool that developers use every day
+              Work on core infrastructure that defines how modern software is planned, built, and shipped.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ const CareerFeature = () => {
             </div>
 
             <p className="text-medium text-gray-300 max-w-xs leading-relaxed">
-              Work on a fast-growing startup in its early stages and have direct impact
+              Contribute directly to a growing platform where your work shapes the product used by real teams.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const CareerFeature = () => {
             </div>
 
             <p className="text-medium text-gray-300 max-w-xs leading-relaxed">
-              Shape company culture in a welcoming, diverse environment
+              Be part of a thoughtful, inclusive team that values ownership, clarity, and long-term thinking.
             </p>
           </div>
         </div>

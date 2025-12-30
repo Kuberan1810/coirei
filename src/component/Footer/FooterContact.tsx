@@ -22,7 +22,7 @@ const FooterContact: React.FC<FooterContactProps> = ({
 
             <div>
                 <p className="text-white/50 text-sm">{title}</p>
-                <p className="text-white font-medium">{value}</p>
+                <a href="support@coirei.com" className="text-white font-medium">{value}</a>
             </div>
         </div>
     );

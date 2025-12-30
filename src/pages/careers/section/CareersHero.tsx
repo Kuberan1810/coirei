@@ -2,7 +2,7 @@ import React from "react";
 
 const CareersHero = () => {
   return (
-    <section className=" text-white px-8 py-40">
+    <section className=" text-white px-8 pt-50 pb-20">
       <div className="max-w-7xl mx-auto">
 
         {/* TOP CONTENT */}
@@ -10,18 +10,15 @@ const CareersHero = () => {
 
           {/* LEFT BIG TEXT */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-3xl">
-            Make the command line
-            <br />
-            more usable, humane, and
-            <br />
-            powerful for everyone.
+            Build the future of <br />
+            agent-assisted software execution
           </h1>
 
           {/* RIGHT SMALL TEXT */}
           <div className="max-w-sm">
             <p className="text-gray-400 mb-6">
-              We’re a team of product-first developers reinventing a tool that we
-              use every day, and we’re looking for more teammates. Join us!
+              At Coirei, we build systems that connect planning, code, pipelines, and AI into one execution fabric.
+              Join us in shaping how teams build and ship software at scale.
             </p>
 
             {/* BUTTON (UPDATED HOVER ONLY) */}

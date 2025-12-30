@@ -23,21 +23,21 @@ const CareersWorkFlow = () => {
             <h2 className="text-[64px] font-medium">How we work</h2>
 
             <p className="text-[#CECBCB] text-[18px] mb-12 max-w-xl">
-              Our team is keenly conscious of how best to work with each other.
+              We’re deliberate about how we build, both our product and our team.
+              Our principles are designed to support clarity, ownership, and long-term impact.
               <br />
-              <span className="text-white font-semibold underline cursor-pointer">
+              {/* <span className="text-white font-semibold underline cursor-pointer">
                 Check out our How We Work guide.
-              </span>
+              </span> */}
             </p>
 
             {/* Product-first */}
             <div className="flex gap-4 mb-8">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Product-first</h4>
+                <h4 className="text-[24px] font-medium mb-2">Product-led by execution</h4>
                 <p className="text-gray-200 text-[18px] leading-relaxed">
-                  Focus on user experience and make engineering choices based on
-                  building the best product for developers.
+                  We make decisions based on how they improve real execution for users, not just features or trends.
                 </p>
               </div>
             </div>
@@ -48,9 +48,9 @@ const CareersWorkFlow = () => {
             <div className="flex gap-4 mb-8">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Be pragmatic</h4>
+                <h4 className="text-[24px] font-medium mb-2">Pragmatic by default</h4>
                 <p className="text-gray-200 text-[18px] leading-relaxed">
-                  Make decisions based on reason and pragmatism — not hierarchy.
+                  We prioritize clear reasoning, practical outcomes, and simplicity over hierarchy or process for its own sake.
                 </p>
               </div>
             </div>
@@ -62,10 +62,10 @@ const CareersWorkFlow = () => {
               <CheckIcon />
               <div>
                 <h4 className="text-[24px] font-medium mb-2">
-                  Run by developers
+                  Built by practitioners
                 </h4>
                 <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We use the product as we build it and solve our problems as we build.
+                  We build and use Coirei ourselves, learning directly from real workflows as we improve the platform.
                 </p>
               </div>
             </div>
@@ -85,10 +85,9 @@ const CareersWorkFlow = () => {
             <div className="flex gap-4 mb-8">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Diversity</h4>
+                <h4 className="text-[24px] font-medium mb-2">Inclusive by design</h4>
                 <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We will ultimately build the best product and business if the
-                  team includes people from a wide range of backgrounds.
+                  We believe strong systems are built by teams with diverse backgrounds, perspectives, and experiences.
                 </p>
               </div>
             </div>
@@ -99,11 +98,9 @@ const CareersWorkFlow = () => {
             <div className="flex gap-4">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Remote-first</h4>
+                <h4 className="text-[24px] font-medium mb-2">Distributed & focused</h4>
                 <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We are a distributed, remote-first team with optional office
-                  spaces in New York City and San Francisco. We emphasize
-                  asynchronous communication and are big on written communication.
+                  We are a remote-first team that values asynchronous communication, deep work, and thoughtful written context.
                 </p>
               </div>
             </div>

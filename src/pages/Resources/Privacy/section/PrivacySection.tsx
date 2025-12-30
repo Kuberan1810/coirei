@@ -6,48 +6,55 @@ const PrivacySection = () => {
             {/* Hero */}
             <div className="w-full">
                 <h1 className="text-4xl md:text-6xl leading-tight">
-                    Your privacy <br /> while using Warp
+                    Your privacy <br /> while using Coirei
                 </h1>
 
-                <p className="mt-6 text-[18px] text-gray-400 max-w-3xl leading-relaxed">
-                    At Warp, we’re building a completely new way to use the command line.
-                    Warp is an intelligent terminal that uses cloud-based LLMs to help
-                    developers, and also has a built-in suite of collaboration primitives.
-                    Because Warp works differently from classic terminal tools, we would
-                    like to share how we protect your privacy as you’re using the app.
-                </p>
+                <p className="mt-6 text-[18px] text-[#A1A09D] max-w-3xl leading-relaxed">
+                    At Coirei, we are building a unified execution platform for software development
+                    because Coirei operates across code, workflows, pipelines, and AI-assisted execution,
+                    we take privacy, security, and data control seriously by design</p>
+
+                <p className="mt-6 text-[18px] text-[#ffffff]">Our goal is simple: you remain in control of your data at all times.</p>
+
 
                 {/* Highlights */}
                 <div className="w-full flex justify-between mt-12">
                     <div className="max-w-xl">
                         <Settings className="text-[18px] bg-gray-400 p-0.5 rounded-md mb-2.5" />
-                        <p className="text-[18px] text-white mb-2">Warp’s telemetry is optional, and you can opt out at any time.</p>
-                        <p className="text-[18px] text-gray-400 leading-relaxed">
-                            We may collect certain console interactions to improve Warp’s AI
-                            capabilities. You can opt out of this telemetry at anytime and
-                            still continue using all of Warp, including our AI features. Visit
-                            telemetry settings under Settings Privacy.
+                        <p className="text-[20px] text-white mb-2">Telemetry is optional. You remain in control.</p>
+                        <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                            Coirei may collect limited execution telemetry to improve {" "}
+                            <a href="#" className="text-white">
+                                platform reliability and performance.
+                            </a>{" "}
+                            You can opt out at any time{" "}
+                            <a href="#" className="text-white">
+                                without losing access
+                            </a>
+                            to core features, {" "}
+                            <a href="#" className="text-white">
+                                including AI assistance.
+                            </a>{" "}
+
                         </p>
                     </div>
                     <div className="max-w-xl">
                         <Settings className="text-[18px] bg-gray-400 p-0.5 rounded-md mb-2.5" />
-                        <p className="text-[18px] text-white mb-2">You have full control.</p>
-                        <p className="text-[18px] text-gray-400 leading-relaxed">
-                            You can read the list of high-level You can
-                            read the list of{" "}
+                        <p className="text-[20px] text-white mb-2">Full visibility, always.</p>
+                        <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                            You can review execution and telemetry events in {" "}
                             <a href="#" className="text-white">
-                                high-level telemetry events
+                                real time through Coirei’s monitoring and audit views.
                             </a>{" "}
-                            that get sent for app analytics and monitor telemetry in real-time
-                            with our native{" "}
+                            All data collection is transparent{" "}
                             <a href="#" className="text-white">
-                                Network Log
+                                documented
                             </a>
-                            . Visit our{" "}
+                            , and {" "}
                             <a href="#" className="text-white">
-                                Privacy docs
+                                governed
                             </a>{" "}
-                            for more info.
+                            by your privacy settings.
                         </p>
                     </div>
                 </div>
@@ -56,186 +63,169 @@ const PrivacySection = () => {
             {/* Philosophy */}
             <div className="text-center mt-24 max-w-4xl mx-auto">
                 <h2 className="text-[32px] md:text-[40px] font-medium">
-                    Our philosophy is full transparency and control of any data leaving
-                    your machine.
+                    Our philosophy is built on transparency, minimal data collection,
+                    and explicit control
                 </h2>
-                <p className="mt-4 text-[16px] text-gray-400">
-                    This page outlines details you need to know in human-readable
-                    language. We encourage you to visit our{" "}
+                <p className="mt-4 text-[18px] text-[#A1A09D]">
+                    TCoirei is designed so that execution happens inside
+                    controlled environments, with clear ownership, access rules, and auditability.{" "}
                     <a href="#" className="text-white">
-                        Privacy docs
+                        Any data that leaves your execution environment
                     </a>{" "}
-                    for more info. There is also a more formal "legalese" version of
-                    Warp's{" "}
+                    does so intentionally, securely, and with purpose.
+                    We do not believe in hidden data collection or opaque AI behaviour.{" "}
                     <a href="#" className="text-white">
-                        privacy policy available
+                        Every system interaction is governed, observable, and accountable.
                     </a>
                     .
                 </p>
             </div>
 
-            {/* How Warp Works */}
+            {/* How Coirei Works */}
             <div className="max-w-4xl mx-auto mt-24">
-                <h3 className="text-3xl font-semibold mb-4">How Warp Works</h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Warp is a fully-native local application that can run without an
-                    internet connection. The core features of the terminal will always
-                    work offline. You have total, explicit, and granular control over any
-                    information that is sent to Warp AI.
+                <h3 className="text-[40px] font-regular mb-4">How Coirei Works</h3>
+                <p className="text-[20px] text-white-400 leading-relaxed">
+                    Coirei operates as a cloud-native execution platform. Code is written
+                    and executed inside isolated cloud workspaces. Execution environments are consistent and reproducible.
                 </p>
             </div>
 
-            {/* Cloud-based Features */}
+            {/* Cloud-based Capabilities */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-4">Cloud-based Features</h3>
-                <p className="text-[16px] text-gray-400 mb-2.5">Warp includes cloud-based features that power cool things like:</p>
-                <ul className="text-[16px] text-gray-400 space-y-2 list-disc list-inside">
-                    <li>Warp AI</li>
-                    <li>Warp Drive</li>
-                    <li>Session Sharing</li>
-                    <li>Block Sharing</li>
+                <h3 className="text-[40px] font-regular mb-4">Cloud-based Capabilities</h3>
+                <p className="text-[20px] text-white-400 mb-2.5">Some Coirei features rely on cloud services to function correctly, including:</p>
+                <ul className="text-[18px] text-white-400 space-y-2 list-disc list-inside">
+                    <li>Cloud workspaces and execution environments</li>
+                    <li>Continuous testing and CI/CD orchestration</li>
+                    <li>AI-assisted analysis and recommendations</li>
+                    <li>Collaboration, monitoring, and execution history</li>
                 </ul>
-                <p className="mt-2.5 text-[16px] text-gray-400 leading-relaxed">
-                    If you choose to use Warp Drive or block sharing and save an item,
-                    that item will be sent to Warp’s servers and stored securely in Warp’s
-                    database. Data is encrypted at rest, and you can delete this data
-                    anytime.
+                <p className="mt-2.5 text-[20px] text-white-400 leading-relaxed">
+                    All cloud-based data is encrypted in transit and at rest.
+                    You can delete project data at any time based on your access level and organization policies.
                 </p>
             </div>
 
-            {/* Warp AI */}
+            {/* Coirei AI */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-4">Warp AI</h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Warp AI includes features like AI Command Suggestions, AI autofill in
-                    Warp Drive, and Agent Mode. Visit our{" "}
+                <h3 className="text-[40px] font-regular font-regular mb-4">Coirei AI</h3>
+                <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                    Coirei AI provides{" "}
                     <a href="#" className="text-white">
-                        Warp AI docs
+                        execution-aware assistance
                     </a>{" "}
-                    for the latest info.
+                    across planning, code, workflows, and pipelines.
                 </p>
 
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Please note that certain features, such as Prompt Suggestions and Next
-                    Command, are powered by large language models (LLMs) running in the
-                    background. To function, they may send segments of your terminal
-                    output to AI services. If you prefer not to share this information,
-                    you can disable these features at any time by navigating to Settings
-                    AI. When using other features, like Agent Mode, Warp AI will read the
-                    command outputs for any command you authorize it to run during the
-                    session as it gathers information in pursuit of completing a task.
+                <p className="mt-5 text-[18px] text-white-400 leading-relaxed">
+                    It helps teams by understanding intent, analyzing execution signals, detecting risks,
+                    and generating recommendations to improve quality and reliability.
                 </p>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    We may collect console interactions in order to improve our AI
-                    features; you can opt out of this telemetry at any time under Settings
-                    Privacy.
+
+                <p className="mt-5 text-[18px] text-white-400 leading-relaxed">
+                    Some AI capabilities may process execution context such as code diffs, test results,
+                    workflow state, or system outputs in order to provide accurate assistance. This processing
+                    happens strictly within defined boundaries and never results in autonomous execution of
+                    irreversible actions. AI in Coirei does not merge code, deploy changes, or override ownership and access controls.
+                    All critical actions require explicit human approval, and AI behavior is always observable and auditable.
                 </p>
-                <a href="#" className="text-white">
-                    Read more about how our AI features work.
-                </a>
+
+                <p className="mt-5 c text-white-400 leading-relaxed">
+                    You can manage or disable specific AI capabilities at any time through platform settings.
+                </p>
+
+                <p className="mt-5 text-[18px] text-white-400 leading-relaxed">
+                    Learn more about how Coirei’s AI assistance works.
+                </p>
             </div>
 
             {/* Telemetry */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-4">Telemetry (Opt-out)</h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Visit{" "}
+                <h3 className="text-[40px] font-regular mb-4">Telemetry (Opt-out)</h3>
+                <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                    Coirei may collect limited telemetry to improve platform reliability, performance, and user experience.{" "}
                     <a href="#" className="text-white">
-                        What telemetry does Warp collect and why
+                        This telemetry is focused on system health and feature usage, not customer code or proprietary logic.
                     </a>
-                    ? for detailed information on our telemetry. Opting out of this
-                    telemetry does not mean you lose access to any AI features. You can
-                    opt out at any time and still continue to use Warp to its fullest.
-                    We've taken several precautions to ensure that, if you've opted out,
-                    there will be no accidental collection of data. A Zero Data Retention
-                    policy is available on Warp's{" "}
+                    Opting out of telemetry does not restrict access to core features or AI assistance.
+                    You can disable telemetry at any time and continue using Coirei without interruption.
+                    We take additional safeguards to ensure that{" "}
                     <a href="#" className="text-white">
-                        Enterprise
+                        when telemetry is disabled, data is not collected unintentionally. For enterprise customers,
                     </a>{" "}
-                    plan.
+                    zero data retention configurations are available based on organizational requirements.
                 </p>
             </div>
 
             {/* Login */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-2.5">Login (Optional)</h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Unlike classic terminals, you can login to Warp. This is more in line
-                    with what you might expect from cloud-based apps like Figma or GitHub.
+                <h3 className="text-[40px] font-regular mb-2.5">Login</h3>
+                <p className="text-[18px] text-white-400 leading-relaxed">
+                    Coirei supports optional sign-in to provide a consistent
+                    and secure execution experience across devices and teams.
                 </p>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    While you are able to use Warp without logging in, the best experience
-                    comes from being signed-in. Your unique login:
+                <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                    You can explore Coirei without logging in, but signing in enables:
                 </p>
-                <ul className="mt-2.5 text-[16px] text-gray-400 list-disc list-inside space-y-2">
-                    <li>Ensures your personal workflows are available any time you use Warp, on any machine</li>
-                    <li>Makes it easier for Warp to provide support, should you ever have an issue specific to your account</li>
-                    <li>Identity allows you to sync your personalized configurations from device-to-device.</li>
+                <ul className="mt-2.5 text-[18px] text-[#FFFFFF] list-disc list-inside space-y-2">
+                    <li>Persistent cloud workspaces and execution history</li>
+                    <li>Synchronized settings and configurations across devices</li>
+                    <li>Faster support and issue resolution tied to your account</li>
                 </ul>
-                <p className="mt-2.5 text-[16px] text-gray-400 leading-relaxed">
-                    We understand that logging in is a big ask. It’s our goal to make your
-                    experience with Warp so exceptional that the login feels like a
-                    benefit instead of a hindrance. Learn more about Warp's{" "}
+                <p className="mt-2.5 text-[18px] text-[#A1A09D] leading-relaxed">
+                    We understand that identity should provide value, not friction.
+                    Login exists to enhance execution continuity, visibility,
+                    and collaboration ,{" "}
                     <a href="#" className="text-white">
-                        position on login on our blog
+                        not to limit access.
                     </a>
-                    .
                 </p>
             </div>
 
-            {/* Business Model */}
+            {/* Coirei’s Business Model */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-4">Warp’s Business Model</h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Warp’s business plan is built around billing power users and business
-                    teams for cloud-based features.{" "}
+                <h3 className="text-[40px] font-regular mb-4">Coirei’s Business Model</h3>
+                <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                    Coirei is built as a product-led platform with usage-based and enterprise subscription plans.
+                    Our business model is focused on delivering execution infrastructure for{" "}
                     <a href="#" className="text-white">
-
-                        Check out our pricing page to learn more
+                        teams and organizations not on collecting or monetizing user data.
                     </a>
-                    . Please note Warp’s business model is not about collecting or
-                    monetizing any of your data.
+                    Pricing is tied to platform capabilities, scale, and support needs, not to the value
+                    of your code or execution data.
                 </p>
             </div>
 
-            {/* Open Source */}
+            {/* Open & Verifiable Practices */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-4">Open Source</h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    Several of Warp’s extension points, like{" "}
-                    <a href="#" className="text-white">
-                        themes
-                    </a>{" "}
-                    and{" "}
-                    <a href="#" className="text-white">
-                        workflows
-                    </a>
-                    , are open-sourced today. We would love it if you checked out the
-                    Github repos and contributed to our growing community! In the future,
-                    we plan to open-source the Rust client code and related projects, like
-                    our UI framework. Among{" "}
-                    <a href="#" className="text-white">
-                        other benefits
-                    </a>{" "}
-                    to the community, open-sourcing will enable folks to audit our code
-                    for privacy and security bugs. Learn more about{" "}
-                    <a href="#" className="text-white">
-                        Warp's position on open source
-                    </a>{" "}
-                    on our blog.
+                <h3 className="text-[40px] font-regular mb-2.5">Open & Verifiable Practices</h3>
+                <p className="text-[18px] text-white-400 leading-relaxed">
+                    Coirei believes trust is earned through transparency and verifiability.
+                </p>
+                <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                    Where applicable, parts of the platform, tooling, or interfaces may be made open or auditable to:
+                </p>
+                <ul className="mt-2.5 text-[18px] text-[#FFFFFF] list-disc list-inside space-y-2">
+                    <li>Improve reliability and security</li>
+                    <li>Enable independent review of system behavior</li>
+                    <li>Strengthen trust around privacy and execution guarantees</li>
+                </ul>
+                <p className="mt-2.5 text-[18px] text-[#A1A09D] leading-relaxed">
+                    We are committed to building systems that can be inspected,
+                    reasoned about, and trusted at scale.{" "}
                 </p>
             </div>
 
             {/* Contact */}
             <div className="max-w-4xl mx-auto mt-16">
-                <h3 className="text-3xl font-semibold mb-4">
-                    Contact Warp’s Privacy Team
+                <h3 className="text-[40px] font-regular mb-2.5">
+                    Contact the Coirei Privacy Team
                 </h3>
-                <p className="text-[16px] text-gray-400 leading-relaxed">
-                    For more information about Warp's privacy policies, please view our{" "}
-                    <a href="#" className="text-white">complete policy notice</a> and our <a href="#" className="text-white">terms of service</a> or visit our <a href="#" className="underline text-white">Trust
-                        Center</a>. If you have questions about privacy or Zero Data Retention
-                    (ZDR), contact us at: <a href="#" className="text-white">privacy@warp.dev</a>.
+                <p className="text-[18px] text-[#A1A09D] leading-relaxed">
+                    For questions about privacy, security, data handling, or governance, please reach out to us directly{" "}
+                    <a href="#" className="text-white">info@coirei.com.</a>You can also review our
+                    <a href="#" className="text-white"> Privacy Policy, Terms of Service,</a> and
+                    <a href="#" className="text-white"> Trust documentation</a> for more details.
                 </p>
             </div>
         </section>

@@ -51,11 +51,10 @@ const Footer: React.FC = () => {
                 {/* LEFT */}
                 <div className="max-w-lg">
                     <h2 className="text-4xl font-medium leading-tight">
-                        Unlock tomorrow’s most important AI trends
+                        Unlock the future of software execution
                     </h2>
                     <p className="text-white/60 mt-4">
-                        Lorem ipsum dolor sit amet consectetur sit mi lacus quis vitae sed
-                        pellentesque libero ultricies neque.
+                        Get product updates, execution insights, and engineering perspectives from the team building Coirei.
                     </p>
 
                     <form className="mt-10 flex border border-white/20">
@@ -75,7 +74,7 @@ const Footer: React.FC = () => {
                     <FooterLinks
                         links={[
                             { label: "Home", href: "/" },
-                            { label: "Features", href: "/features/code" },
+                            { label: "Features", href: "/features" },
                             { label: "Contact Sales", href: "/contactsales" },
                             { label: "Careers", href: "/careers" },
                         ]}
@@ -114,11 +113,10 @@ const Footer: React.FC = () => {
 
             {/* BOTTOM */}
             <div className="">
-                <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row items-center justify-between text-white/50 text-sm">
-                    <span>Coirei Technologies</span>
+                <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row items-center justify-end text-white/50 text-sm">
+                   
                     <span>
-                        © coirei| {" "}
-                        <b className="text-white">Technologies</b>
+                        © coirei
                     </span>
                 </div>
             </div>

@@ -1,11 +1,12 @@
-import imageFile from "../../..//assets/images/homepage/sampleimage.png"
+import imageFile from "../../..//assets/images/homepage/team-missing.png"
+
 
 function ProblemSection() {
     return (
         <>
             <section className="problem-section my-20">
                 <div className="w-[80%]">
-                    <div className="top-section flex flex-col items-center mb-22">
+                    <div className="top-section flex flex-col justify-center items-center mb-22">
                         <p className="backdrop-blur-md border border-white/20 rounded-xl p-2 max-w-fit text-base text-[#959493] mb-2.5">
                             Why Orca AI Exist?
                         </p>
@@ -14,7 +15,7 @@ function ProblemSection() {
                             They fail at execution.
                         </h2>
                     </div>
-                    <div className="bottom-section h-[70%]">
+                    <div className="bottom-section justify-between  h-[70%]">
                         <div className="content w-[50%]">
                             <h3 className="text-[#E3E3E0] text-[48px]  mb-5">
                                 Execution breaks <br />When:
@@ -46,8 +47,8 @@ function ProblemSection() {
                                 flow.
                             </div>
                         </div>
-                        <div className="image w-142.5 h-107.5">
-                            <img className="w-full h-full" src={imageFile} alt="" />
+                        <div className=" w-142.5 h-107.5">
+                            <img className="w-full h-full rounded-2xl" src={imageFile} alt="" />
                         </div>
                     </div>
                 </div>

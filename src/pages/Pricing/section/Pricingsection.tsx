@@ -14,19 +14,16 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
     ];
 
     return (
-        <section className="relative mt-24 px-6 py-32 overflow-hidden">
+        <section className="relative mt-24 px-6 py-5 overflow-hidden">
 
-            {/* liquid background blobs */}
-            <div className="absolute -top-40 -left-40 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute top-1/2 -right-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
-
+           
             <div className="relative mx-20 grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch ">
 
                 {/* STARTER */}
                 <div className="group relative rounded-3xl
                     bg-white/10 backdrop-blur-3xl
                     border border-white/20
-                    shadow-[0_30px_80px_rgba(0,0,0,0.6)]
+                    shadow-[0_30px_80px_rgba(0,0,0,0.1)]
                     transition-all duration-500 ease-out
                     hover:scale-[1.05] hover:border-white/40">
 
@@ -70,28 +67,20 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
 
                 {/* PROFESSIONAL – LIQUID HERO */}
                 <div className="group relative rounded-3xl
-                    bg-white/15 backdrop-blur-[30px]
-                    border border-orange-400/40
-                    shadow-[0_40px_120px_rgba(255,140,0,0.35)]
+                    bg-white/10 backdrop-blur-3xl
+                    border border-white/20
+                    shadow-[0_30px_80px_rgba(0,0,0,0.6)]
                     transition-all duration-500 ease-out
-                    hover:scale-[1.08] hover:border-orange-400">
+                    hover:scale-[1.05] hover:border-white/40">
 
-                    {/* liquid glow */}
-                    <div className="absolute -inset-1 rounded-3xl
-                        bg-gradient-to-r from-orange-400/40 via-orange-500/40 to-orange-600/40
-                        blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
-
-                    {/* liquid reflection */}
-                    <div className="absolute inset-0 rounded-3xl
-                        bg-gradient-to-tr from-white/30 via-transparent to-transparent
-                        opacity-30 pointer-events-none" />
 
                     <div className="relative p-10 flex flex-col h-full text-white">
 
-                        <span className="mb-4 w-fit px-4 py-1 rounded-full text-sm
-                            bg-orange-500/20 text-orange-300 border border-orange-400/40">
+                        <span className="mb-4 w-fit px-4 py-1 rounded-full text-sm bg-orange-500/15 text-orange-300 border border-orange-400/30 transition-all duration-300 ease-out group-hover:bg-orange-500/40 group-hover:text-orange-200 group-hover:border-orange-400 group-hover:shadow-[0_0_20px_rgba(249,115,22,0.3)]">
                             Most Popular
                         </span>
+
+
 
                         <h3 className="text-3xl font-semibold pb-4 border-b border-white/20">
                             Professional

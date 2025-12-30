@@ -7,7 +7,7 @@ interface TopsectionProps {
 
 const Topsection = ({ isAnnual, setIsAnnual }: TopsectionProps) => {
     return (
-        <section className="text-center mt-16 px-4">
+        <section className="pt-50  text-center  px-4">
             <div className="flex justify-center mb-10">
                 <p className="backdrop-blur-md border border-white/20 rounded-full py-3 px-10 text-white">
                     Pricing
@@ -19,7 +19,7 @@ const Topsection = ({ isAnnual, setIsAnnual }: TopsectionProps) => {
             </h1>
 
             {/* TOGGLE */}
-            <div className="flex items-center justify-center gap-4 text-gray-300">
+            <div className="flex items-center justify-center gap-4 text-gray-300 ">
 
                 <span className={`text-[28px] ${!isAnnual ? "text-white" : "opacity-50"}`}>
                     Monthly
@@ -27,7 +27,7 @@ const Topsection = ({ isAnnual, setIsAnnual }: TopsectionProps) => {
 
                 <button
                     onClick={() => setIsAnnual(!isAnnual)}
-                    className={`w-14 h-7 rounded-full relative transition-all duration-300
+                    className={`w-14 h-7 rounded-full relative transition-all duration-300 cursor-pointer
             ${isAnnual ? "bg-orange-500" : "bg-gray-700"}
           `}
                 >

@@ -16,7 +16,7 @@ const SecondContent = () => {
                       </div>
                       <div>
                           <h3 className='text-[32px] text-white mb-2.5  ' >Your data, secure and private</h3>
-                          <p className='max-w-md font-normal text-xl text-white'>No training on your data by external model providers. Control over analytics and telemetry one click disable. ZDR and BYO LLM available on enterprise plans.</p>
+                          <p className='max-w-md font-normal text-xl text-white'>Your code, workflows, and execution history are never used to train external models. You control Data retention, Analytics and telemetry (one-click disable), Model access and routing</p>
                       </div>
                       
                   </div>

@@ -6,9 +6,9 @@ const CTABanner = () => {
       <div className='relative'>
         <img src={Banner} alt="CTA banner" className='w-full '/>
         <div className='absolute top-1/2 left-1/2 
-              -translate-x-1/2 -translate-y-1/2 text-center '>
+              -translate-x-1/2 -translate-y-1/2 text-center w-[80%] '>
           <h2 className='text-[48px] text-white/60 mb-4'>Download Coirei</h2>
-          <p className='text-6xl text-white'>The #1 coding agent</p>
+          <p className='text-6xl text-white '>The Execution Platform for Agent-Assisted Development</p>
         </div>
       </div>
 

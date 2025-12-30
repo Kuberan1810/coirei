@@ -19,10 +19,10 @@ const ContactHero = () => {
           {/* LEFT CARD */}
           <div className="relative pl-12">
             {/* Vertical line */}
-            <div className="absolute left-0 top-0 h-[305px] w-px bg-white/20" />
+            <div className="absolute left-0 top-0 h-76.25 w-px bg-white/20" />
 
             {/* Icon */}
-            <div className="backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-fit text-base text-[#959493] mb-2.5">
+            <div className="backdrop-blur-md border border-white/20 rounded-md   p-4 max-w-fit text-base text-[#959493] mb-2.5 bg-[#29292980]">
               <MessageCircle size={20} className="text-[#22C55E]" />
             </div>
 
@@ -31,8 +31,7 @@ const ContactHero = () => {
             </h3>
 
             <p className="text-[#FAF9F6B3] text-[18px] max-w-md mb-6">
-              Discuss your enterprise requirements, explore personalized
-              pricing options, or request a demo.
+              Discuss your enterprise requirements, explore tailored pricing, or request a personalized demo of Coirei.
             </p>
 
             <button
@@ -50,7 +49,7 @@ const ContactHero = () => {
             <div className="absolute left-0 top-0 h-full w-px bg-white/20" />
 
             {/* Icon */}
-            <div className="vbackdrop-blur-md border border-white/20 rounded-xl p-4 max-w-fit text-base text-[#959493] mb-2.5">
+            <div className="vbackdrop-blur-md border border-white/20 rounded-md p-4 max-w-fit text-base text-[#959493] mb-2.5 bg-[#29292980]">
               <Hand size={20} className="text-[#22C55E]" />
             </div>
 
@@ -58,30 +57,26 @@ const ContactHero = () => {
               Get in touch
             </h3>
 
-            <p className="text-[#FAF9F6B3] text-[18px] max-w-md mb-6">
-              Found a bug? <span className="text-[#ffffff] underline cursor-pointer">File a GitHub issue</span> and
-              the Warp team will review it right away.
-            </p>
 
             <div className="space-y-4 text-[18px]">
               <p className="text-[#FAF9F6B3] max-w-md mb-6" >
-                For subscribers technical issues:<br />
-                <span className="text-[#ffffff] underline">support@coirei.dev</span>
+                Technical support: <br />
+                <a href="#" className="text-[#ffffff90] underline cursor-pointer  hover:text-white">support@coirei.com</a>
               </p>
 
               <p className="text-[#FAF9F6B3] max-w-md mb-6">
-                For subscribers billing issues:<br />
-                <span className="text-[#ffffff] underline">billing@coirei.dev</span>
+                Billing questions:<br />
+                <a href="#" className="text-[#ffffff90] underline cursor-pointer  hover:text-white">billing@coirei.com</a>
               </p>
 
               <p className="text-[#FAF9F6B3] max-w-md mb-6">
-                For security concerns:<br />
-                <span className="text-[#ffffff] underline">security@coirei.dev</span>
+                Security concerns:<br />
+                <a href="#" className="text-[#ffffff] underline cursor-pointer  hover:text-white">security@coirei.com</a>
               </p>
 
               <p className="text-[#FAF9F6B3] max-w-md mb-6">
-                For questions about privacy:<br />
-                <span className="text-[#ffffff] underline">privacy@coirei.dev</span>
+                Privacy & data:<br />
+                <a href="#" className="text-[#ffffff90] underline cursor-pointer  hover:text-white" >privacy@coirei.com</a>
               </p>
             </div>
           </div>

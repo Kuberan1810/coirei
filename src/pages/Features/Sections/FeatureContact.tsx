@@ -18,8 +18,9 @@ const FeatureContact: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-2.5">
             Contact Us Now
           </h2>
-          <p className="text-white/80 text-base">
-            Automation you can build, adapt, and grow
+          <p className="text-white/80 text-base max-w-md">
+            Have questions or want to explore how Coirei fits your team?
+            Share your email and our team will get in touch
           </p>
         </div>
 

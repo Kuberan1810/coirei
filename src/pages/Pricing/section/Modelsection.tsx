@@ -18,7 +18,8 @@ const Modelsection = () => {
 
             <div className="bg-black rounded-xl overflow-hidden relative">
                 <img src={globe} alt="Coirei" className="w-full h-full object-cover  " />
-                <img src={coirei} alt="" className=" absolute top-0" />
+                <img src={coirei} alt="coirei logo" className="max-w-100 absolute top-1/2 left-60
+              -translate-x-1/2 -translate-y-1/2" />
             </div>
         </section>
     );

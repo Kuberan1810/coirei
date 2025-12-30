@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 
 const roles = [
-  "Applied AI Engineer",
-  "Developer Relations Engineer",
-  "Enterprise Marketing Lead",
-  "Performance Marketing Lead",
-  "Product Designer",
-  "Revenue Operations Manager",
-  "Sales Engineer",
-  "Software Engineer",
+  "AI ML Intern",
+  "UI & UX Intern",
+  "Frontend & Fullstack Intern",
+  "Digital Marketing Intern",
+ 
 ];
 
 const CareersRoles = () => {
@@ -38,7 +35,7 @@ const CareersRoles = () => {
                 <div>
                   <p className="text-[20px] text-base font-semibold">{role}</p>
                   <p className="text-[20px] text-medium text-gray-300 mt-1">
-                    Remote within US and Canada
+                    Hybrid
                   </p>
                 </div>
               </div>

@@ -8,16 +8,16 @@ const ContactList = () => {
     <section className="pt-50 pb-20 mx-15">
       <div className="flex justify-between flex-wrap gap-16">
         <div className="max-w-2xl">
-          <h2 className="text-5xl text-white/80 mb-2">
+          <h2 className="text-5xl text-white/80 mb-4">
             Contact Sales
           </h2>
 
-          <p className="text-lg text-white/70 mb-3">
-            We’re always here to help you build better software. Let us know what kind of question you have and we’ll route to you the right place.
+          <p className="text-base text-white/70 mb-3">
+            We’re here to help you understand how Coirei fits into your team’s execution workflow. Tell us what you’re looking to achieve, and we’ll guide you to the right solution.
           </p>
 
-          <p className="text-lg text-white/70">
-            If you’re looking for detailed documentation regarding a specific feature, check out our docs.
+          <p className="text-base text-white/70">
+            If you’re looking for detailed technical documentation or learning resources, you can explore Coirei University and our Docs.
           </p>
         </div>
 
@@ -41,23 +41,23 @@ const ContactList = () => {
                   </h4>
 
                   <p className="text-lg text-white/70  group-hover:text-white/40 transition">
-                    Talk with our team and see Warp in action for your use case.
+                    See Coirei in action with a guided walkthrough tailored to your use case. Understand how planning, code, pipelines, and AI-assisted execution come together in one system.
                   </p>
                 </div>
 
                 <Card
                   title="Upgrade my plan"
-                  desc="Connect with Sales to explore advanced plans and team features."
+                  desc="Talk to our team about advanced capabilities, team collaboration features, and enterprise-scale execution support."
                 />
 
                 <Card
                   title="Help with Billing"
-                  desc="Get support with invoices, payments, or subscription updates."
+                  desc="Get assistance with invoices, subscriptions, plan changes, or account-related questions"
                 />
 
                 <Card
                   title="Report a bug"
-                  desc="Found a bug? File a GitHub issue and the team will review it."
+                  desc="Found a bug or unexpected behavior? Reach out to our team so we can investigate and resolve it quickly"
                 />
 
                 <div>
@@ -67,13 +67,13 @@ const ContactList = () => {
 
                   <div className="flex gap-6 flex-wrap">
                     <a className="text-white/60 underline text-lg hover:text-white/80 transition cursor-pointer">
-                      Technical Issue
+                      Technical Support 
                     </a>
                     <a className="text-white/60 underline text-lg hover:text-white/80 transition cursor-pointer">
-                      Questions about privacy
+                      Privacy and data handling
                     </a>
                     <a className="text-white/60 underline text-lg hover:text-white/80 transition cursor-pointer">
-                      Security concerns
+                      Security  and compliance  
                     </a>
                   </div>
                 </div>

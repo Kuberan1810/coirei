@@ -1,4 +1,5 @@
-import company1 from "../../../../assets/images/contact/cta-banner.png"
+import JoinUs from "../../../../assets/images/Resourses/company/join-us.png"
+
 
 const ContentSection = () => {
     return (
@@ -13,30 +14,40 @@ const ContentSection = () => {
                 </div>
                 <div className="mx-60">
                     <div >
-                        <p className="text-white/80 text-lg mb-5  text-justify">Coirei began with the vision of re-imagining one of the fundamental
-                            devtools – the terminal – to make it more usable and powerful for
-                            all developers.</p>
-
-                        <p className="text-white/80 text-lg mb-5 text-justify">  Our mission: to empower developers to ship better software
-                            more quickly, freeing them to focus on their work's creative and
-                            rewarding aspects.</p>
-                        <p className="text-white/80 text-lg mb-5 text-justify">
-                            As AI has advanced, Warp has evolved beyond its terminal
-                            roots into a powerful agentic development environment – a workbench
-                            for dispatching agents to code, deploy, and debug production
-                            software.</p>
-
-                        <p className="text-white/80 text-lg mb-5 text-justify"> We believe that soon developers will be “tech leads” for
-                            groups of agents; rather than opening a code editor to write code or
-                            a terminal to write commands, they will open Warp and prompt their
-                            computer to build features, fix bugs, and diagnose production
-                            issues.</p>
-
-                        <p className="text-white/80 text-lg mb-5 text-justify">  In this future, AI doesn’t replace developers, it gives them
-                            superpowers. It works alongside them, and together human + AI ship
-                            better software together.
+                        <p className="text-[20px] text-white/80 text-lg mb-5  text-justify">Coirei exists to solve a fundamental problem
+                            in software development: execution is fragmented.
                         </p>
-                        <p className="text-white/80 text-lg mb-5 text-justify">If you’re excited about building this future, come join us</p>
+
+                        <p className="text-[20px] text-white/80 text-lg mb-5 text-justify">  Today, planning, coding, testing, deployment,
+                            collaboration, and governance live in separate systems. Context is lost, coordination slows teams down,
+                            and visibility disappears as projects scale.
+                        </p>
+
+                        <p className="text-[20px] text-white/80 text-lg mb-5 text-justify"> As AI has advanced, Warp has evolved beyond its terminal
+                            roots into a powerful agentic development environment a workbench
+                            for dispatching agents to code, deploy, and debug production
+                            software.
+                        </p>
+
+                        <p className="text-[20px] text-white/80 text-lg mb-5 text-justify"> Coirei is a unified execution system where software development
+                            runs continuously. Code is written in shared cloud workspaces with
+                            automatic validation and background pipelines.
+                        </p>
+
+                        <p className="text-[20px] text-white/80 text-lg mb-5 text-justify">  AI in Coirei is execution-aware and human-governed.
+                            It understands intent, coordinates workflows, detects risks, and generates insights.
+                            All critical decisions and irreversible actions require human approval.
+                        </p>
+
+                        <p className="text-[20px] text-white/80 text-lg mb-5 text-justify">We believe the future of software development is agent-assisted,
+                            not agent-controlled. Developers become directors of execution, guiding intelligent systems that build, test, deploy,
+                            and operate software with clarity, safety, and accountability.
+                        </p>
+
+                        <p className="text-[20px] text-white/80 text-lg mb-5 text-justify">Coirei is designed to scale from small teams to large
+                            organizations without increasing execution complexity, delivering speed without sacrificing control.
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -44,14 +55,14 @@ const ContentSection = () => {
                 <div className="flex mb-20">
                     <div className="leftcontent w-[50%] mt-20">
                         <h3 className="text-[40px] text-white/80 font-normal mb-2">Join us</h3>
-                        <p className="text-white/60 max-w-2xl text-xl">
-                            We are a company run by developers, building a core product for
-                            all developers. We're also product-first engineers, which means we
-                            are constantly focusing on the user-experience.
+                        <p className="text-white max-w-2xl text-xl">
+                            We are building foundational infrastructure for how modern software
+                            will be executed. At Coirei, we are product-first engineers focused
+                            on correctness, reliability, and real-world scale.
                         </p>
                     </div>
-                    <div className="w-[50%] h-125 rightcontent bg-[#D9D9D9] rounded-md">
-
+                    < div className="">
+                        <img src={JoinUs} alt="Join us " className="rounded-md" />
                     </div>
                 </div>
 

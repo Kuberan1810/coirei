@@ -1,6 +1,7 @@
 import { useState, type JSX, lazy, Suspense } from "react";
 import { CardSim } from "lucide-react";
 
+
 /* ---------------- LAZY IMPORTS ---------------- */
 
 const CollaborateFeature = lazy(() => import("./Animation/ColabrationCard"));
@@ -109,8 +110,8 @@ export default function FeaturesSection(): JSX.Element {
 
                         {/* ---------- LEFT (ANIMATION) ---------- */}
                         <div className="relative">
-                            <div className="bg-linear-to-br from-teal-600 to-rose-900 rounded-3xl px-8 pt-15 shadow-2xl">
-                                <div className="relative w-full rounded-t-2xl overflow-hidden">
+                            <div className="bg-linear-to-br from-white/70 to-gray-600 rounded-3xl px-8 pt-15 shadow-2xl">
+                                <div className="relative w-full rounded-t-4xl overflow-hidden  ">
 
                                     {/* 🔥 Lazy animation render */}
                                     <Suspense

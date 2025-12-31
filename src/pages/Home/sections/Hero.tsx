@@ -1,6 +1,5 @@
 import Lottie from "lottie-react";
-import waterfallAnimation from "../../../assets/js/cta-animation-waterfall.json";
-import CodingImg from "../../../../src/assets/images/homepage/coirei_coding.png"
+// import CodingImg from "../../../../src/assets/images/homepage/coirei_coding.png"
 import BackCoding from "../../../../src/assets/images/homepage/coireimg.png"
 import CollaborateFeature from "./Animation/ColabrationCard";
 
@@ -8,7 +7,7 @@ import CollaborateFeature from "./Animation/ColabrationCard";
 function Hero() {
 
     return (
-        <section className="md:mb-80 mb-25 mt-50 ">
+        <section className="md:mb-20 mb-15 mt-50 ">
             <div className="main-container">
                 <div className="flex items-center justify-between gap-12">
 
@@ -50,14 +49,14 @@ function Hero() {
                                 <div className="absolute inset-0 bg-black/40" />
                     
                                 {/* Glass Card */}
-                                <div className="relative z-1 h-full flex items-center justify-center p-6">
-                                  <div className="  p-4 max-w-lg w-full">
-                                    <img
+                                <div className="relative z-1 h-full flex items-end justify-center px-6 pt-6">
+                                  <div className=" max-w-2xl w-full">
+                                    {/* <img
                                       src={CodingImg}
                                       alt="Code preview"
                                       className="w-full rounded-xl shadow-2xl"
-                                    />
-                                {/* <CollaborateFeature/> */}
+                                    /> */}
+                                <CollaborateFeature/>
                                   </div>
                                 </div>
                               </div>

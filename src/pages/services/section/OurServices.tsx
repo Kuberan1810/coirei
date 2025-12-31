@@ -1,9 +1,159 @@
-import React from 'react'
+import React, { useState } from "react";
+import {
+  Smartphone,
+  Globe,
+  ShieldCheck,
+  BarChart,
+  Cpu,
+  Cloud,
+  Settings,
+  Database,
+  Code,
+  Layers,
+  Rocket,
+  Monitor,
+} from "lucide-react";
+
+const services = [
+  {
+    title: "Company Website (Full Build)",
+    icon: Smartphone,
+    desc: "We build high-performance websites that represent your brand with clarity and speed custom pages, smart forms etc. ",
+  },
+  {
+    title: "Custom CRM Lite",
+    icon: Globe,
+    desc: "A lightweight CRM tailored for growing teams. Track leads, manage customers, automate follow-ups, monitor pipelines, and centralize all your data.",
+  },
+  {
+    title: "AI Chatbot + Knowledge Base",
+    icon: ShieldCheck,
+    desc: "A smart chatbot that never sleeps. It answers customer questions, handles support tasks, captures leads.",
+  },
+  {
+    title: "Business Process Automation",
+    icon: BarChart,
+    desc: "Turn slow manual work into fast automated workflows from approvals and ticketing to reporting and document management.",
+  },
+  {
+    title: "E-Commerce Store Development",
+    icon: Cpu,
+    desc: "Launch a clean and powerful online store with easy product management,secure checkout, order tracking, and integrated payments.",
+  },
+  {
+    title: "Dashboard & Analytics Setup",
+    icon: Cloud,
+    desc: "We build powerful, real-time dashboards that give you complete visibility into your business.",
+  },
+  {
+    title: "ERP Module Deployment",
+    icon: Settings,
+    desc: "Start with the part of your business that needs the most structure Inventory, HR, Sales, or Finance we deploy a focused ERP module. ",
+  },
+  {
+    title: "Document AI",
+    icon: Database,
+    desc: "Using intelligent OCR, layout-aware parsing, Torstan-level extraction strategies, ITS-based semantic understanding, and deep NLP models.",
+  },
+  {
+    title: "AI Product Development",
+    icon: Code,
+    desc: "Custom AI algorithms and predictive models end-to-end AI product lifecycle, from ideation to deployment.",
+  },
+  {
+    title: "Predictive Analytics & Forecasting",
+    icon: Layers,
+    desc: "Make informed business decisions before the market shifts our predictive analytics tools help you foresee patterns, manage risks.",
+  },
+  {
+    title: "AI Integration & Customization",
+    icon: Rocket,
+    desc: "AI integration for ERP, CRM, and SaaS. Automatic invoce creation from CRM deals, scalable, secure cloud or hyrid deploment.",
+  },
+  {
+    title: "AI Strategy & Advisory",
+    icon: Monitor,
+    desc: "Turn AI potential into a sustainable business advantage our advisory services help organizations craft long-term AI strategies.",
+  },
+];
 
 const OurServices = () => {
-  return (
-    <div>OurServices</div>
-  )
-}
+  const [showAll, setShowAll] = useState(false);
 
-export default OurServices
+  const visibleServices = showAll ? services : services.slice(0, 6);
+
+  return (
+    <section className="text-white py-20 px-8">
+      <div className="max-w-7xl mx-auto">
+
+        {/* HEADER */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+          <div>
+            <p className="text-[24px] text-white-400 mb-2 text-[24px] mb-2 inline-flex items-center justify-center
+          text-xl text-white py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10">Our Services</p>
+            <h2 className="text-[40px] md:text-4xl font-medium">
+              Services We Provide to{" "}
+              <p><span className="text-orange-500">Elevate Your Business</span></p>
+            </h2>
+          </div>
+
+          {/* VIEW ALL BUTTON */}
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="
+              mt-6 md:mt-0
+              px-6 py-2.5 rounded-full
+              bg-white/10 backdrop-blur-md
+              border border-white/20
+              hover:bg-white hover:text-black
+              transition-all
+            "
+          >
+            {showAll ? "Hide Services" : "View All Services"}
+          </button>
+        </div>
+
+        {/* SERVICE CARDS */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {visibleServices.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={index}
+                className="
+                  rounded-2xl p-6
+                  bg-white/5 backdrop-blur-xl
+                  border border-white/10
+                  transition-all
+                "
+              >
+                {/* ICON */}
+                <div
+                  className="
+                    w-11 h-11 mb-4 rounded-lg
+                    flex items-center justify-center
+                    bg-white/10 backdrop-blur
+                    border border-white/20
+                  "
+                >
+                  <Icon size={22} className="text-white-400" />
+                </div>
+
+                <h3 className="text-[20px] font-bold mb-2">
+                  {service.title}
+                </h3>
+
+                <p className="text-[16px] text-white/70 font-medium leading-relaxed">
+                  {service.desc}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default OurServices;

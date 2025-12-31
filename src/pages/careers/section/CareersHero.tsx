@@ -1,4 +1,6 @@
 import React from "react";
+import image1 from "../../../assets/images/Careers/img_1.avif"
+import image2 from "../../../assets/images/Careers/img_2.avif"
 
 const CareersHero = () => {
   return (
@@ -40,8 +42,7 @@ const CareersHero = () => {
           {/* IMAGE 1 */}
           <div className="overflow-hidden">
             <img
-              src="https://media.istockphoto.com/id/1277142237/photo/tourist-with-backpack-at-mountain-lake-background.jpg?s=612x612&w=0&k=20&c=soEVfApNuSchY2kQmCSNHMDBDbPHXfi0uvl8bahAUuQ="
-              alt="Team outdoor"
+              src={image1}
               className="rounded-xl w-full h-[500px] object-cover grayscale"
             />
           </div>
@@ -49,7 +50,7 @@ const CareersHero = () => {
           {/* IMAGE 2 */}
           <div className="overflow-hidden">
             <img
-              src="https://media.istockphoto.com/id/1947499362/photo/happy-group-of-business-people-discussing-strategy-during-team-meeting-at-the-office-desk.jpg?s=612x612&w=0&k=20&c=UXPrlQx09d8EP4_kTdAa-vC2LxD_ppY1tiG7eTPGVbE="
+              src={image2}
               alt="Team meeting"
               className="rounded-xl w-full h-[420px] object-cover grayscale"
             />

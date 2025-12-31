@@ -1,5 +1,9 @@
 import React from "react";
 import { Check } from "lucide-react";
+import workflow_img from "../../../assets/images/Careers/workflow_img.avif"
+import Workflow_img_2 from "../../../assets/images/Careers/workflow_img2.avif";
+import workflow_img_3 from "../../../assets/images/Careers/workflow_img3.avif"
+import workflow_img_4 from "../../../assets/images/Careers/workflow_img4.avif"
 
 /* Reusable Check Icon – correct size & position */
 const CheckIcon = () => (
@@ -108,26 +112,26 @@ const CareersWorkFlow = () => {
         </div>
 
         {/* IMAGES SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_2fr] gap-8 h-[630px]">
           <img
-            src="https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg"
+            src={workflow_img}
             alt="Team working"
-            className="rounded-xl object-cover h-[450px] w-full grayscale"
+            className="self-start rounded-xl object-cover h-[387px] w-full grayscale"
           />
           <img
-            src="https://img.freepik.com/free-photo/group-happy-freelance-workers-talking-having-fun-lunch-break-office_637285-2588.jpg"
+            src={Workflow_img_2}
             alt="Team lunch"
-            className="rounded-xl object-cover h-[300px] w-full grayscale"
+            className="self-end rounded-xl object-cover h-[200px] w-full grayscale mb-35"
           />
           <img
-            src="https://cdn.prod.website-files.com/5f8b3f92189560cd389cf2b3/653fd4a07eef416340f5a140_company-outing-ideas-teamland.com.jpg"
+            src={workflow_img_3}
             alt="Team outing"
-            className="rounded-xl object-cover h-[400px] w-full grayscale"
+            className="rounded-xl object-cover h-[200px] w-full grayscale mt-30"
           />
           <img
-            src="https://img.freepik.com/free-photo/young-happy-businesswoman-using-desktop-pc-while-working-office_637285-5143.jpg"
+            src={workflow_img_4}
             alt="Office work"
-            className="rounded-xl object-cover h-[260px] w-full grayscale"
+            className="self-end rounded-xl object-cover h-[387px] w-full grayscale"
           />
         </div>
 

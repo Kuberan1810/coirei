@@ -8,6 +8,7 @@ import CTASection from "./Sections/CTASection";
 import WorksFlow from "./Sections/WorksFlow";
 import FeatureContact from "./Sections/FeatureContact";
 import "./Features.css"
+import AiWorkflowTrack from "./Sections/AiWorkflowTrack";
 
 function Features() {
     return (
@@ -22,6 +23,7 @@ function Features() {
             <IntegrationSection />
             <CTASection />
             <FeatureContact />
+           
             <Footer />
         </>
     );

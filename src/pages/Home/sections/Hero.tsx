@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import waterfallAnimation from "../../../assets/js/cta-animation-waterfall.json";
 import CodingImg from "../../../../src/assets/images/homepage/coirei_coding.png"
 import BackCoding from "../../../../src/assets/images/homepage/coireimg.png"
+import CollaborateFeature from "./Animation/ColabrationCard";
 
 
 function Hero() {
@@ -56,6 +57,7 @@ function Hero() {
                                       alt="Code preview"
                                       className="w-full rounded-xl shadow-2xl"
                                     />
+                                {/* <CollaborateFeature/> */}
                                   </div>
                                 </div>
                               </div>

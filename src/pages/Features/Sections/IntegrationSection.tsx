@@ -12,6 +12,7 @@ import CloudIocn from "../../../assets/images/Features/cloud-icon.svg"
 import IconN from "../../../assets/images/Features/icon-N.svg"
 import IconB from "../../../assets/images/Features/icon-B.svg"
 import Icon3 from "../../../assets/images/Features/icon-3.svg"
+import OurIntegrationsLottie from "./OurIntegrationsLottie";
 
 const IntegrationsSection: React.FC = () => {
     return (
@@ -118,7 +119,7 @@ const IntegrationsSection: React.FC = () => {
                     </div>
                 </div>
 
-             
+                {/* <OurIntegrationsLottie /> */}
             </section>
         </>
     );

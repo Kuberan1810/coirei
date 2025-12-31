@@ -27,12 +27,12 @@ const GlassCard: React.FC<GlassCardProps> = ({
         hover:shadow-[0_35px_90px_rgba(0,0,0,0.85)]
         transition-all duration-300
         p-7
-        animate-fadeUp
+        animate-fadeUp flex flex-col justify-evenly
       "
         >
             {/* IMAGE FIRST — ONLY IF imageFirst = true */}
             {imageFirst && children && (
-                <div className="mb-5 flex justify-center">
+                <div className="mb-5 flex justify-center ">
                     {children}
                 </div>
             )}
@@ -45,7 +45,7 @@ const GlassCard: React.FC<GlassCardProps> = ({
                 {subtitle}
             </p>
 
-            <p className="text-white/90 font-medium text-lg leading-relaxed mb-5 ">
+            <p className="text-white/90 font-medium text-lg leading-relaxed mb-10 ">
                 {description}
             </p>
 

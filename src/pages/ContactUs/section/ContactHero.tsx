@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 const ContactHero = () => {
   const navigate = useNavigate();
   return (
-    <section className="text-white px-8 py-24 pt-40 pb-20'">
-      <div className="max-w-7xl mx-auto">
+    <section className="text-white mx-15 py-24 pt-40 pb-20'">
+      <div className="">
 
         {/* TITLE */}
         <h2 className="text-center text-[65px] font-medium mb-20">
@@ -23,7 +23,7 @@ const ContactHero = () => {
 
             {/* Icon */}
             <div className="backdrop-blur-md border border-white/20 rounded-md   p-4 max-w-fit text-base text-[#959493] mb-2.5 bg-[#29292980]">
-              <MessageCircle size={20} className="text-[#22C55E]" />
+              <MessageCircle size={20} className="text-[#FF8800]" />
             </div>
 
             <h3 className="text-[50px] font-medium mb-3">
@@ -50,7 +50,7 @@ const ContactHero = () => {
 
             {/* Icon */}
             <div className="vbackdrop-blur-md border border-white/20 rounded-md p-4 max-w-fit text-base text-[#959493] mb-2.5 bg-[#29292980]">
-              <Hand size={20} className="text-[#22C55E]" />
+              <Hand size={20} className="text-[#FF8800]" />
             </div>
 
             <h3 className="text-[50px] font-medium mb-3">

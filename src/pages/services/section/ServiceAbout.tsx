@@ -1,14 +1,14 @@
 
-import signature from "../../../assets/images/services/signature2.png"
+import signature from "../../../assets/images/services/Ceo-sign.png"
 import groupImage from "../../../assets/images/services/group_images.png"
 
 const ServiceAbout = () => {
   return (
-    <section className='bg-[#1C1B1B] py-20 flex items-center'>
-      <div className="flex pl-20">
+    <section className='bg-[#1C1B1B] py-20 flex items-center px-15'>
+      <div className="flex ">
 
         {/* Image Collage */}
-        <div className="relative w-[350px] h-[400px] mr-20">
+        <div className=" mr-20">
           {/* Orange Shape */}
           <img src={groupImage} alt="" className='object-cover w-[350px] h-[400px]' />
         </div>
@@ -28,28 +28,30 @@ const ServiceAbout = () => {
             </p>
           </h2>
 
-          <p className="mt-4 text-[#FFFAFA] text-xl w-100.5">
+          <p className="mt-4 text-[#FFFAFA] text-xl w-100.5 mb-8">
             Get assistance with invoices, subscriptions, plan
             changes, or account-related questions
           </p>
 
-          {/* Signature */}
-          <div className="mt-6">
-            <img
-              src={signature}
-              alt="Signature"
-              className="absolute text-white h-[130px] w-[130px] object-cover"
-            />
+          <div className="flex flex-col justify-center ">
+            <div className="">
+              <img
+                src={signature}
+                alt="Signature"
+                className=" text-white w-[#130px] object-cover"
+              />
+            </div>
+            <div className="">
+              <p className=" text-white text-md mt-2">
+                Naveenkumar S
+                <br />
+                <span className="text-white text-sm">
+                  (CEO & Founder)
+                </span>
+              </p>
+            </div>
           </div>
-          <div className="relative mt-20">
-            <p className=" text-white text-md mt-2">
-              Naveenkumar S
-              <br />
-              <span className="text-white text-sm">
-                (CEO & Founder)
-              </span>
-            </p>
-          </div>
+
         </div>
       </div>
     </section>

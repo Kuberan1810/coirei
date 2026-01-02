@@ -10,8 +10,8 @@ const roles = [
 
 const CareersRoles = () => {
   return (
-    <section className=" text-white py-8">
-      <div className="max-w-7xl mx-auto py-2">
+    <section className=" text-white py-8 mx-15">
+      <div className=" py-2">
 
         {/* HEADER */}
         <h2 className="text-[64px] text-4xl font-medium mb-4">Open roles</h2>

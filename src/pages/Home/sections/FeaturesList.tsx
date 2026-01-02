@@ -15,7 +15,7 @@ const FeaturesList = () => {
 
   return (
     <>
-      <section className=" py-20 w-full">
+      <section className=" py-15 w-full">
         <div className="flex flex-col items-center">
           <div className="heading-section mb-5">
             <h2 className="leading-none text-[#E3E3E0] text-[30px] font-small md:text-[60px] max-w-5xl text-center">

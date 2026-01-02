@@ -35,8 +35,8 @@ const steps = [
 
 const ServicesWorkFlow = () => {
   return (
-    <section className="text-white py-14 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="text-white py-20 mx-15">
+      <div className="">
 
         {/* HEADER */}
         <div className="text-center mb-16">

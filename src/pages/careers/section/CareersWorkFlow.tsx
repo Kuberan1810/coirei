@@ -16,8 +16,8 @@ const CheckIcon = () => (
 
 const CareersWorkFlow = () => {
   return (
-    <section className=" text-white px-8 py-14">
-      <div className="max-w-7xl mx-auto">
+    <section className=" text-white mx-15 py-14">
+      <div className="">
 
         {/* TOP GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 mb-24">

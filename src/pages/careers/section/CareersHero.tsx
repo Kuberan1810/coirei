@@ -4,8 +4,8 @@ import image2 from "../../../assets/images/Careers/img_2.avif"
 
 const CareersHero = () => {
   return (
-    <section className=" text-white px-8 pt-50 pb-20">
-      <div className="max-w-7xl mx-auto">
+    <section className=" text-white mx-15 pt-50 pb-20">
+      <div className="">
 
         {/* TOP CONTENT */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
@@ -18,7 +18,7 @@ const CareersHero = () => {
 
           {/* RIGHT SMALL TEXT */}
           <div className="max-w-sm">
-            <p className="text-gray-400 mb-6">
+            <p className="text-white/70 mb-6">
               At Coirei, we build systems that connect planning, code, pipelines, and AI into one execution fabric.
               Join us in shaping how teams build and ship software at scale.
             </p>

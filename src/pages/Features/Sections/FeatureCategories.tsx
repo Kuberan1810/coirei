@@ -1,6 +1,5 @@
 import React from "react";
-import Lottie from "lottie-react";
-import { motion } from "framer-motion";
+import Lottie from "lottie-react"
 
 
 
@@ -12,13 +11,13 @@ import shieldIcons from "../../../assets/js/shield and icons recreated.json";
 import Orca from "../../../assets/images/Features/orca-ai.png";
 
 import GlassCard from "./FeatureGlassCard";
-import AiWorkflowTrack from "./AiWorkflowTrack";
+import AiWorkflowTrack from "./animation/AiWorkflowTrack";
 
 
 
 const FeatureCategories: React.FC = () => {
   return (
-    <section className="px-15 py-20">
+    <section className="mx-15 py-20">
 
       {/* TOP GRID */}
       <div className="grid grid-cols-[1fr_1.9fr]  gap-6">
@@ -34,18 +33,18 @@ const FeatureCategories: React.FC = () => {
             src={Orca}
             alt="Orca AI"
             className="w-full"
-            
+
           />
         </GlassCard>
 
         {/* AI WORKFLOW AUTOMATION — REACT IMAGE ANIMATION */}
-        <GlassCard 
+        <GlassCard
           title="AI Workflow Automation"
           subtitle="Execution that moves on its own"
           description="ORCA uses context-aware AI to automate execution across planning, code, and pipelines. Agents orchestrate workflows across systems based on intent and state."
         >
-          <AiWorkflowTrack   />
-          
+          <AiWorkflowTrack />
+
         </GlassCard>
       </div>
 

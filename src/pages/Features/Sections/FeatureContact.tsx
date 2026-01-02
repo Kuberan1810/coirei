@@ -10,15 +10,15 @@ const FeatureContact: React.FC = () => {
   };
 
   return (
-    <section className="mx-35 py-20">
-      <div className="mx-auto max-w-7xl flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+    <section className="mx-15 py-20">
+      <div className=" flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
 
         {/* Left Content */}
         <div className="max-w-xl">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-2.5">
             Contact Us Now
           </h2>
-          <p className="text-white/80 text-base max-w-md">
+          <p className="text-white/80 text-lg max-w-md">
             Have questions or want to explore how Coirei fits your team?
             Share your email and our team will get in touch
           </p>

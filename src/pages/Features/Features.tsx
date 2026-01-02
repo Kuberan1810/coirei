@@ -3,12 +3,11 @@ import Footer from "../../component/Footer/Footer";
 import FeaturesHero from "./Sections/FeaturesHero";
 import FeatureCategories from "./Sections/FeatureCategories";
 import FeatureContent from "./Sections/FeatureContent";
-import IntegrationSection from "./Sections/IntegrationSection";
 import CTASection from "./Sections/CTASection";
 import WorksFlow from "./Sections/WorksFlow";
 import FeatureContact from "./Sections/FeatureContact";
 import "./Features.css"
-import AiWorkflowTrack from "./Sections/AiWorkflowTrack";
+import IntegrationSection from "./Sections/IntegrationSection";
 
 function Features() {
     return (
@@ -20,10 +19,10 @@ function Features() {
             <FeatureCategories />
             <FeatureContent />
             <WorksFlow />
-            <IntegrationSection />
+            <IntegrationSection/>
             <CTASection />
             <FeatureContact />
-           
+
             <Footer />
         </>
     );

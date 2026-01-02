@@ -5,7 +5,7 @@ import smartLayouts from "../../../../assets/js/orchestration.json";
 
 export default function OrchestrationCard(): JSX.Element {
     return (
-        <div className="lottie-100 w-full h-92.5 flex items-center justify-center">
+        <div className="lottie-100 w-full  flex items-center justify-center">
             <Lottie
                 animationData={smartLayouts}
                 loop

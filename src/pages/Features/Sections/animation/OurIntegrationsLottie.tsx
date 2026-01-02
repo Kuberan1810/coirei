@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import integrationsLottie from "../../../assets/js/integrations.json";
+import integrationsLottie from "../../../../assets/js/integrations.json";
 
 export default function OurIntegrationsLottie() {
     return (

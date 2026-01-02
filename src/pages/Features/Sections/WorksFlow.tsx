@@ -42,10 +42,10 @@ const features = [
 
 const FeaturesGlass = () => {
   return (
-    <section className="text-white">
+    <section className=" py-20 mx-15">
 
       {/* HEADER */}
-      <div className="py-20 px-6 text-center">
+      <div className="text-white text-center">
         <span
           className="inline-flex items-center justify-center
           text-xl text-white py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10"
@@ -63,8 +63,8 @@ const FeaturesGlass = () => {
       </div>
 
       {/* FEATURES GRID */}
-      <div className="py-5 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="py-5 ">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((item, index) => {
             const Icon = item.icon;
             return (

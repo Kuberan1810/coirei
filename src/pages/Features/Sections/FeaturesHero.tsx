@@ -1,6 +1,6 @@
 const FeaturesHero = () => {
   return (
-    <section className="mb-25 mt-50">
+    <section className=" mb-25 mt-50">
       <div className="herocontainer main-container">
         <div className="top-content ">
           <h2 className="text-white/90 text-6xl font-medium  ">

@@ -1,5 +1,4 @@
 import React from "react";
-import Integration from "../../../assets/images/Features/integration-icon.svg"
 import CoireiLogo from "../../../assets/images/Features/coirei-cirlce-logo.png"
 import RightLine from "../../../assets/images/Features/right-line.svg"
 import LeftLine from "../../../assets/images/Features/left-line.svg"
@@ -12,14 +11,14 @@ import CloudIocn from "../../../assets/images/Features/cloud-icon.svg"
 import IconN from "../../../assets/images/Features/icon-N.svg"
 import IconB from "../../../assets/images/Features/icon-B.svg"
 import Icon3 from "../../../assets/images/Features/icon-3.svg"
-import OurIntegrationsLottie from "./OurIntegrationsLottie";
+// import OurIntegrationsLottie from "./animation/OurIntegrationsLottie";
 
 const IntegrationsSection: React.FC = () => {
     return (
         <>
-            <section className="mx-auto py-20 px-4">
+            <section className="py-20 mx-15">
                 {/* Top Section */}
-                <div className="max-w-7xl mx-auto">
+                <div className="">
                     <div className="flex flex-col items-center justify-center mb-20">
                         <div className="inline-flex items-center justify-center
           text-xl text-white py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10"
@@ -36,7 +35,7 @@ const IntegrationsSection: React.FC = () => {
                     </div>
 
                     {/* Integration Content Block */}
-                    <div className="flex justify-center items-start w-full max-w-[960px] h-[302px] mt-8 relative mx-auto">
+                    <div className="flex justify-center items-start w-full max-w-240 h-[302px] mt-8 relative mx-auto">
                         {/* LEFT LOGOS */}
                         <div className="text-center w-full h-[186px] relative">
                             <img

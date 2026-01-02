@@ -7,70 +7,58 @@ import FooterContact from "./FooterContact";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-[#161616] text-white mx-20 pt-20">
+        <footer className="bg-[#161616] text-white mx-6 sm:mx-10 md:mx-15 pt-16 sm:pt-20">
 
             {/* TOP BAR */}
             <div className="relative overflow-hidden">
-                {/* Top border animation */}
-                <span className="  pointer-events-none  absolute top-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-white/30 to-transparent
-  " />
+                <span className="pointer-events-none absolute top-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                <span className="pointer-events-none absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white/30 to-transparent" />
 
-                {/* Bottom border animation */}
-                <span className=" pointer-events-none absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white/30 to-transparent
-
-  " />
-
-                <div className="group max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+                <div className="group flex items-center justify-between py-6">
                     <img
                         src={logo}
                         alt="Logo"
-                        className="w-12 transition-transform duration-500 ease-out group-hover:rotate-180"
+                        className="w-10 sm:w-12 transition-transform duration-500 ease-out group-hover:rotate-180"
                     />
 
                     <a
                         href="/careers"
-                        className="flex items-center gap-2 text-sm tracking-wide  text-white/70 hover:text-white transition-all duration-300"
+                        className="flex items-center gap-2 text-xs sm:text-sm tracking-wide text-white/70 hover:text-white transition-all duration-300"
                     >
                         JOIN OUR TEAM
-
-                        <span
-                            className="flex items-center text-white/40  transition-all duration-300 ease-out
-                            group-hover:translate-x-2 group-hover:text-white"
-                        >
+                        <span className="flex items-center text-white/40 transition-all duration-300 ease-out group-hover:translate-x-2 group-hover:text-white">
                             <ChevronRight size={16} />
                         </span>
                     </a>
                 </div>
-
             </div>
 
-
             {/* MAIN CONTENT */}
-            <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className=" py-5 sm:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16">
 
                 {/* LEFT */}
                 <div className="max-w-lg">
-                    <h2 className="text-4xl font-medium leading-tight">
+                    <h2 className="text-[28px] sm:text-[32px] md:text-4xl font-medium leading-tight">
                         Unlock the future of software execution
                     </h2>
-                    <p className="text-white/60 mt-4">
+                    <p className="text-white/60 mt-4 text-sm sm:text-base">
                         Get product updates, execution insights, and engineering perspectives from the team building Coirei.
                     </p>
 
-                    <form className="mt-10 flex border border-white/20">
+                    <form className="mt-8 sm:mt-10 flex flex-col sm:flex-row ">
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="flex-1 bg-transparent px-4 py-3 text-white outline-none"
+                            className="flex-1 bg-transparent px-4 py-3  text-white outline-none text-sm sm:text-base border border-white/20 "
                         />
-                        <button className="bg-white text-black px-6 text-sm font-medium">
-                            SUBSCRIBE
+                        <button  className="bg-white text-black px-15 py-3 text-sm font-medium sm:mt-0 mt-5">
+                            SUBMIT
                         </button>
                     </form>
                 </div>
 
                 {/* RIGHT */}
-                <div className="grid grid-cols-2 gap-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2  sm:gap-16">
                     <FooterLinks
                         links={[
                             { label: "Home", href: "/" },
@@ -82,9 +70,8 @@ const Footer: React.FC = () => {
 
                     <FooterLinks
                         links={[
-
-                            { label: "Blog", href: "/resources/blog" },
-                            { label: "Coirei University", href: "/resources/university" },
+                            // { label: "Blog", href: "/resources/blog" },
+                            // { label: "Coirei University", href: "/resources/university" },
                             { label: "Pricing", href: "/pricing" },
                             { label: "Coming soon", href: "#" },
                         ]}
@@ -93,7 +80,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* CONTACT STRIP */}
-            <div className="grid grid-cols-1 md:grid-cols-3 mx-18">
+            <div className="grid grid-cols-1 md:grid-cols-3">
                 <FooterContact
                     icon={<Mail />}
                     title="Email address"
@@ -112,13 +99,8 @@ const Footer: React.FC = () => {
             </div>
 
             {/* BOTTOM */}
-            <div className="">
-                <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row items-center justify-end text-white/50 text-sm">
-                   
-                    <span>
-                        © coirei
-                    </span>
-                </div>
+            <div className="px-6 sm:px-8 py-6 flex justify-center md:justify-end text-white/50 text-xs sm:text-sm">
+                © coirei
             </div>
 
         </footer>

@@ -1,4 +1,4 @@
-import bg_img_1 from "../../../assets/images/services/hero_img.jpg";
+import bg_img_1 from "../../../assets/images/services/service-banner.jpg";
 import bg_img_2 from "../../../assets/images/services/hero_img_2.png"
 
 const ServicesHero = () => {
@@ -36,9 +36,14 @@ const ServicesHero = () => {
                                 features, and enterprise-scale execution support.
                             </p>
 
-                            <button className="mt-7 px-6 py-2 rounded-full border border-white/30 text-white text-xl  hover:bg-white hover:text-black transition">
+                            <button className="mt-7 px-6 py-2 rounded-3xl border border-white/30 text-white text-xl  hover:bg-white/90 hover:text-black transition backdrop-blur-3xl shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)]">
                                 Explore more
                             </button>
+                            
+
+                            
+
+                            
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import Logo1 from "../../../assets/images/Features/animation/Logo1.png";
-import Logo2 from "../../../assets/images/Features/animation/Logo2.png";
-import Logo3 from "../../../assets/images/Features/animation/Logo3.png";
-import Logo4 from "../../../assets/images/Features/animation/Logo4.png";
-import Logo5 from "../../../assets/images/Features/animation/Logo5.png";
-import Logo6 from "../../../assets/images/Features/animation/Logo6.png";
-import CenterLogo from "../../../assets/images/Features/animation/CenterLogo.png";
+import Logo1 from "../../../../assets/images/Features/animation/logo1.png";
+import Logo2 from "../../../../assets/images/Features/animation/Logo2.png";
+import Logo3 from "../../../../assets/images/Features/animation/Logo3.png";
+import Logo4 from "../../../../assets/images/Features/animation/Logo4.png";
+import Logo5 from "../../../../assets/images/Features/animation/Logo5.png";
+import Logo6 from "../../../../assets/images/Features/animation/Logo6.png";
+import CenterLogo from "../../../../assets/images/Features/animation/CenterLogo.png";
 
 const leftIcons = [Logo1, Logo2, Logo3];
 const rightIcons = [Logo4, Logo5, Logo6];

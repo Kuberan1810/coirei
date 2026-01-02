@@ -2,7 +2,7 @@
 
 const CTASection = () => {
   return (
-    <section className="mx-35 py-20">
+    <section className="mx-15 py-20">
       <div className="">
         <div className="relative overflow-hidden rounded-3xl  bg-[#7B7B7B]/10 backdrop-blur-3xl  border border-white/20  w-full shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)]  ">
           {/* Main Content Container */}

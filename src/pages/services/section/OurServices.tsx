@@ -83,8 +83,8 @@ const OurServices = () => {
   const visibleServices = showAll ? services : services.slice(0, 6);
 
   return (
-    <section className="text-white py-20 px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="text-white py-20 mx-15">
+      <div className="">
 
         {/* HEADER */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
@@ -97,24 +97,11 @@ const OurServices = () => {
             </h2>
           </div>
 
-          {/* VIEW ALL BUTTON */}
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="
-              mt-6 md:mt-0
-              px-6 py-2.5 rounded-full
-              bg-white/10 backdrop-blur-md
-              border border-white/20
-              hover:bg-white hover:text-black
-              transition-all
-            "
-          >
-            {showAll ? "Hide Services" : "View All Services"}
-          </button>
+
         </div>
 
         {/* SERVICE CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {visibleServices.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -139,16 +126,27 @@ const OurServices = () => {
                   <Icon size={22} className="text-white-400" />
                 </div>
 
-                <h3 className="text-[20px] font-bold mb-2">
+                <h3 className="text-[20px] font-bold mb-5">
                   {service.title}
                 </h3>
 
-                <p className="text-[16px] text-white/70 font-medium leading-relaxed">
+                <p className="text-[16px] text-white/70 font-medium leading-relaxed mb-5">
                   {service.desc}
                 </p>
               </div>
             );
           })}
+        </div>
+        
+        {/* VIEW ALL BUTTON */}
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20
+            hover:bg-white hover:text-black transition-all"
+          >
+            {showAll ? "Hide Services" : "View All Services"}
+          </button>
         </div>
 
       </div>

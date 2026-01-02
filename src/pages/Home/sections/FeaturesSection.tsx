@@ -1,16 +1,14 @@
 import { useState, type JSX, lazy, Suspense } from "react";
-import { CardSim } from "lucide-react";
-
+import { CardSim,  } from "lucide-react";
+import { LayoutGroup, motion } from "framer-motion";
 
 /* ---------------- LAZY IMPORTS ---------------- */
-
 const CollaborateFeature = lazy(() => import("./Animation/ColabrationCard"));
 const OrchestrationCard = lazy(() => import("./Animation/OrchestrationCard"));
 const Traceability = lazy(() => import("./Animation/Traceability"));
 const Intelligence = lazy(() => import("./Animation/IntelligenceCard"));
 
 /* ---------------- TYPES ---------------- */
-
 interface TabContent {
     id: string;
     label: string;
@@ -21,7 +19,6 @@ interface TabContent {
 }
 
 /* ---------------- COMPONENT ---------------- */
-
 export default function FeaturesSection(): JSX.Element {
     const [activeTab, setActiveTab] = useState<string>("colabration");
 
@@ -68,86 +65,91 @@ export default function FeaturesSection(): JSX.Element {
         },
     ];
 
-    const activeContent = tabs.find((tab) => tab.id === activeTab)!;
+    const activeContent = tabs.find(tab => tab.id === activeTab)!;
+
+    
 
     return (
-        <section className="min-h-screen text-white py-20">
-            <div className="max-w-6xl mx-auto px-20">
+        <section className="min-h-screen py-16 sm:py-20">
+            <div className="px-6 sm:px-10 md:px-15">
 
                 {/* ---------- Heading ---------- */}
-                <p className="text-2xl md:text-3xl text-center mb-16 font-normal leading-tight max-w-3xl mx-auto">
+                <p className="text-2xl md:text-5xl text-center mb-10 sm:mb-14 md:mb-16 font-normal leading-tight max-w-5xl mx-auto text-white/80">
                     ORCA AI unifies the entire software execution lifecycle into a single
                     AI-native platform.
                 </p>
 
+                
                 {/* ---------- Tabs ---------- */}
-                <div className="flex justify-center mb-12">
-                    <div className="flex p-2.5 rounded-full bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)]">
-                        {tabs.map((tab) => (
-                            <button
-                                key={tab.id}
-                                onClick={() => setActiveTab(tab.id)}
-                                className={`px-10 py-3 rounded-full text-sm font-medium transition-all duration-200
-                  ${activeTab === tab.id
-                                        ? "bg-white/0 text-white backdrop-blur-3xl shadow-[inset_-1px_1px_2px_#ffffff10]"
-                                        : "text-white/70 hover:bg-white/5 hover:text-white hover:shadow-[inset_-1px_1px_2px_#ffffff10]"
-                                    }`}
-                            >
-                                <div className="flex gap-1 items-center">
-                                    <CardSim size={16} strokeWidth={2} />
-                                    <span className="text-base font-normal">
-                                        {tab.label}
-                                    </span>
-                                </div>
-                            </button>
-                        ))}
-                    </div>
+                <div className="flex justify-center mb-10 sm:mb-12">
+                    <LayoutGroup>
+                        <div className="relative grid grid-cols-2 lg:grid-cols-4  gap-5 lg:gap-15   w-full lg:w-auto p-2.5 rounded-2xl lg:rounded-full bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)]">
+
+                            {tabs.map(tab => (
+                                <button
+                                    key={tab.id}
+                                    onClick={() => setActiveTab(tab.id)}
+                                    className={`relative z-10 flex items-center justify-center gap-1 px-5 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-xl md:rounded-full text-sm sm:text-base font-normal cursor-pointer transition-colors duration-200 ${activeTab === tab.id ? "text-white" : "text-white/70 hover:text-white"}`}
+                                >
+                                    {/* SLIDING BG */}
+                                    {activeTab === tab.id && (
+                                        <motion.span
+                                            layoutId="activeTab"
+                                            className="absolute inset-0 rounded-xl md:rounded-full backdrop-blur-3xl shadow-[inset_-1px_1px_2px_#ffffff20]"
+                                            transition={{ type: "spring", stiffness: 500, damping: 35 }}
+                                        />
+                                    )}
+
+                                    <CardSim size={16} strokeWidth={2} className="relative z-10 shrink-0" />
+                                    <span className="relative z-10">{tab.label}</span>
+                                </button>
+                            ))}
+                        </div>
+                    </LayoutGroup>
                 </div>
 
+
                 {/* ---------- Content ---------- */}
-                <div className="bg-[#1E1E1E] rounded-[20px] px-13 pt-5">
-                    <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="bg-[#1E1E1E] rounded-[20px] px-5 sm:px-8 md:px-13 pt-5 pb-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center ">
 
                         {/* ---------- LEFT (ANIMATION) ---------- */}
-                        <div className="relative">
-                            <div className="bg-linear-to-br from-white/70 to-gray-600 rounded-3xl px-8 pt-15 shadow-2xl">
-                                <div className="relative w-full rounded-t-4xl overflow-hidden  ">
-
-                                    {/* 🔥 Lazy animation render */}
+                        <div className="relative w-full">
+                            <div className="bg-linear-to-br from-white/70 to-gray-600 rounded-3xl px-6 sm:px-8 pt-10 sm:pt-15 shadow-2xl">
+                                <div className="relative w-full rounded-t-4xl overflow-hidden">
                                     <Suspense
                                         fallback={
-                                            <div className="w-full h-75 flex items-center justify-center text-white/40 text-sm">
+                                            <div className="w-full py-24 flex items-center justify-center text-white/40 text-sm">
                                                 Loading animation...
                                             </div>
                                         }
                                     >
-                                        <div className="w-full h-full flex items-center justify-center">
+                                        <div className="w-full flex items-center justify-center">
                                             {activeContent.image}
                                         </div>
                                     </Suspense>
-
                                 </div>
                             </div>
                         </div>
 
                         {/* ---------- RIGHT (TEXT) ---------- */}
-                        <div className="space-y-2.5">
-                            <span className="inline-block mb-5 px-2.5 py-1.5 bg-[#FFF7A5] text-black rounded-full text-sm font-medium uppercase tracking-wide">
+                        <div className="space-y-4">
+                            <span className="inline-block px-3 py-1.5 bg-[#FFF7A5] text-black rounded-full text-xs sm:text-sm font-medium tracking-wide uppercase">
                                 {activeContent.badge}
                             </span>
 
-                            <h2 className="text-4xl text-[#FFF8F8] font-normal">
+                            <h2 className="text-[26px] sm:text-[32px] md:text-[36px] text-white font-normal leading-tight">
                                 {activeContent.title}
                             </h2>
 
                             {Array.isArray(activeContent.description) ? (
-                                <ul className="space-y-2 text-[#ECEBEB] text-sm font-normal py-2">
+                                <ul className="space-y-2 text-white/80 text-sm sm:text-base">
                                     {activeContent.description.map((point, index) => (
                                         <li key={index}>• {point}</li>
                                     ))}
                                 </ul>
                             ) : (
-                                <p className="text-[#ECEBEB] text-sm font-normal leading-relaxed max-w-[350px]">
+                                <p className="text-white/80 text-sm sm:text-base leading-relaxed max-w-md">
                                     {activeContent.description}
                                 </p>
                             )}
@@ -155,6 +157,7 @@ export default function FeaturesSection(): JSX.Element {
 
                     </div>
                 </div>
+
             </div>
         </section>
     );

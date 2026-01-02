@@ -3,8 +3,8 @@ import { Terminal, Rocket, Puzzle } from "lucide-react";
 
 const CareerFeature = () => {
   return (
-    <section className=" text-white py-0 px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className=" text-white py-0 mx-15">
+      <div className="">
 
         {/* TOP HORIZONTAL LINE */}
         <div className="h-px w-full bg-white/20 mb-24" />
@@ -23,7 +23,7 @@ const CareerFeature = () => {
               <Terminal size={22} className="text-white" />
             </div>
 
-            <p className="text-medium text-gray-300 max-w-xs leading-relaxed">
+            <p className="text-medium text-white/70 max-w-xs leading-relaxed">
               Work on core infrastructure that defines how modern software is planned, built, and shipped.
             </p>
           </div>
@@ -37,7 +37,7 @@ const CareerFeature = () => {
               <Rocket size={22} className="text-white" />
             </div>
 
-            <p className="text-medium text-gray-300 max-w-xs leading-relaxed">
+            <p className="text-medium text-white/70 max-w-xs leading-relaxed">
               Contribute directly to a growing platform where your work shapes the product used by real teams.
             </p>
           </div>
@@ -51,7 +51,7 @@ const CareerFeature = () => {
               <Puzzle size={22} className="text-white" />
             </div>
 
-            <p className="text-medium text-gray-300 max-w-xs leading-relaxed">
+            <p className="text-medium text-white/70 max-w-xs leading-relaxed">
               Be part of a thoughtful, inclusive team that values ownership, clarity, and long-term thinking.
             </p>
           </div>

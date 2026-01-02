@@ -1,4 +1,3 @@
-import React from "react";
 import { Check } from "lucide-react";
 import workflow_img from "../../../assets/images/Careers/workflow_img.avif"
 import Workflow_img_2 from "../../../assets/images/Careers/workflow_img2.avif";

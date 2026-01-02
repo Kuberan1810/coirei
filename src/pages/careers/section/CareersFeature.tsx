@@ -1,4 +1,3 @@
-import React from "react";
 import { Terminal, Rocket, Puzzle } from "lucide-react";
 
 const CareerFeature = () => {

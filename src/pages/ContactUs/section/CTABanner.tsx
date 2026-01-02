@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Banner from "../../../assets/images/contact/cta-banner.png"
 const CTABanner = () => {
   return (

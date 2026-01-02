@@ -1,4 +1,4 @@
-import Lottie from "lottie-react";
+
 // import CodingImg from "../../../../src/assets/images/homepage/coirei_coding.png"
 import BackCoding from "../../../../src/assets/images/homepage/coireimg.png"
 import CollaborateFeature from "./Animation/ColabrationCard";

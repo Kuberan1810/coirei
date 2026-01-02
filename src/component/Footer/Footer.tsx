@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
 
             {/* TOP BAR */}
             <div className="relative overflow-hidden">
-                <span className="pointer-events-none absolute top-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                <span className="pointer-events-none absolute top-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white/30 to-transparent" />
                 <span className="pointer-events-none absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-white/30 to-transparent" />
 
                 <div className="group flex items-center justify-between py-6">

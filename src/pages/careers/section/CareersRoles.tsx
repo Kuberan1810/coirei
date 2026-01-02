@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 
 const roles = [
   "AI ML Intern",

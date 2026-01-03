@@ -9,7 +9,7 @@ import Navbar from "../../component/Navbar";
 
 function Careers() {
     return (
-        <>
+        <div className="overflow-hidden">
             <div className="fixed w-full top-0 z-10">
                 <Navbar />
             </div>
@@ -18,7 +18,7 @@ function Careers() {
             <CareersWorkFlow />
             <CareersRoles />
             <Footer />
-        </>
+        </div>
     );
 };
 

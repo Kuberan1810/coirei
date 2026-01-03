@@ -6,7 +6,7 @@ import HeroSection from "./section/HeroSection";
 
 const Company = () => {
     return (
-        <>
+        <div className="overflow-hidden">
             <div className="fixed w-full top-0 z-10">
                 <Navbar />
             </div>
@@ -14,7 +14,7 @@ const Company = () => {
             <ContentSection />
             <CTABanner/>
             <Footer />
-        </>
+        </div>
     );
 };
 

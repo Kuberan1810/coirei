@@ -1,8 +1,8 @@
 import { Check } from "lucide-react";
-import workflow_img from "../../../assets/images/Careers/workflow_img.avif"
+import workflow_img from "../../../assets/images/Careers/workflow_img.avif";
 import Workflow_img_2 from "../../../assets/images/Careers/workflow_img2.avif";
-import workflow_img_3 from "../../../assets/images/Careers/workflow_img3.avif"
-import workflow_img_4 from "../../../assets/images/Careers/workflow_img4.avif"
+import workflow_img_3 from "../../../assets/images/Careers/workflow_img3.avif";
+import workflow_img_4 from "../../../assets/images/Careers/workflow_img4.avif";
 
 /* Reusable Check Icon – correct size & position */
 const CheckIcon = () => (
@@ -15,95 +15,103 @@ const CheckIcon = () => (
 
 const CareersWorkFlow = () => {
   return (
-    <section className=" text-white mx-15 py-14">
-      <div className="">
-
+    <section className="text-white mx-6 sm:mx-10 md:mx-15 py-12">
+      <div className="max-w-6xl mx-auto">
         {/* TOP GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 mb-24">
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* LEFT COLUMN */}
           <div>
-            <h2 className="text-[64px] font-medium">How we work</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">
+              How we work
+            </h2>
 
-            <p className="text-[#CECBCB] text-[18px] mb-12 max-w-xl">
-              We’re deliberate about how we build, both our product and our team.
-              Our principles are designed to support clarity, ownership, and long-term impact.
-              <br />
-              {/* <span className="text-white font-semibold underline cursor-pointer">
-                Check out our How We Work guide.
-              </span> */}
+            <p className="text-[#CECBCB] text-base md:text-lg mb-8 max-w-xl">
+              We’re deliberate about how we build, both our product and our
+              team. Our principles are designed to support clarity, ownership,
+              and long-term impact.
             </p>
 
             {/* Product-first */}
-            <div className="flex gap-4 mb-8">
+            <div className="flex gap-4 mb-6">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Product-led by execution</h4>
-                <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We make decisions based on how they improve real execution for users, not just features or trends.
+                <h4 className="text-lg md:text-xl font-medium mb-2">
+                  Product-led by execution
+                </h4>
+                <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+                  We make decisions based on how they improve real execution for
+                  users, not just features or trends.
                 </p>
               </div>
             </div>
 
-            <div className="h-px bg-white/20 mb-8" />
+            <div className="h-px bg-white/20 mb-6" />
 
             {/* Be pragmatic */}
-            <div className="flex gap-4 mb-8">
+            <div className="flex gap-4 mb-6">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Pragmatic by default</h4>
-                <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We prioritize clear reasoning, practical outcomes, and simplicity over hierarchy or process for its own sake.
+                <h4 className="text-lg md:text-xl font-medium mb-2">
+                  Pragmatic by default
+                </h4>
+                <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+                  We prioritize clear reasoning, practical outcomes, and
+                  simplicity over hierarchy or process for its own sake.
                 </p>
               </div>
             </div>
 
-            <div className="h-px bg-white/20 mb-8" />
+            <div className="h-px bg-white/20 mb-6" />
 
             {/* Run by developers */}
             <div className="flex gap-4">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">
+                <h4 className="text-lg md:text-xl font-medium mb-2">
                   Built by practitioners
                 </h4>
-                <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We build and use Coirei ourselves, learning directly from real workflows as we improve the platform.
+                <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+                  We build and use Coirei ourselves, learning directly from real
+                  workflows as we improve the platform.
                 </p>
               </div>
             </div>
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="pt-24">
-            <div className="flex justify-end mb-12">
-              <button className="text-[#252525] py-2.5 px-4 bg-[#FAF9F6] rounded font-semibold
-                                 hover:bg-[#1E1E1E] hover:text-white
-                                 transition-all duration-500 ease-out">
+          <div className="pt-6 lg:pt-0">
+            <div className="flex justify-end mb-6">
+              <button className="text-[#252525] py-2.5 px-4 bg-[#FAF9F6] rounded font-semibold hover:bg-[#1E1E1E] hover:text-white transition-all duration-500 ease-out">
                 See open roles
               </button>
             </div>
 
             {/* Diversity */}
-            <div className="flex gap-4 mb-8">
+            <div className="flex gap-4 mb-6">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Inclusive by design</h4>
-                <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We believe strong systems are built by teams with diverse backgrounds, perspectives, and experiences.
+                <h4 className="text-lg md:text-xl font-medium mb-2">
+                  Inclusive by design
+                </h4>
+                <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+                  We believe strong systems are built by teams with diverse
+                  backgrounds, perspectives, and experiences.
                 </p>
               </div>
             </div>
 
-            <div className="h-px bg-white/20 mb-8" />
+            <div className="h-px bg-white/20 mb-6" />
 
             {/* Remote-first */}
             <div className="flex gap-4">
               <CheckIcon />
               <div>
-                <h4 className="text-[24px] font-medium mb-2">Distributed & focused</h4>
-                <p className="text-gray-200 text-[18px] leading-relaxed">
-                  We are a remote-first team that values asynchronous communication, deep work, and thoughtful written context.
+                <h4 className="text-lg md:text-xl font-medium mb-2">
+                  Distributed & focused
+                </h4>
+                <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+                  We are a remote-first team that values asynchronous
+                  communication, deep work, and thoughtful written context.
                 </p>
               </div>
             </div>
@@ -111,32 +119,31 @@ const CareersWorkFlow = () => {
         </div>
 
         {/* IMAGES SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_2fr] gap-8 h-[630px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <img
             src={workflow_img}
             alt="Team working"
-            className="self-start rounded-xl object-cover h-[387px] w-full grayscale"
+            className="rounded-xl object-cover w-full h-64 md:h-[387px] grayscale"
           />
           <img
             src={Workflow_img_2}
             alt="Team lunch"
-            className="self-end rounded-xl object-cover h-[200px] w-full grayscale mb-35"
+            className="rounded-xl object-cover w-full h-48 md:h-[200px] grayscale"
           />
           <img
             src={workflow_img_3}
             alt="Team outing"
-            className="rounded-xl object-cover h-[200px] w-full grayscale mt-30"
+            className="rounded-xl object-cover w-full h-48 md:h-[200px] grayscale"
           />
           <img
             src={workflow_img_4}
             alt="Office work"
-            className="self-end rounded-xl object-cover h-[387px] w-full grayscale"
+            className="rounded-xl object-cover w-full h-64 md:h-[387px] grayscale"
           />
         </div>
 
         {/* BOTTOM LINE */}
-        <div className="h-px w-full bg-white/20 mt-24" />
-
+        <div className="h-px w-full bg-white/20 mt-12" />
       </div>
     </section>
   );

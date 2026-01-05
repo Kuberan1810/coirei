@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import ScrollAnimationWrapper from "./layout/ScrollAnimationWrapper";
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Contact from "./pages/ContactUs/Contact";
@@ -23,6 +23,7 @@ import Services from "./pages/services/Services";
 
 function App() {
   return (
+    <ScrollAnimationWrapper>
     <Routes>
       {/* MAIN PAGES */}
       <Route path="/" element={<Home />} />
@@ -45,7 +46,8 @@ function App() {
       {/* FEATURES (NO parent page) */}
       <Route path="/features" element={<Features />} />
 
-    </Routes>
+      </Routes>
+    </ScrollAnimationWrapper>
   );
 }
 

@@ -5,42 +5,45 @@ const ContactList = () => {
   const [showRequestDemo, setShowRequestDemo] = useState(false);
 
   return (
-    <section className="pt-50 pb-20 mx-15">
-      <div className="flex justify-between flex-wrap gap-16">
-        <div className="max-w-2xl">
-          <h2 className="text-5xl text-white/80 mb-4">
+    <section className="pt-20 px-6 sm:px-10 md:px-15  py-10 sm:py-16 md:py-18 lg:py-20  mt-20 sm:mt-24 lg:mt-40 ">
+      <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-16">
+
+        {/* LEFT CONTENT */}
+        <div className="w-full sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-2xl">
+
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white/80 mb-4">
             Contact Sales
           </h2>
 
-          <p className="text-base text-white/70 mb-3">
+          <p className="text-base sm:text-lg text-white/70 mb-3">
             We’re here to help you understand how Coirei fits into your team’s execution workflow. Tell us what you’re looking to achieve, and we’ll guide you to the right solution.
           </p>
 
-          <p className="text-base text-white/70">
+          <p className="text-base sm:text-lg text-white/70">
             If you’re looking for detailed technical documentation or learning resources, you can explore Coirei University and our Docs.
           </p>
         </div>
 
-        <div className="flex-1">
-          <div className="pb-8">
-            <p className="text-white/80 text-2xl">
+        {/* RIGHT CONTENT */}
+        <div className="flex-2">
+          <div className="pb-6 sm:pb-8">
+            <p className="text-xl sm:text-2xl text-white/80">
               How can we help?
             </p>
           </div>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4 sm:gap-5">
             {!showRequestDemo ? (
               <>
                 <div
                   onClick={() => setShowRequestDemo(true)}
-                  className="group bg-[#1e1e1e] px-8 py-10 rounded-lg space-y-3
-                  hover:bg-[#29292950] cursor-pointer transition-all duration-300 "
+                  className="group bg-[#1e1e1e] px-6 sm:px-8 py-7 sm:py-10 rounded-lg space-y-3 hover:bg-[#29292950] cursor-pointer transition-all duration-300"
                 >
-                  <h4 className="text-2xl text-white/80 group-hover:text-white/50 transition">
+                  <h4 className="text-xl sm:text-2xl text-white/80 group-hover:text-white/50 transition">
                     Request a Demo
                   </h4>
 
-                  <p className="text-lg text-white/70  group-hover:text-white/40 transition">
+                  <p className="text-base sm:text-lg text-white/70 group-hover:text-white/40 transition">
                     See Coirei in action with a guided walkthrough tailored to your use case. Understand how planning, code, pipelines, and AI-assisted execution come together in one system.
                   </p>
                 </div>
@@ -61,19 +64,19 @@ const ContactList = () => {
                 />
 
                 <div>
-                  <h4 className="text-white/80 text-2xl mb-2.5">
+                  <h4 className="text-xl sm:text-2xl text-white/80 mb-2.5">
                     Other questions:
                   </h4>
 
-                  <div className="flex gap-6 flex-wrap">
-                    <a className="text-white/60 underline text-lg hover:text-white/80 transition cursor-pointer">
-                      Technical Support 
+                  <div className="flex flex-wrap gap-4 sm:gap-6">
+                    <a className="text-white/60 underline text-base sm:text-lg hover:text-white/80 transition cursor-pointer">
+                      Technical Support
                     </a>
-                    <a className="text-white/60 underline text-lg hover:text-white/80 transition cursor-pointer">
+                    <a className="text-white/60 underline text-base sm:text-lg hover:text-white/80 transition cursor-pointer">
                       Privacy and data handling
                     </a>
-                    <a className="text-white/60 underline text-lg hover:text-white/80 transition cursor-pointer">
-                      Security  and compliance  
+                    <a className="text-white/60 underline text-base sm:text-lg hover:text-white/80 transition cursor-pointer">
+                      Security and compliance
                     </a>
                   </div>
                 </div>
@@ -91,15 +94,12 @@ const ContactList = () => {
 export default ContactList;
 
 const Card = ({ title, desc }: { title: string; desc: string }) => (
-  <div
-    className="group bg-[#1e1e1e] px-8 py-10 rounded-lg space-y-3
-    hover:bg-[#29292950] cursor-pointer transition-all duration-300"
-  >
-    <h4 className="text-2xl text-white/80 group-hover:text-white/50 transition">
+  <div className="group bg-[#1e1e1e] px-6 sm:px-8 py-7 sm:py-10 rounded-lg space-y-3 hover:bg-[#29292950] cursor-pointer transition-all duration-300">
+    <h4 className="text-xl sm:text-2xl text-white/80 group-hover:text-white/50 transition">
       {title}
     </h4>
 
-    <p className="text-lg text-white/70  group-hover:text-white/40 transition">
+    <p className="text-sm sm:text-lg text-white/70 group-hover:text-white/40 transition">
       {desc}
     </p>
   </div>

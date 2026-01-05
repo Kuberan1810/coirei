@@ -83,25 +83,27 @@ const OurServices = () => {
   const visibleServices = showAll ? services : services.slice(0, 6);
 
   return (
-    <section className="text-white py-20 mx-15">
+    <section className="text-white mx-6 sm:mx-10 md:mx-15 py-10 sm:py-20">
       <div className="">
 
         {/* HEADER */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>
-            <p className="text-[24px] text-white-400 mb-2 text-[24px] mb-2 inline-flex items-center justify-center
-          text-xl text-white py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10">Our Services</p>
-            <h2 className="text-[40px] md:text-4xl font-medium">
+
+            <p className="text-[16px] sm:text-lg md:text-xl lg:text-2xl  text-white  inline-flex items-center justify-center
+           py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10">Our Services</p>
+            
+            <h2 className="text-[40px] md:text-4xl max-sm:text-[28px] font-medium leading-tight">
               Services We Provide to{" "}
-              <p><span className="text-orange-500">Elevate Your Business</span></p>
+              <span className="block text-orange-500">Elevate Your Business</span>
             </h2>
-          </div>
+          </div>  
 
 
         </div>
 
         {/* SERVICE CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {visibleServices.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -126,11 +128,11 @@ const OurServices = () => {
                   <Icon size={22} className="text-white-400" />
                 </div>
 
-                <h3 className="text-[20px] font-bold mb-5">
+                <h3 className="text-lg md:text-xl  font-bold mb-5">
                   {service.title}
                 </h3>
 
-                <p className="text-[16px] text-white/70 font-medium leading-relaxed mb-5">
+                <p className=" text-base lg:text-lg text-white/70 font-medium leading-relaxed mb-5">
                   {service.desc}
                 </p>
               </div>

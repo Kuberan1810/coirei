@@ -84,7 +84,7 @@ export default function ResourcesDropdown() {
                         // { label: "Blog", to: "/resources/blog" },
                         // { label: "Coirei University", to: "/resources/university" },
                         { label: "Company", to: "/resources/company" },
-                        { label: "Careers", to: "/resources/careers" },
+                        // { label: "Careers", to: "/resources/careers" },
                         { label: "Contact", to: "/resources/contact" },
                         { label: "Privacy", to: "/resources/privacy" },
                     ].map((item, index) => (

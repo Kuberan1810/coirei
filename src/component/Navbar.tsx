@@ -126,7 +126,7 @@ function Navbar() {
                                 >
                                     {[
                                         { label: "Company", to: "/resources/company" },
-                                        { label: "Careers", to: "/resources/careers" },
+                                        // { label: "Careers", to: "/resources/careers" },
                                         { label: "Contact", to: "/resources/contact" },
                                         { label: "Privacy", to: "/resources/privacy" },
                                     ].map((item, index) => (

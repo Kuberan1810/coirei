@@ -1,19 +1,26 @@
+import Banner from "../../../assets/images/contact/cta-banner.png";
 
-import Banner from "../../../assets/images/contact/cta-banner.png"
 const CTABanner = () => {
   return (
-    <section className='mx-15 py-20'>
-      <div className='relative'>
-        <img src={Banner} alt="CTA banner" className='w-full rounded-2xl '/>
-        <div className='absolute top-1/2 left-1/2 
-              -translate-x-1/2 -translate-y-1/2 text-center w-[80%] '>
-          <h2 className='text-[48px] text-white/60 mb-4'>Download Coirei</h2>
-          <p className='text-6xl text-white '>The Execution Platform for Agent-Assisted Development</p>
+    <section className="px-6 sm:px-10 md:px-15 py-10 sm:py-16 md:py-18 lg:py-20">
+      <div
+        className="relative w-full rounded-xl sm:rounded-2xl bg-center bg-cover overflow-hidden py-20 sm:py-24 md:py-32 lg:py-50"
+        style={{ backgroundImage: `url(${Banner})` }}
+      >
+        <div className="absolute inset-0 flex items-center justify-center text-center px-4">
+          <div className="max-w-5xl">
+            <h2 className="text-xl sm:text-3xl lg:text-[48px] text-white/60 mb-3 sm:mb-4">
+              Download Coirei
+            </h2>
+
+            <p className="text-xl sm:text-4xl lg:text-5xl text-white/90 leading-tight">
+              The Execution Platform for Agent-Assisted Development
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+  );
+};
 
-   </section>
-  )
-}
-
-export default CTABanner
+export default CTABanner;

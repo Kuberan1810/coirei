@@ -1,4 +1,4 @@
-import React from "react";
+
 import Code from "../../../../assets/images/Resourses/Code-img.png";
 import BGRectangle from "../../../../assets/images/Resourses/bg-Rectangle.png";
 

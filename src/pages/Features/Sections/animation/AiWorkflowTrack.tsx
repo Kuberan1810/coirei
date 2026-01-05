@@ -16,6 +16,14 @@ type Phase = "center" | "open" | "close";
 
 const AiWorkflowTrack = () => {
     const [phase, setPhase] = useState<Phase>("center");
+    const [isSmall, setIsSmall] = useState(false);
+
+    useEffect(() => {
+        const check = () => setIsSmall(window.innerWidth <= 420);
+        check();
+        window.addEventListener("resize", check);
+        return () => window.removeEventListener("resize", check);
+    }, []);
 
     useEffect(() => {
         if (phase === "center") setTimeout(() => setPhase("open"), 100);
@@ -23,115 +31,71 @@ const AiWorkflowTrack = () => {
         if (phase === "close") setTimeout(() => setPhase("center"), 1000);
     }, [phase]);
 
+    const visibleLeftIcons = isSmall ? leftIcons.slice(0, 2) : leftIcons;
+    const visibleRightIcons = isSmall ? rightIcons.slice(0, 2) : rightIcons;
+
     return (
-        <div className="relative w-full h-52 rounded-full border border-white/10 overflow-hidden">
+        <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-full border border-white/10 overflow-hidden">
 
-            {/* ================= BORDER (OLD STYLE) ================= */}
-            <motion.div
-                className="absolute top-0 left-0 h-[2px] w-40 bg-orange-500"
-                animate={{ x: ["-30%", "530%"] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
-            />
-            <motion.div
-                className="absolute bottom-0 right-0 h-[2px] w-40 bg-orange-500"
-                animate={{ x: ["0", "-530%"] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
-            />
-
-            {/* ================= CENTER ICON (FIRST OPEN, SMOOTH CLOSE) ================= */}
+            {/* CENTER ICON */}
             <div className="absolute inset-0 flex items-center justify-center z-10">
                 <motion.div
                     initial={{ scale: 0 }}
-                    animate={{
-                        scale: phase === "center" || phase === "open" ? 1 : 0 ,
-                    }}
+                    animate={{ scale: phase === "center" || phase === "open" ? 1 : 0 }}
                     transition={{ duration: 0.6, ease: "easeInOut" }}
                 >
-                    <img src={CenterLogo} className="w-35" />
+                    <img src={CenterLogo} className="w-16 sm:w-20 md:w-28" />
                 </motion.div>
             </div>
 
-            {/* ================= LEFT ICONS ================= */}
-            <div className="absolute left-[10%] top-1/2 -translate-y-1/2 flex gap-6">
-                {leftIcons.map((icon, i) => (
+            {/* LEFT ICONS */}
+            <div className="absolute left-[6%] sm:left-[8%] md:left-[10%] top-1/2 -translate-y-1/2 flex gap-3 sm:gap-4 md:gap-6">
+                {visibleLeftIcons.map((icon, i) => (
                     <motion.div
                         key={i}
-                        className="w-14 h-14 rounded-full bg-white flex items-center justify-center"
+                        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center"
                         animate={{
-                            // 🔥 OPEN – opposite side (Right → Center)
                             x: phase === "open" ? [60, 0] : 0,
-
-                            // 🔥 WAVE only during OPEN (opp side)
-                            y:
-                                phase === "open"
-                                    ? [0, 8, 0]            // opposite wave
-                                    : phase === "close"
-                                        ? [0, -16, -40]      // ✅ OLD CLOSE (unchanged)
-                                        : 0,
-
-                            // 🔥 SCALE
                             scale:
-                                phase === "open"
-                                    ? [0, 1]               // open in
-                                    : phase === "close"
-                                        ? [1, 0]             // ✅ old close out
-                                        : 0,
-
+                                phase === "open" ? [0, 1] : phase === "close" ? [1, 0] : 0,
                             opacity: phase === "close" ? 0 : 1,
                         }}
-
                         transition={{
                             duration: 0.8,
                             delay: phase === "open" ? i * 0.12 : 0,
                             ease: "easeInOut",
                         }}
                     >
-                        <img src={icon} className="w-full" />
+                        <img src={icon} className="w-full h-full object-contain" />
                     </motion.div>
                 ))}
             </div>
 
-            {/* ================= RIGHT ICONS ================= */}
-            <div className="absolute right-[10%] top-1/2 -translate-y-1/2 flex gap-6">
-                {rightIcons.map((icon, i) => (
+            {/* RIGHT ICONS */}
+            <div className="absolute right-[6%] sm:right-[8%] md:right-[10%] top-1/2 -translate-y-1/2 flex gap-3 sm:gap-4 md:gap-6">
+                {visibleRightIcons.map((icon, i) => (
                     <motion.div
                         key={i}
-                        className="w-14 h-14 rounded-full bg-white flex items-center justify-center"
+                        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center"
                         animate={{
-                            // 🔁 OPEN (OPPOSITE): Left → Center
                             x: phase === "open" ? [-60, 0] : 0,
-
-                            // 🔁 OPEN wave opposite
-                            y:
-                                phase === "open"
-                                    ? [0, -8, 0]            // opposite wave
-                                    : phase === "close"
-                                        ? [0, 16, 40]         // ✅ SAME close (unchanged)
-                                        : 0,
-
-                            // SCALE (unchanged)
                             scale:
-                                phase === "open"
-                                    ? [0, 1]
-                                    : phase === "close"
-                                        ? [1, 0]
-                                        : 0,
-
+                                phase === "open" ? [0, 1] : phase === "close" ? [1, 0] : 0,
                             opacity: phase === "close" ? 0 : 1,
                         }}
-
                         transition={{
                             duration: 0.8,
                             delay: phase === "open" ? i * 0.12 : 0,
                             ease: "easeInOut",
                         }}
                     >
-                        <img src={icon} className="w-full" />
+                        <img src={icon} className="w-full h-full object-contain" />
                     </motion.div>
                 ))}
             </div>
         </div>
     );
 };
+
 
 export default AiWorkflowTrack;

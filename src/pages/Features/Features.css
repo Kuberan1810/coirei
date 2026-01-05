@@ -39,3 +39,52 @@
     animation: rippleTwo 3s ease-out infinite;
 }
 
+@keyframes orbitRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mobile-orbit {
+    animation: orbitRotate 22s linear infinite;
+}
+
+.mobile-orbit-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+@keyframes slowSpin {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.animate-slowSpin {
+    animation: slowSpin 28s linear infinite;
+}
+
+@keyframes slowSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-slowSpin {
+    animation: slowSpin 28s linear infinite;
+}
+

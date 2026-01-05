@@ -2,16 +2,16 @@ import imageFile from "../../..//assets/images/homepage/team-missing.png";
 
 function ProblemSection() {
     return (
-        <section className="py-16 md:py-20">
-            <div className="px-6 sm:px-10 md:px-15">
+        <section  className="px-6 sm:px-10 md:px-15 py-16 md:py-20">
+            <div className="">
 
                 {/* TOP SECTION */}
                 <div className="flex flex-col justify-center items-center mb-14 md:mb-22 text-center">
-                    <p className="backdrop-blur-md border border-white/20 rounded-xl py-2 px-4 max-w-fit text-sm sm:text-base text-[#959493] mb-5">
+                    <p  className="backdrop-blur-md border border-white/20 rounded-xl py-2 px-4 max-w-fit text-sm sm:text-base text-[#959493] mb-5">
                         Why Orca AI Exist?
                     </p>
 
-                    <h2 className="leading-tight text-[#E3E3E0] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] max-w-5xl">
+                    <h2  className="leading-tight text-[#E3E3E0] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] max-w-5xl">
                         Modern teams don’t fail at coding.
                         <br className="hidden sm:block" />
                         They fail at execution.

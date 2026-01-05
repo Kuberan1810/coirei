@@ -38,7 +38,8 @@ function Hero() {
                     {/* RIGHT IMAGE / CARD */}
                     <div data-ns-animate
                         data-offset="100"
-                        data-delay="0.2" className="relative h-80 sm:h-130 lg:h-full xl:h-130 rounded-2xl overflow-hidden max-w-full hero-perspective">
+                        data-delay="0.2
+                        " className="relative h-80 sm:h-130 lg:h-full xl:h-130 rounded-2xl overflow-hidden max-w-full hero-perspective">
                         {/* Background Image */}
                         <img
                             src={BackCoding}

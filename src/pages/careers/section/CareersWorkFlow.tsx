@@ -41,81 +41,93 @@ const CareersWorkFlow = () => {
         </div>
 
         {/* TOP GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 sm:gap-16 lg:gap-20 mb-16 sm:mb-20 lg:mb-24">
+        <div className="max-w-350 mx-auto  pb-36">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 lg:gap-y-24 gap-y-10 ">
 
-
-          {/* MIDDLE COLUMN */}
-          <div>
-            <div className="flex gap-4 mb-8">
-              <CheckIcon />
+            {/* LEFT COLUMN */}
+            <div className="space-y-12">
               <div>
-                <h4 className="text-lg sm:text-xl lg:text-[24px] font-medium mb-2">
-                  Product-led by execution
-                </h4>
-                <p className="text-gray-200 text-sm sm:text-base lg:text-[18px] leading-relaxed">
-                  We make decisions based on how they improve real execution for users, not just features or trends.
-                </p>
+                <div className="flex gap-4">
+                  <CheckIcon />
+                  <div>
+                    <h4 className="text-xl font-medium mb-2">
+                      Product-led by execution
+                    </h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      We make decisions based on how they improve real execution for users,
+                      not just features or trends.
+                    </p>
+                  </div>
+                </div>
+                <div className="h-px bg-white/20 mt-6" />
+              </div>
+
+              <div>
+                <div className="flex gap-4">
+                  <CheckIcon />
+                  <div>
+                    <h4 className="text-xl font-medium mb-2">
+                      Pragmatic by default
+                    </h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      We prioritize clear reasoning, practical outcomes, and simplicity
+                      over hierarchy or process for its own sake.
+                    </p>
+                  </div>
+                </div>
+                <div className="h-px bg-white/20 mt-6" />
+              </div>
+
+              <div className="flex gap-4">
+                <CheckIcon />
+                <div>
+                  <h4 className="text-xl font-medium mb-2">
+                    Built by practitioners
+                  </h4>
+                  <p className="text-gray-300 leading-relaxed">
+                    We build and use Coirei ourselves, learning directly from real workflows
+                    as we improve the platform.
+                  </p>
+                 
+
+                </div>
+              </div>
+              <div className="h-px bg-white/20 mt-6 lg:hidden visible" />
+            </div>
+
+            {/* RIGHT COLUMN */}
+            <div className="space-y-12">
+              <div>
+                <div className="flex gap-4">
+                  <CheckIcon />
+                  <div>
+                    <h4 className="text-xl font-medium mb-2">
+                      Inclusive by design
+                    </h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      We believe strong systems are built by teams with diverse
+                      backgrounds, perspectives, and experiences.
+                    </p>
+                  </div>
+                </div>
+                <div className="h-px bg-white/20 mt-6" />
+              </div>
+
+              <div className="flex gap-4">
+                <CheckIcon />
+                <div>
+                  <h4 className="text-xl font-medium mb-2">
+                    Distributed & focused
+                  </h4>
+                  <p className="text-gray-300 leading-relaxed">
+                    We are a remote-first team that values asynchronous communication,
+                    deep work, and thoughtful written context.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="h-px bg-white/20 mb-8" />
-
-            <div className="flex gap-4 mb-8">
-              <CheckIcon />
-              <div>
-                <h4 className="text-lg sm:text-xl lg:text-[24px] font-medium mb-2">
-                  Pragmatic by default
-                </h4>
-                <p className="text-gray-200 text-sm sm:text-base lg:text-[18px] leading-relaxed">
-                  We prioritize clear reasoning, practical outcomes, and simplicity over hierarchy or process for its own sake.
-                </p>
-              </div>
-            </div>
-
-            <div className="h-px bg-white/20 mb-8" />
-
-            <div className="flex gap-4">
-              <CheckIcon />
-              <div>
-                <h4 className="text-lg sm:text-xl lg:text-[24px] font-medium mb-2">
-                  Built by practitioners
-                </h4>
-                <p className="text-gray-200 text-sm sm:text-base lg:text-[18px] leading-relaxed">
-                  We build and use Coirei ourselves, learning directly from real workflows as we improve the platform.
-                </p>
-              </div>
-            </div>
           </div>
-
-          {/* RIGHT COLUMN */}
-          <div className="lg:pt-24">
-            <div className="flex gap-4 mb-8">
-              <CheckIcon />
-              <div>
-                <h4 className="text-lg sm:text-xl lg:text-[24px] font-medium mb-2">
-                  Inclusive by design
-                </h4>
-                <p className="text-gray-200 text-sm sm:text-base lg:text-[18px] leading-relaxed">
-                  We believe strong systems are built by teams with diverse backgrounds, perspectives, and experiences.
-                </p>
-              </div>
-            </div>
-
-            <div className="h-px bg-white/20 mb-8" />
-
-            <div className="flex gap-4">
-              <CheckIcon />
-              <div>
-                <h4 className="text-lg sm:text-xl lg:text-[24px] font-medium mb-2">
-                  Distributed & focused
-                </h4>
-                <p className="text-gray-200 text-sm sm:text-base lg:text-[18px] leading-relaxed">
-                  We are a remote-first team that values asynchronous communication, deep work, and thoughtful written context.
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
 
         {/* IMAGES – 2x2 FROM MOBILE, OLD LG POSITION SAFE */}

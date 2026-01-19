@@ -4,52 +4,23 @@ const LearningSection = () => {
   return (
     <section className="text-white mx-6 sm:mx-10 md:mx-15 pt-24 sm:pt-28 md:pt-32">
 
-      <div className="w-full max-w-6xl mx-auto mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+      <div className=" mb-12 max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center">
           Learn and grow with Coirei
         </h1>
 
-        <p className="mt-6 text-base md:text-lg text-white max-w-3xl leading-relaxed">
+        <p className="mt-6 text-base md:text-lg text-white max-w-3xl leading-relaxed ">
           At Coirei, we provide structured learning resources to help you
           understand execution workflows, pipelines, and AI-assisted
           development. Learn through practical guides built for real-world
           usage.
         </p>
 
-        <p className="mt-6 text-base md:text-lg text-white max-w-3xl">
+        <p className="mt-6 text-base md:text-lg text-white max-w-3xl text-center">
           Our goal is simple: help you learn faster and build with confidence.
         </p>
 
-      {/* Highlights */}
-      <div className="w-full flex flex-col md:flex-row gap-8 mt-8 flex-wrap max-w-6xl mx-auto">
-        {/* Left Card */}
-        <div className="flex-1">
-          <BookOpen className="text-[18px] bg-gray-500 p-0.5 rounded-md mb-3" />
-          <p className="text-lg md:text-xl text-white mb-2">
-            Structured learning paths
-          </p>
-
-          <p className="text-base md:text-lg text-white leading-relaxed">
-            Follow guided learning paths that take you from fundamentals to
-            advanced concepts. Each lesson builds step by step with clear
-            explanations and examples.
-          </p>
-        </div>
-
-        {/* Right Card */}
-        <div className="flex-1">
-          <BookOpen className="text-[18px] bg-gray-500 p-0.5 rounded-md mb-3" />
-          <p className="text-lg md:text-xl text-white mb-2">
-            Practical & transparent content
-          </p>
-
-          <p className="text-base md:text-lg text-white leading-relaxed">
-            Every guide focuses on practical implementation. Learn by doing,
-            explore real workflows, and understand how each part of Coirei
-            works in production environments.
-          </p>
-        </div>
-      </div>
+      
     </div>
 
     <div className="border-t border-b border-white/20">

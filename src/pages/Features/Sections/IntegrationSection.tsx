@@ -63,7 +63,7 @@ const IntegrationsSection: React.FC = () => {
 
                         <div className="w-[130px] h-[130px] relative flex items-center justify-center">
 
-                            <div className="bg-[#161616] rounded-full w-[80px] h-[80px] flex items-center justify-center z-10">
+                            <div className="bg-[#161616] rounded-full w-[80px] h-[80px] flex items-center justify-center z-1">
                                 <img src={CoireiLogo} className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute inset-0 border-[3px] border-[#bababa] rounded-full animate-ring1" />

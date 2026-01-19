@@ -40,7 +40,7 @@ function Navbar() {
     const [resourcesOpen, setResourcesOpen] = useState(false);
 
     return (
-        <header data-ns-animate data-offset="40" data-direction="down" data-duration="1" className="text-[rgb(212,212,212)] mx-5 my-7.5 rounded-lg">
+        <header data-ns-animate data-offset="40" data-direction="down" data-duration="1" className="text-[rgb(212,212,212)] mx-5 my-7.5 rounded-lg ">
             <nav className="glass flex items-center justify-between px-5 py-2.5">
 
                 {/* LEFT */}
@@ -156,7 +156,12 @@ function Navbar() {
                                         <ChevronRight size={16} className="opacity-40" />
                                     </Link>
                                 </li>
-
+                                <li>
+                                    <Link to="/learning" onClick={() => setOpen(false)} className="flex items-center justify-between text-lg px-4 py-3 rounded-lg hover:bg-white/5">
+                                        <span>Learning</span>
+                                        <ChevronRight size={16} className="opacity-40" />
+                                    </Link>
+                                </li>
                                 <Link
                                     to="/contactsales"
                                     onClick={() => setOpen(false)}

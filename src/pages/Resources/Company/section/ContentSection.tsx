@@ -61,7 +61,7 @@ const ContentSection = () => {
       </div>
 
       <div className="pt-10 border-white border-t mt-8">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 py-8 max-w-6xl mx-auto px-6 sm:px-0">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-6 py-8 max-w-6xl mx-auto px-6 sm:px-0">
           <div className="w-full lg:w-1/2 mt-2">
             <h3 className="text-2xl md:text-4xl text-white/80 font-normal mb-4">
               Join us

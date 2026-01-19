@@ -4,7 +4,7 @@ const PrivacySection = () => {
   return (
     <section className="text-white mx-6 sm:mx-10 md:mx-15 pt-24 sm:pt-28 md:pt-32 pb-16">
       {/* Hero */}
-      <div className="w-full max-w-6xl mx-auto">
+      <div className="w-full max-w-6xl mx-auto mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center md:text-left max-w-4xl mx-auto md:mx-0">
           Your privacy <br /> while using Coirei
         </h1>
@@ -21,8 +21,8 @@ const PrivacySection = () => {
         </p>
 
         {/* Highlights */}
-        <div className="w-full flex flex-col md:flex-row justify-between gap-8 mt-8 flex-wrap px-4 sm:px-0">
-          <div className="w-full md:w-1/2">
+        <div className="w-full flex flex-col md:flex-row gap-8 mt-8 flex-wrap px-4 sm:px-0">
+          <div className="flex-1">
             <Settings className="text-[18px] bg-gray-500 p-0.5 rounded-md mb-2.5" />
             <p className="text-lg md:text-xl text-white mb-2">
               Telemetry is optional. You remain in control.
@@ -34,7 +34,7 @@ const PrivacySection = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-1/2 mb-6 md:mb-0">
+          <div className="flex-1 mb-6 md:mb-0">
             <Settings
               size={24}
               className="text-[18px] bg-gray-500 p-0.5 rounded-md mb-2.5"

@@ -7,8 +7,11 @@ import FeaturesSection from "./sections/FeaturesSection";
 import ContentSection from "./sections/ContentSection";
 import SecondContent from "./sections/SecondContent";
 import { CeoSection } from "./sections/CeoSection";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Home() {
+    useScrollAnimations();
+    
     return (
         <div className="overflow-hidden">
           

@@ -6,7 +6,7 @@ const ContactList = () => {
 
   return (
     <section className="pt-20 px-6 sm:px-10 md:px-15  py-10 sm:py-16 md:py-18 lg:py-20  mt-20 sm:mt-24 lg:mt-40 ">
-      <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-16">
+      <div className="flex flex-col lg:flex-col justify-between gap-12 lg:gap-16">
 
         {/* LEFT CONTENT */}
         <div className="w-full sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-2xl">
@@ -32,9 +32,9 @@ const ContactList = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 sm:gap-5">
+          <div className="w-full">
             {!showRequestDemo ? (
-              <>
+              <div className="flex flex-col gap-4 sm:gap-6 lg:grid lg:grid-cols-2">
                 <div
                   onClick={() => setShowRequestDemo(true)}
                   className="group bg-[#1e1e1e] px-6 sm:px-8 py-7 sm:py-10 rounded-lg space-y-3 hover:bg-[#29292950] cursor-pointer transition-all duration-300"
@@ -80,7 +80,7 @@ const ContactList = () => {
                     </a>
                   </div>
                 </div>
-              </>
+              </div>
             ) : (
               <RequestDemoForm onBack={() => setShowRequestDemo(false)} />
             )}

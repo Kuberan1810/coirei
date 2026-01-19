@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import ScrollAnimationWrapper from "./layout/ScrollAnimationWrapper";
+
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Contact from "./pages/ContactUs/Contact";
@@ -17,13 +17,14 @@ import Privacy from "./pages/Resources/Privacy/Privacy";
 import ContactSales from "./pages/ContactUs/ContactSales/ContactSales";
 import Company from "./pages/Resources/Company/Company";
 import Services from "./pages/services/Services";
+import Learning from "./pages/Learning/Learning";
 
 // import Analytics from "./pages/Features/Analytics";
 // import Integrations from "./pages/Features/Integrations";
 
 function App() {
   return (
-    <ScrollAnimationWrapper>
+   
     <Routes>
       {/* MAIN PAGES */}
       <Route path="/" element={<Home />} />
@@ -32,7 +33,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/contact-sales" element={<ContactSales />} />
       <Route path="/services" element={<Services />} />
-
+      <Route path="/learning" element={<Learning />} />
       {/* RESOURCES (NO parent page) */}
       <Route path="/resources/blog" element={<Blog />} />
       <Route path="/resources/company" element={<Company />} />
@@ -47,7 +48,7 @@ function App() {
       <Route path="/features" element={<Features />} />
 
       </Routes>
-    </ScrollAnimationWrapper>
+   
   );
 }
 

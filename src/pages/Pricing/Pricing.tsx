@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "../../component/SEO";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer/Footer";
 import Topsection from "./section/Topsection";
@@ -11,6 +12,14 @@ function Pricing() {
 
     return (
         <>
+            <SEO 
+                title="Pricing Plans | Coirei Solutions"
+                description="Flexible and transparent pricing plans designed to scale with your business needs."
+                breadcrumbs={[
+                    { name: "Home", url: "https://coirei.com" },
+                    { name: "Pricing", url: "https://coirei.com/pricing" }
+                ]}
+            />
             <div className="fixed w-full top-0 z-10">
                 <Navbar />
             </div>

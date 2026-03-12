@@ -11,7 +11,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ links }) => {
             {links.map((link) => (
                 <li
                     key={link.label}
-                    className={link.label === "Careers" ? "border-b border-white/10 sm:border-none" : ""}
+                    className={link.label === "" ? "border-b border-white/10 sm:border-none" : ""}
                 >
                     <a
                         href={link.href}

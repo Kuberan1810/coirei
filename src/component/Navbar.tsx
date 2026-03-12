@@ -2,7 +2,7 @@ import logo from "../assets/images/homepage/coirei-logo.png";
 import { Link } from "react-router-dom";
 import ResourcesDropdown from "../component/NavDropdown/ResourcesDropdown";
 import { useState } from "react";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronRight, ChevronUp} from "lucide-react";
 import { AnimatePresence, motion, type Variants } from "framer-motion";
 
 
@@ -104,7 +104,7 @@ function Navbar() {
                         exit="exit"
                         className="md:hidden mt-3 px-2"
                     >
-                        <div className="glass rounded-2xl p-3 bg-[#121212]/90 backdrop-blur-2xl border border-white/10">
+                        <div className="glass rounded-2xl p-3 bg-[#292929]/90! backdrop-blur-2xl border border-white/10">
                             <ul className="flex flex-col gap-3 text-white">
 
                                 <li>
@@ -115,17 +115,18 @@ function Navbar() {
                                 </li>
 
                                 {/* RESOURCES ACCORDION */}
-                                <li className={`overflow-hidden rounded-2xl transition-all duration-300 ${resourcesOpen ? "bg-[#1c1c1c]/60 border border-white/10" : ""}`}>
+                                <li className={`overflow-hidden rounded-2xl transition-all duration-300 ${resourcesOpen ? "bg-[#292929]/90 border border-white/10" : ""}`}>
                                     <button
                                         onClick={() => setResourcesOpen(prev => !prev)}
                                         className="w-full flex items-center justify-between px-4 py-4 text-lg font-medium hover:bg-white/5"
                                     >
                                         <span>Resources</span>
-                                        <ChevronRight size={18} className={`transition-transform duration-300 ${resourcesOpen ? "rotate-90" : ""}`} />
+                                        <ChevronUp size={18} className={`transition-transform duration-300 ${resourcesOpen ? "rotate-0" : "rotate-180"}`} />
                                     </button>
 
                                     <div className={`overflow-hidden transition-all duration-300 ${resourcesOpen ? "max-h-75 opacity-100" : "max-h-0 opacity-0"}`}>
                                         {[
+                                            // { label: "Blog", to: "/resources/blog" },
                                             { label: "Company", to: "/resources/company" },
                                             { label: "Contact", to: "/resources/contact" },
                                             { label: "Privacy", to: "/resources/privacy" },

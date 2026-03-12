@@ -21,13 +21,13 @@ const IntegrationsSection: React.FC = () => {
 
             {/* TOP */}
             <div className="flex flex-col items-center justify-center mb-20 max-sm:mb-12">
-                <div className="inline-flex items-center justify-center text-xl max-sm:text-base text-white py-2.5 px-10 max-sm:px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 rounded-full shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] mb-10 max-sm:mb-6">
+                <h2 className="inline-flex items-center justify-center text-xl max-sm:text-base text-white py-2.5 px-10 max-sm:px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 rounded-full shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] mb-10 max-sm:mb-6">
                     Seamless Integrations
-                </div>
-
-                <h2 className="text-center text-[#E3E3E0] font-normal text-[32px] md:text-[60px] max-sm:text-[26px] max-w-220 mb-5">
-                    Native Integrations Across Your Execution Stack
                 </h2>
+
+                <p className="text-center text-[#E3E3E0] font-normal text-[32px] md:text-[60px] max-sm:text-[26px] max-w-220 mb-5 leading-tight">
+                    Native Integrations Across Your Execution Stack
+                </p>
 
                 <p className="text-center text-xl max-sm:text-base text-[#CECECE] max-w-3xl">
                     Connect repositories, cloud providers, internal tools, and services into a single intelligent execution fabric.
@@ -51,7 +51,7 @@ const IntegrationsSection: React.FC = () => {
                         { icon: CircleIcon, pos: "top-[35%] left-[28%]" },
                         { icon: HosueIocn, pos: "-bottom-[15%] left-0" }].map((item, i) => (
 
-                            <div key={i} className={`absolute ${item.pos} w-[60px] h-[60px] rounded-full flex items-center justify-center bg-gradient-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] p-2.5 shadow-[inset_0_-2px_1px_rgba(255,255,255,0.4)]`}>
+                            <div key={i} className={`absolute ${item.pos} w-[60px] h-[60px] rounded-full flex items-center justify-center bg-linear-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] p-2.5 shadow-[inset_0_-2px_1px_rgba(255,255,255,0.4)]`}>
 
                                 <img src={item.icon} />
                             </div>
@@ -75,7 +75,7 @@ const IntegrationsSection: React.FC = () => {
                         <div className="flex justify-between w-full max-w-[189px] absolute bottom-0">
                             {[IconN, CloudIocn].map((icon, i) => (
 
-                                <div key={i} className="w-[60px] h-[60px] rounded-full flex items-center justify-center bg-gradient-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] p-2.5">
+                                <div key={i} className="w-[60px] h-[60px] rounded-full flex items-center justify-center bg-linear-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] p-2.5">
                                     <img src={icon} />
                                 </div>
                             ))}
@@ -86,7 +86,7 @@ const IntegrationsSection: React.FC = () => {
                     <div className="w-full h-[186px] relative">
                         <img src={RightLine} className="w-full h-full object-contain object-[0%_50%]" />
                         {[{ icon: CubeIocn, pos: "-top-[15%] right-0" }, { icon: Icon3, pos: "top-[35%] right-[28%]" }, { icon: IconB, pos: "-bottom-[15%] right-0" }].map((item, i) => (
-                            <div key={i} className={`absolute ${item.pos} w-[60px] h-[60px] rounded-full flex items-center justify-center bg-gradient-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] p-2.5`}>
+                            <div key={i} className={`absolute ${item.pos} w-[60px] h-[60px] rounded-full flex items-center justify-center bg-linear-to-b from-[#f5f5f5] via-[#d4d4d4] to-[#e5e5e5] border border-[#d4d4d4] p-2.5`}>
                                 <img src={item.icon} />
                             </div>
                         ))}

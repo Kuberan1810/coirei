@@ -1,8 +1,11 @@
 // import CodingImg from "../../../../src/assets/images/homepage/coirei_coding.png"
 import BackCoding from "../../../../src/assets/images/homepage/coireimg.png";
 import CollaborateFeature from "./Animation/ColabrationCard";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+    const navigate = useNavigate();
+
     return (
         <section className="mt-32 sm:mt-36 lg:mt-40 mb-10 md:mb-20">
             <div className="px-6 sm:px-10 md:px-15">
@@ -49,11 +52,17 @@ function Hero() {
                             data-offset="40"
                             className="flex justify-center sm:justify-start gap-4"
                         >
-                            <button className="text-[#252525] py-2.5 px-4 bg-[#FAF9F6] rounded font-semibold border border-transparent hover:bg-[#1E1E1E] hover:text-white hover:border-white/10 transition-all duration-500 ease-out cursor-pointer sm:text-base text-[13px]">
+                            <button 
+                                onClick={() => navigate("/contact-sales")}
+                                className="text-[#252525] py-2.5 px-4 bg-[#FAF9F6] rounded font-semibold border border-transparent hover:bg-[#1E1E1E] hover:text-white hover:border-white/10 transition-all duration-500 ease-out cursor-pointer sm:text-base text-[13px]"
+                            >
                                 Request Early Access
                             </button>
 
-                            <button className="text-white py-2.5 px-4 bg-[#292929] rounded font-semibold border border-white/10 hover:bg-white hover:text-[#292929] transition-all duration-500 ease-out cursor-pointer sm:text-base text-[13px]">
+                            <button 
+                                onClick={() => navigate("/features")}
+                                className="text-white py-2.5 px-4 bg-[#292929] rounded font-semibold border border-white/10 hover:bg-white hover:text-[#292929] transition-all duration-500 ease-out cursor-pointer sm:text-base text-[13px]"
+                            >
                                 Explore the Platform
                             </button>
                         </div>

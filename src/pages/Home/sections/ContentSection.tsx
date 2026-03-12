@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const ContentSection = () => {
+    const navigate = useNavigate();
     return (
         <section className="mx-6 sm:mx-10 md:mx-15 py-16 sm:py-20">
             <div className="flex flex-col md:flex-row justify-between items-start lg:items-center gap-10">
@@ -20,7 +23,10 @@ const ContentSection = () => {
                         No training on your data. Ever. Control over analytics and telemetry. BYO-LLM and zero-data-retention modes available for enterprise.
                     </p>
 
-                    <button data-ns-animate data-delay="0.45" data-offset="40" data-direction="up" className="text-white py-2.5 px-4 bg-[#292929] rounded font-semibold border border-white/10 hover:bg-white hover:text-[#292929] transition-all duration-500 ease-out cursor-pointer sm:text-base text-[13px]">
+                    <button 
+                        onClick={() => navigate("/resources/privacy")}
+                        data-ns-animate data-delay="0.45" data-offset="40" data-direction="up" className="text-white py-2.5 px-4 bg-[#292929] rounded font-semibold border border-white/10 hover:bg-white hover:text-[#292929] transition-all duration-500 ease-out cursor-pointer sm:text-base text-[13px]"
+                    >
                         Learn more about data and privacy
                     </button>
                 </div>

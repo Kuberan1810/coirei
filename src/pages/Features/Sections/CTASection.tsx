@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const CTASection = () => {
+
+  const navigate = useNavigate();
   return (
     <section className="py-16 sm:py-20 mx-6 sm:mx-10 md:mx-15">
       <div className="relative overflow-hidden rounded-3xl bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)]">
@@ -26,12 +30,20 @@ const CTASection = () => {
 
             {/* BUTTONS */}
             <div className="flex flex-wrap gap-4 ">
-              <a className="px-5 py-3 rounded-lg text-white/90 border border-white/20 backdrop-blur-3xl shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] flex justify-center w-full sm:w-fit">
+              <button
+                onClick={() => {
+                  navigate("/resources/contact")
+              }}
+                className="cursor-pointer px-5 py-3 rounded-lg text-white/90 border border-white/20 backdrop-blur-3xl hover:backdrop-blur-2xl shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] flex justify-center w-full sm:w-fit hover:shadow-[inset_5px_5px_12px_rgba(255,255,255,0.10)]">
                 Get started
-              </a>
-              <a className="px-5 py-3 rounded-lg text-white/90 border border-white/20 backdrop-blur-3xl shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] flex justify-center w-full sm:w-fit">
+              </button>
+              <button
+                onClick={() => {
+                  navigate("/contact-sales")
+                }}
+                className="cursor-pointer px-5 py-3 rounded-lg text-white/90 border border-white/20 backdrop-blur-3xl hover:backdrop-blur-2xl shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] flex justify-center w-full sm:w-fit hover:shadow-[inset_5px_5px_12px_rgba(255,255,255,0.10)]">
                 Book a demo
-              </a>
+              </button>
             </div>
           </div>
         </div>

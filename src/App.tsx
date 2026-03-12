@@ -1,13 +1,15 @@
 import { Routes, Route } from "react-router-dom";
+import ParticleBackground from "./component/ParticleBackground";
 
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Contact from "./pages/ContactUs/Contact";
 
 // Resources pages
-import Blog from "./pages/Resources/Blog/Blog";
+// import Blog from "./pages/Resources/Blog/Blog";
+// import BlogDetails from "./pages/Resources/Blog/BlogDetails";
 // import Docs from "./pages/Resources/Docs";
-import University from "./pages/Resources/Univercity/University";
+// import University from "./pages/Resources/Univercity/University";
 // import Changelog from "./pages/Resources/Changelog";
 
 // Features pages
@@ -17,6 +19,7 @@ import Privacy from "./pages/Resources/Privacy/Privacy";
 import ContactSales from "./pages/ContactUs/ContactSales/ContactSales";
 import Company from "./pages/Resources/Company/Company";
 import Services from "./pages/services/Services";
+import ServiceDetails from "./pages/services/ServiceDetails";
 import Learning from "./pages/Learning/Learning";
 
 // import Analytics from "./pages/Features/Analytics";
@@ -24,31 +27,34 @@ import Learning from "./pages/Learning/Learning";
 
 function App() {
   return (
-   
-    <Routes>
-      {/* MAIN PAGES */}
-      <Route path="/" element={<Home />} />
-      <Route path="/careers" element={<Careers />} />
-      <Route path="/pricing" element={<Pricing />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/contact-sales" element={<ContactSales />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/learning" element={<Learning />} />
-      {/* RESOURCES (NO parent page) */}
-      <Route path="/resources/blog" element={<Blog />} />
-      <Route path="/resources/company" element={<Company />} />
-      <Route path="/resources/university" element={<University />} />
-      <Route path="contactsales" element={<ContactSales />} />
-      <Route path="/resources/privacy" element={<Privacy />} />
-      <Route path="/resources/contact" element={<Contact />} />
-      <Route path="/resources/careers" element={<Careers />} />
+    <>
+      {/* Global white particle background — visible across all pages */}
+      <ParticleBackground />
 
+      <Routes>
+        {/* MAIN PAGES */}
+        <Route path="/" element={<Home />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-sales" element={<ContactSales />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:slug" element={<ServiceDetails />} />
+        <Route path="/learning" element={<Learning />} />
+        {/* RESOURCES (NO parent page) */}
+        {/* <Route path="/resources/blog" element={<Blog />} /> */}
+        {/* <Route path="/resources/blog/:id" element={<BlogDetails />} /> */}
+        <Route path="/resources/company" element={<Company />} />
+        {/* <Route path="/resources/university" element={<University />} /> */}
+        <Route path="/contactsales" element={<ContactSales />} />
+        <Route path="/resources/privacy" element={<Privacy />} />
+        <Route path="/resources/contact" element={<Contact />} />
+        <Route path="/resources/careers" element={<Careers />} />
 
-      {/* FEATURES (NO parent page) */}
-      <Route path="/features" element={<Features />} />
-
+        {/* FEATURES (NO parent page) */}
+        <Route path="/features" element={<Features />} />
       </Routes>
-   
+    </>
   );
 }
 

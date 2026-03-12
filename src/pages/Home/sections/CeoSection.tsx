@@ -7,9 +7,9 @@ export const CeoSection = () => {
 
                 {/* BADGE */}
                 <div data-ns-animate data-offset="60" data-duration="1" data-direction="up" className="mb-8 sm:mb-10">
-                    <span className="inline-block text-[16px] sm:text-[18px] md:text-2xl text-white py-2 px-6 sm:px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full">
+                    <h2 className="inline-block text-[16px] sm:text-[18px] md:text-2xl text-white py-2 px-6 sm:px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full">
                         What our CEO said
-                    </span>
+                    </h2>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-start md:items-end">

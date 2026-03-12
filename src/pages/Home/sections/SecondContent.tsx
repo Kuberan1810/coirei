@@ -17,9 +17,9 @@ const SecondContent = () => {
 
                     {/* LEFT CARD */}
                     <div data-ns-animate data-delay="0.25" data-offset="80" data-direction="up" className="w-full md:w-1/2">
-                        <h3 className="text-[24px] sm:text-[28px] md:text-[32px] text-white mb-2.5">
+                        <h2 className="text-[24px] sm:text-[28px] md:text-[32px] text-white mb-2.5">
                             Complete Control
-                        </h3>
+                        </h2>
                         <p className="max-w-md font-normal text-[16px] sm:text-[18px] md:text-xl text-white leading-relaxed">
                             Control exactly how much autonomy agents have, from approving every step to allowing full autonomy. Configurable at the individual and enterprise level.
                         </p>
@@ -27,9 +27,9 @@ const SecondContent = () => {
 
                     {/* RIGHT CARD */}
                     <div data-ns-animate data-delay="0.4" data-offset="80" data-direction="up" className="w-full md:w-1/2">
-                        <h3 className="text-[24px] sm:text-[28px] md:text-[32px] text-white mb-2.5">
+                        <h2 className="text-[24px] sm:text-[28px] md:text-[32px] text-white mb-2.5">
                             Your data, secure and private
-                        </h3>
+                        </h2>
                         <p className="max-w-md font-normal text-[16px] sm:text-[18px] md:text-xl text-white leading-relaxed">
                             Your code, workflows, and execution history are never used to train external models. You control data retention, analytics and telemetry (one-click disable), model access and routing.
                         </p>

@@ -17,15 +17,15 @@ const ServiceAbout = () => {
 
         {/* Text Content */}
         <div className="md:justify-items-start">
-          <span className="inline-flex items-center justify-center text-[16px] sm:text-lg md:text-xl lg:text-2xl  text-white py-2 px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-4">
+          <h2 className="inline-flex items-center justify-center text-[16px] sm:text-lg md:text-xl lg:text-2xl  text-white py-2 px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-4">
             About Us
-          </span>
+          </h2>
 
-          <h2 className="mt-4 text-[32px] sm:text-[44px] lg:text-[60px] xl:text-[64px] leading-tight text-white">
+          <p className="mt-4 text-[32px] sm:text-[44px] lg:text-[60px] xl:text-[64px] leading-tight text-white font-medium">
             Transforming <span className="text-[#FF6A00]">Ideas.</span>
             <br />
             <span className="text-[#FF6A00]">into Digital Reality</span>
-          </h2>
+          </p>
 
           <p className="mt-2 text-white/90 text-base sm:text-lg lg:text-xl max-w-md lg:max-w-105 mb-2">
             Get assistance with invoices, subscriptions, plan

@@ -50,9 +50,9 @@ const CareersWorkFlow = () => {
                 <div className="flex gap-4">
                   <CheckIcon />
                   <div>
-                    <h4 className="text-xl font-medium mb-2">
+                    <h3 className="text-xl font-medium mb-2">
                       Product-led by execution
-                    </h4>
+                    </h3>
                     <p className="text-gray-300 leading-relaxed">
                       We make decisions based on how they improve real execution for users,
                       not just features or trends.
@@ -66,9 +66,9 @@ const CareersWorkFlow = () => {
                 <div className="flex gap-4">
                   <CheckIcon />
                   <div>
-                    <h4 className="text-xl font-medium mb-2">
+                    <h3 className="text-xl font-medium mb-2">
                       Pragmatic by default
-                    </h4>
+                    </h3>
                     <p className="text-gray-300 leading-relaxed">
                       We prioritize clear reasoning, practical outcomes, and simplicity
                       over hierarchy or process for its own sake.
@@ -81,9 +81,9 @@ const CareersWorkFlow = () => {
               <div className="flex gap-4">
                 <CheckIcon />
                 <div>
-                  <h4 className="text-xl font-medium mb-2">
+                  <h3 className="text-xl font-medium mb-2">
                     Built by practitioners
-                  </h4>
+                  </h3>
                   <p className="text-gray-300 leading-relaxed">
                     We build and use Coirei ourselves, learning directly from real workflows
                     as we improve the platform.
@@ -101,9 +101,9 @@ const CareersWorkFlow = () => {
                 <div className="flex gap-4">
                   <CheckIcon />
                   <div>
-                    <h4 className="text-xl font-medium mb-2">
+                    <h3 className="text-xl font-medium mb-2">
                       Inclusive by design
-                    </h4>
+                    </h3>
                     <p className="text-gray-300 leading-relaxed">
                       We believe strong systems are built by teams with diverse
                       backgrounds, perspectives, and experiences.
@@ -116,9 +116,9 @@ const CareersWorkFlow = () => {
               <div className="flex gap-4">
                 <CheckIcon />
                 <div>
-                  <h4 className="text-xl font-medium mb-2">
+                  <h3 className="text-xl font-medium mb-2">
                     Distributed & focused
-                  </h4>
+                  </h3>
                   <p className="text-gray-300 leading-relaxed">
                     We are a remote-first team that values asynchronous communication,
                     deep work, and thoughtful written context.

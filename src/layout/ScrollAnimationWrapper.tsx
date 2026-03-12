@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { useScrollAnimations } from "../hooks/useScrollAnimations";
+import useScrollAnimations from "../hooks/useScrollAnimations";
 
 interface Props {
     children: ReactNode;

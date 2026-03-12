@@ -1,3 +1,4 @@
+import SEO from "../../component/SEO";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer/Footer";
 import FeaturesHero from "./Sections/FeaturesHero";
@@ -12,6 +13,15 @@ import IntegrationSection from "./Sections/IntegrationSection";
 function Features() {
     return (
         <>
+            <SEO 
+                title="AI, Automation & Smart Digital Solutions"
+                description="Discover powerful technology features including AI automation, scalable software architecture, cloud solutions and advanced development capabilities"
+                keywords="AI features, automation solutions, scalable software architecture, cloud technology solutions, smart business automation"
+                breadcrumbs={[
+                    { name: "Home", url: "https://coirei.com" },
+                    { name: "Features", url: "https://coirei.com/features" }
+                ]}
+            />
             <div className="fixed w-full top-0 z-10">
                 <Navbar />
             </div>
@@ -19,7 +29,7 @@ function Features() {
             <FeatureCategories />
             <FeatureContent />
             <WorksFlow />
-            <IntegrationSection/>
+            <IntegrationSection />
             <CTASection />
             <FeatureContact />
 

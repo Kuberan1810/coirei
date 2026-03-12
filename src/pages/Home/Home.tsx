@@ -1,3 +1,4 @@
+import SEO from "../../component/SEO";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer/Footer";
 
@@ -11,23 +12,28 @@ import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Home() {
     useScrollAnimations();
-    
+
     return (
         <div className="overflow-hidden">
-          
+            <SEO 
+                title="Coirei – Intelligence Engineered"
+                description="Coirei – Intelligence Engineered. We build AI-native systems, deep-tech engineering platforms, and scalable software solutions that transform ideas into intelligent digital products."
+                keywords="Coirei, AI-native systems, deep tech engineering, intelligent software development, enterprise software solutions, AI platform development, software engineering company"
+            />
+
             <div className="fixed top-0 left-0 w-full z-50">
                 <Navbar />
             </div>
 
-           
-                <Hero />
-                <ProblemSection />
-                <FeaturesSection />
-                <ContentSection />
-                <SecondContent />
-                <CeoSection />
-                <Footer />
-           
+
+            <Hero />
+            <ProblemSection />
+            <FeaturesSection />
+            <ContentSection />
+            <SecondContent />
+            <CeoSection />
+            <Footer />
+
         </div>
     );
 }

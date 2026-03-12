@@ -23,9 +23,9 @@ function ProblemSection() {
 
                     {/* LEFT CONTENT */}
                     <div className="w-full lg:w-1/2">
-                        <h3 data-ns-animate data-offset="80" className="text-[#E3E3E0] max-w-fit lg:max-w-md text-[32px] sm:text-[40px] md:text-[48px] mb-5">
+                        <h2 data-ns-animate data-offset="80" className="text-[#E3E3E0] max-w-fit lg:max-w-md text-[32px] sm:text-[40px] md:text-[48px] mb-5">
                             Execution breaks When:
-                        </h3>
+                        </h2>
 
                         <ul className="list-disc pl-5 sm:pl-6">
                             <li data-ns-animate data-delay="0" className="text-[#B5B4B2] text-[18px] sm:text-[20px] md:text-[24px] mb-2">

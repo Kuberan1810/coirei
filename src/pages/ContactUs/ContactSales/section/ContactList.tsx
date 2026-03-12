@@ -11,9 +11,9 @@ const ContactList = () => {
         {/* LEFT CONTENT */}
         <div className="w-full sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-2xl">
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white/80 mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-white/80 mb-4 font-medium">
             Contact Sales
-          </h2>
+          </h1>
 
           <p className="text-base sm:text-lg text-white/70 mb-3">
             We’re here to help you understand how Coirei fits into your team’s execution workflow. Tell us what you’re looking to achieve, and we’ll guide you to the right solution.
@@ -27,9 +27,9 @@ const ContactList = () => {
         {/* RIGHT CONTENT */}
         <div className="flex-2">
           <div className="pb-6 sm:pb-8">
-            <p className="text-xl sm:text-2xl text-white/80">
+            <h2 className="text-xl sm:text-2xl text-white/80">
               How can we help?
-            </p>
+            </h2>
           </div>
 
           <div className="w-full">

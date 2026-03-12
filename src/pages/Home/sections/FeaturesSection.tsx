@@ -104,9 +104,9 @@ export default function FeaturesSection(): JSX.Element {
             <div className="px-6 sm:px-10 md:px-15">
 
                 {/* ---------- Heading (SCROLL) ---------- */}
-                <p data-ns-animate data-offset="80" data-duration="1.2" className="text-2xl md:text-5xl text-center mb-10 sm:mb-14 md:mb-16 font-normal leading-tight max-w-5xl mx-auto text-white/80">
+                <h2 data-ns-animate data-offset="80" data-duration="1.2" className="text-2xl md:text-5xl text-center mb-10 sm:mb-14 md:mb-16 font-normal leading-tight max-w-5xl mx-auto text-white/80">
                     ORCA AI unifies the entire software execution lifecycle into a single AI-native platform.
-                </p>
+                </h2>
 
                 {/* ---------- Tabs (SCROLL) ---------- */}
                 <div data-ns-animate data-delay="0.2" data-offset="40" className="flex justify-center mb-10 sm:mb-12">

@@ -5,6 +5,25 @@ import { Mail, MessagesSquare, Info, ChevronRight } from "lucide-react";
 import FooterLinks from "./FooterLinks";
 import FooterContact from "./FooterContact";
 
+const footerLinksData = [
+    [
+        { label: "Home", href: "/" },
+        { label: "Features", href: "/features" },
+        { label: "Contact Sales", href: "/contactsales" },
+        { label: "Services", href: "/services" },
+        { label: "Careers", href: "/careers" },
+    ],
+    [
+
+        { label: "Blog", href: "/resources/blog" },
+        { label: "Company", href: "/resources/company" },
+        { label: "Privacy", href: "/resources/privacy" },
+        { label: "Contact", href: "/resources/contact" },
+        { label: "Learning", href: "/learning" },
+
+    ]
+];
+
 const Footer: React.FC = () => {
     return (
         <footer className="bg-[#161616] text-white mx-6 sm:mx-10 md:mx-15 pt-16 sm:pt-20">
@@ -47,26 +66,18 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-16">
-                    <div data-ns-animate data-delay="0.25" data-offset="70" data-direction="up">
-                        <FooterLinks
-                            links={[
-                                { label: "Home", href: "/" },
-                                { label: "Features", href: "/features" },
-                                { label: "Contact Sales", href: "/contactsales" },
-                                { label: "Careers", href: "/careers" },
-                            ]}
-                        />
-                    </div>
-
-                    <div data-ns-animate data-delay="0.4" data-offset="70" data-direction="up">
-                        <FooterLinks
-                            links={[
-                                { label: "Pricing", href: "/pricing" },
-                                { label: "Coming soon", href: "#" },
-                            ]}
-                        />
-                    </div>
+                <div className="grid grid-cols-2 sm:gap-16 gap-5">
+                    {footerLinksData.map((links, index) => (
+                        <div
+                            key={index}
+                            data-ns-animate
+                            data-delay={index === 0 ? "0.25" : "0.4"}
+                            data-offset="70"
+                            data-direction="up"
+                        >
+                            <FooterLinks links={links} />
+                        </div>
+                    ))}
                 </div>
             </div>
 

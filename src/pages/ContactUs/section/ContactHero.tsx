@@ -7,9 +7,9 @@ const ContactHero = () => {
   return (
     <section className="text-white px-5 sm:px-8 md:px-12 lg:px-15 pt-32 sm:pt-36 lg:pt-40 pb-16 sm:pb-20">
       {/* TITLE */}
-      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-[65px] font-medium mb-12 sm:mb-16 lg:mb-20">
+      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-[65px] font-medium mb-12 sm:mb-16 lg:mb-20">
         Contact
-      </h2>
+      </h1>
 
       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 lg:gap-20">
@@ -24,9 +24,9 @@ const ContactHero = () => {
             <MessageCircle size={20} className="text-[#FF8800]" />
           </div>
 
-          <h3 className="text-2xl sm:text-3xl lg:text-[50px] font-medium mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-[50px] font-medium mb-3">
             Contact Sales
-          </h3>
+          </h2>
 
           <p className="text-white/70 text-[18px] max-w-md mb-6">
             Discuss your enterprise requirements, explore tailored pricing, or request a personalized demo of Coirei.
@@ -48,9 +48,9 @@ const ContactHero = () => {
             <Hand size={20} className="text-[#FF8800]" />
           </div>
 
-          <h3 className="text-2xl sm:text-3xl lg:text-[50px] font-medium mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-[50px] font-medium mb-6">
             Get in touch
-          </h3>
+          </h2>
 
           <div className="space-y-5 text-[18px]">
             <p className="text-white/70 max-w-md">

@@ -195,7 +195,7 @@ const RequestDemoForm: React.FC<RequestDemoFormProps> = ({ onBack }) => {
 
                 <button
                     onClick={handleSubmit}
-                    className="w-full h-12 bg-[#FC7C04] text-white rounded-lg text-lg font-medium transition-all duration-300 ease-out hover:brightness-95 hover:shadow-[0_0_0_3px_rgba(252,124,4,0.25)] active:scale-[0.98]"
+                    className="w-full h-12 bg-[#FC7C04] text-white rounded-lg text-lg font-medium transition-all duration-300 ease-out hover:brightness-95 hover:shadow-[0_0_0_3px_rgba(252,124,4,0.25)] active:scale-[0.98] cursor-pointer"
                 >
                     Get in touch
                 </button>

@@ -46,7 +46,7 @@ const FeaturesGlass = () => {
 
       {/* HEADER */}
       <div className="text-white text-center">
-        <span
+        <h2
           className="
             inline-flex items-center justify-center
             text-xl max-sm:text-base
@@ -60,9 +60,9 @@ const FeaturesGlass = () => {
           "
         >
           How it Works
-        </span>
+        </h2>
 
-        <h2
+        <p
           className="
             mx-auto leading-18 max-sm:leading-tight
             text-[#E3E3E0]
@@ -72,7 +72,7 @@ const FeaturesGlass = () => {
           "
         >
           Execute Smarter with an All-in-One Platform
-        </h2>
+        </p>
 
         <p className="text-white/50 font-light text-xl max-sm:text-base mb-5">
           Insight, action, and validation flow together without handoffs or tool hopping.

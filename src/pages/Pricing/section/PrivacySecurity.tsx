@@ -4,13 +4,13 @@ const PrivacySecurity = () => {
     return (
         <section className="max-w-7xl mx-auto mt-24 px-6">
             <div className="mb-17">
-                <h2 className="text-orange-500 text-6xl mb-2">
+                <p className="text-orange-500 text-6xl mb-2">
                     Your privacy and security
-                </h2>
-                <h3 className="text-6xl text-[#FFFFFF] mb-4">
+                </p>
+                <h2 className="text-6xl text-[#FFFFFF] mb-4">
                     {" "}
                     Transparency and control at every touchpoint.
-                </h3>
+                </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-10">

@@ -5,24 +5,24 @@ import BGRectangle from "../../../../assets/images/Resourses/bg-Rectangle.png";
 const BlogHero = () => {
   return (
     <section className="mt-50 mb-12.5 ">
-      <div className="main-container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 sm:px-10 md:px-15">
 
           {/* LEFT — TEXT */}
           <div>
-            <h2 className="text-4xl md:text-6xl font-medium text-[#E3E3E0] leading-17">
-              Agents 3.0: Four New Ways Warp’s Agent Helps You Go from Prompt to
-              Production
-            </h2>
+            <h1 className="text-4xl md:text-6xl font-medium text-[#E3E3E0] leading-tight">
+              Ideas for the AI builders.
+              From concept to production.
+            </h1>
           </div>
 
           {/* RIGHT — IMAGE + GLASS */}
-          <div className="relative h-105 md:h-130 rounded-2xl overflow-hidden">
+          <div className="relative h-105 md:h-130 rounded-2xl overflow-hidden hidden md:block">
             {/* Background Image */}
             <img
               src={BGRectangle}
               alt="Background"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover  "
             />
 
             {/* Dark overlay */}

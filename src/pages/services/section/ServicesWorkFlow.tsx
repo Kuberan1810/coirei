@@ -39,13 +39,13 @@ const ServicesWorkFlow = () => {
 
         {/* HEADER */}
         <div className="text-center mb-16 max-sm:mb-12">
-          <p className="inline-flex items-center justify-center text-xl max-sm:text-base text-white py-2.5 max-sm:py-2 px-10 max-sm:px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10 max-sm:mb-6">
+          <h2 className="inline-flex items-center justify-center text-xl max-sm:text-base text-white py-2.5 max-sm:py-2 px-10 max-sm:px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10 max-sm:mb-6">
             Our Work Process
-          </p>
-
-          <h2 className="text-[40px] max-sm:text-[28px] font-medium">
-            Our Proven <span className="text-orange-500">Work Process</span>
           </h2>
+
+          <p className="text-[40px] max-sm:text-[28px] font-medium">
+            Our Proven <span className="text-orange-500">Work Process</span>
+          </p>
         </div>
 
         {/* PROCESS STEPS */}

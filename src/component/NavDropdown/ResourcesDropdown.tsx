@@ -81,7 +81,7 @@ export default function ResourcesDropdown() {
             >
                 <ul className="py-3 relative z-10">
                     {[
-                        // { label: "Blog", to: "/resources/blog" },
+                        { label: "Blog", to: "/resources/blog" },
                         // { label: "Coirei University", to: "/resources/university" },
                         { label: "Company", to: "/resources/company" },
                         // { label: "Careers", to: "/resources/careers" },

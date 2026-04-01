@@ -2,8 +2,10 @@ import SEO from "../../../component/SEO";
 import Footer from "../../../component/Footer/Footer"
 import Navbar from "../../../component/Navbar"
 import PrivacySection from "./section/PrivacySection"
+import useScrollAnimations from "../../../hooks/useScrollAnimations";
 
 const Privacy = () => {
+    useScrollAnimations();
     return (
         <div className="overflow-hidden">
             <SEO 

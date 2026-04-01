@@ -6,8 +6,10 @@ import Topsection from "./section/Topsection";
 import Pricingsection from "./section/Pricingsection";
 import Modelsection from "./section/Modelsection";
 import PrivacySecurity from "./section/PrivacySecurity";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Pricing() {
+    useScrollAnimations();
     const [isAnnual, setIsAnnual] = useState(true);
 
     return (

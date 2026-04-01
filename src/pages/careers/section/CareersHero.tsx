@@ -10,13 +10,23 @@ const CareersHero = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-10 mb-10 sm:mb-14 lg:mb-16">
 
           {/* LEFT BIG TEXT */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-full lg:max-w-3xl">
+          <h1 
+            data-ns-animate 
+            data-direction="left" 
+            data-offset="80" 
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-full lg:max-w-3xl"
+          >
             Build the future of <br />
             agent-assisted software execution
           </h1>
 
           {/* RIGHT SMALL TEXT */}
-          <div className="max-w-full sm:max-w-md lg:max-w-sm">
+          <div 
+            data-ns-animate 
+            data-direction="right" 
+            data-offset="80" 
+            className="max-w-full sm:max-w-md lg:max-w-sm"
+          >
             <p className="text-white/70 mb-4 sm:mb-5 lg:mb-6 text-base sm:text-lg">
               At Coirei, we build systems that connect planning, code, pipelines, and AI into one execution fabric.
               Join us in shaping how teams build and ship software at scale.
@@ -39,7 +49,11 @@ const CareersHero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 
           {/* IMAGE 1 */}
-          <div className="overflow-hidden">
+          <div 
+            data-ns-animate 
+            data-offset="100" 
+            className="overflow-hidden"
+          >
             <img
               src={image1}
               className="rounded-xl w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[500px] object-cover grayscale"
@@ -47,7 +61,12 @@ const CareersHero = () => {
           </div>
 
           {/* IMAGE 2 */}
-          <div className="overflow-hidden">
+          <div 
+            data-ns-animate 
+            data-delay="0.2" 
+            data-offset="100" 
+            className="overflow-hidden"
+          >
             <img
               src={image2}
               alt="Team meeting"

@@ -1,9 +1,10 @@
-import image1 from "../../assets/images/services/service1.jpg";
-import image2 from "../../assets/images/Resourses/blog2.png";
-import image3 from "../../assets/images/Resourses/blog3.png";
-import image4 from "../../assets/images/Resourses/blog4.png";
-import image5 from "../../assets/images/Resourses/blog5.png";
-import image6 from "../../assets/images/Resourses/blog6.png";
+// import Chatbots from "../../assets/images/services/Chatbots.png";
+import AiChatbot from "../../assets/images/services/AiChatbot.png";
+import WebDevelop from "../../assets/images/services/WebDevelop.png";
+import CustomSoftware from "../../assets/images/services/CustomSoftware1.jpg";
+import Automation from "../../assets/images/services/automation1.webp";
+import Dashboard from "../../assets/images/services/dashboard.jpg";
+import UiUx from "../../assets/images/services/UiUx.png";
 // import image7 from "../../assets/images/Resourses/blog7.png";
 // import image8 from "../../assets/images/Resourses/blog8.png";
 // import image9 from "../../assets/images/Resourses/blog9.png";
@@ -31,7 +32,7 @@ export const servicesData: ServiceItem[] = [
         title: "Custom Web and Platform Development Services",
         metaTitle: "Custom Web and Platform Development Services | Full Stack & SaaS Development",
         metaDescription: "Get scalable custom web and platform development services for businesses. We build secure web applications, SaaS platforms, and enterprise solutions tailored to your needs.",
-        image: image1,
+        image: WebDevelop,
         author: "Hariharan",
         date: "February 10, 2026",
         sections: [
@@ -79,7 +80,7 @@ export const servicesData: ServiceItem[] = [
         title: "Custom Business Application Development Services",
         metaTitle: "Custom Business Application Development | CRM, ERP & Enterprise Software Solutions",
         metaDescription: "Custom Business Application Development services for CRM, ERP, and Web-Based Business Applications. Build scalable enterprise software solutions tailored to your business needs.",
-        image: image2,
+        image: CustomSoftware,
         author: "Hariharan",
         date: "March 06, 2026",
         sections: [
@@ -131,7 +132,7 @@ export const servicesData: ServiceItem[] = [
         title: "Expert AI Chatbot Development Services for Modern Businesses",
         metaTitle: "AI Chatbot Development Services | Custom AI Chatbots & Virtual Assistants for Business",
         metaDescription: "AI Chatbot Development Services for businesses. We build custom AI chatbots, virtual assistants, and AI automation solutions to improve customer support, engagement, and operational efficiency.",
-        image: image3,
+        image: AiChatbot,
         author: "Hariharan",
         date: "March 06, 2026",
         sections: [
@@ -159,7 +160,7 @@ export const servicesData: ServiceItem[] = [
         title: "Scalable Process Automation and System Integration Services",
         metaTitle: "Process Automation and System Integration Services | Scale Efficiently",
         metaDescription: "Drive efficiency with Process Automation and System Integration Services. From workflow automation solutions to enterprise system integration, we unify your IT ecosystem.",
-        image: image4,
+        image: Automation,
         author: "Hariharan",
         date: "March 06, 2026",
         sections: [
@@ -191,7 +192,7 @@ export const servicesData: ServiceItem[] = [
         title: "Transform Your Raw Data into Strategic Gold with Business Intelligence Services",
         metaTitle: "Business Intelligence Services & Custom Dashboard Development",
         metaDescription: "Unlock growth with expert Business Intelligence Services. We offer custom dashboard development and data reporting solutions to turn complex data into clear action.",
-        image: image5,
+        image: Dashboard,
         author: "Hariharan",
         date: "March 06, 2026",
         sections: [
@@ -227,7 +228,7 @@ export const servicesData: ServiceItem[] = [
         title: "Elevate Your Digital Presence with Strategic UI/UX, Branding & Product Design",
         metaTitle: "UI/UX Design Services, Branding & Strategic Product Design",
         metaDescription: "Transform your digital presence with expert UI/UX design services, cohesive brand identity, and user-centric product design strategy.",
-        image: image6,
+        image: UiUx,
         author: "Hariharan",
         date: "March 06, 2026",
         sections: [

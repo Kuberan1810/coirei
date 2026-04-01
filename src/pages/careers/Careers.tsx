@@ -5,9 +5,10 @@ import CareersFeature from "./section/CareersFeature";
 import CareersWorkFlow from "./section/CareersWorkFlow";
 import CareersRoles from "./section/CareersRoles";
 import Navbar from "../../component/Navbar";
-
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Careers() {
+    useScrollAnimations();
     return (
         <>
             <SEO 

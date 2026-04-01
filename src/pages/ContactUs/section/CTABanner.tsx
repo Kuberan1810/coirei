@@ -8,7 +8,12 @@ const CTABanner = () => {
         style={{ backgroundImage: `url(${Banner})` }}
       >
         <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-          <div className="max-w-5xl">
+          <div 
+            data-ns-animate 
+            data-offset="100" 
+            data-duration="1.2" 
+            className="max-w-5xl"
+          >
             <h2 className="text-xl sm:text-3xl lg:text-[48px] text-white/60 mb-3 sm:mb-4">
               Download Coirei
             </h2>

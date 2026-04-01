@@ -9,7 +9,11 @@ const BlogHero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 sm:px-10 md:px-15">
 
           {/* LEFT — TEXT */}
-          <div>
+          <div 
+            data-ns-animate 
+            data-direction="left" 
+            data-offset="80"
+          >
             <h1 className="text-4xl md:text-6xl font-medium text-[#E3E3E0] leading-tight">
               Ideas for the AI builders.
               From concept to production.
@@ -17,7 +21,12 @@ const BlogHero = () => {
           </div>
 
           {/* RIGHT — IMAGE + GLASS */}
-          <div className="relative h-105 md:h-130 rounded-2xl overflow-hidden hidden md:block">
+          <div 
+            data-ns-animate 
+            data-direction="right" 
+            data-offset="100" 
+            className="relative h-105 md:h-130 rounded-2xl overflow-hidden hidden md:block"
+          >
             {/* Background Image */}
             <img
               src={BGRectangle}

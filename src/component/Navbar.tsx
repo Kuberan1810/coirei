@@ -126,7 +126,7 @@ function Navbar() {
 
                                     <div className={`overflow-hidden transition-all duration-300 ${resourcesOpen ? "max-h-75 opacity-100" : "max-h-0 opacity-0"}`}>
                                         {[
-                                            // { label: "Blog", to: "/resources/blog" },
+                                            { label: "Blog", to: "/resources/blog" },
                                             { label: "Company", to: "/resources/company" },
                                             { label: "Contact", to: "/resources/contact" },
                                             { label: "Privacy", to: "/resources/privacy" },

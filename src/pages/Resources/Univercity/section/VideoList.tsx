@@ -37,6 +37,9 @@ const VideoList = () => {
         {accordionItems.map((item, index) => (
           <div
             key={index}
+            data-ns-animate
+            data-delay={0.1 * index}
+            data-offset="40"
             className="bg-[#1e1e1e] rounded-xl p-10 cursor-pointer hover:bg-[#262626]"
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
           >

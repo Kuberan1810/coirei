@@ -11,19 +11,33 @@ const CTASection = () => {
         <div className="relative z-10 p-8 md:p-14 lg:p-20">
           <div className="max-w-3xl">
             {/* TAG */}
-            <div className="inline-block mb-6">
+            <div 
+              data-ns-animate 
+              data-offset="40" 
+              className="inline-block mb-6"
+            >
               <div className="px-4 py-1 rounded-full bg-black/0 backdrop-blur-3xl border border-white/20 shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)]">
                 <span className="text-sm font-medium text-white">Try it now</span>
               </div>
             </div>
 
             {/* HEADING */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 leading-tight">
+            <h2 
+              data-ns-animate 
+              data-delay="0.2" 
+              data-offset="80" 
+              className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 leading-tight"
+            >
               Ready to Execute Smarter?
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="text-base md:text-lg text-[#d4d4d3] mb-8 leading-relaxed">
+            <p 
+              data-ns-animate 
+              data-delay="0.4" 
+              data-offset="60" 
+              className="text-base md:text-lg text-[#d4d4d3] mb-8 leading-relaxed"
+            >
               Start building and shipping software in a unified execution environment.
               Whether you’re a startup or an enterprise, ORCA keeps execution fast, visible, and controlled.
             </p>
@@ -49,7 +63,11 @@ const CTASection = () => {
         </div>
 
         {/* ILLUSTRATION */}
-        <div className="
+        <div 
+          data-ns-animate 
+          data-direction="right" 
+          data-offset="120" 
+          className="
           pointer-events-none absolute right-0 top-0 h-full
           
           /* 75–540 : NO OVERLAP */

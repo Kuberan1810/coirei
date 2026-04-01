@@ -4,7 +4,11 @@ const PrivacySection = () => {
   return (
     <section className="text-white mx-6 sm:mx-10 md:mx-15 pt-24 sm:pt-28 md:pt-32 pb-16">
       {/* Hero */}
-      <div className="w-full max-w-6xl mx-auto mb-12">
+      <div
+        data-ns-animate
+        data-offset="80"
+        className="w-full max-w-6xl mx-auto mb-12"
+      >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center md:text-left max-w-4xl mx-auto md:mx-0">
           Your privacy <br /> while using Coirei
         </h1>
@@ -52,7 +56,11 @@ const PrivacySection = () => {
       </div>
 
       {/* Philosophy */}
-      <div className="border-t border-b border-white/20">
+      <div
+        data-ns-animate
+        data-offset="100"
+        className="border-t border-b border-white/20"
+      >
         <div className="text-center max-w-4xl mx-auto py-12 px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium leading-8 pb-5 text-white">
             Our philosophy is built on transparency, minimal data collection,
@@ -70,7 +78,11 @@ const PrivacySection = () => {
       </div>
 
       {/* How Coirei Works */}
-      <div className="max-w-4xl mx-auto mt-12 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-offset="100"
+        className="max-w-4xl mx-auto mt-12 px-4 sm:px-0">
+
         <h3 className="text-2xl md:text-3xl font-regular mb-4">
           How Coirei Works
         </h3>
@@ -82,7 +94,10 @@ const PrivacySection = () => {
       </div>
 
       {/* Cloud-based Capabilities */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-offset="100"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
         <h3 className="text-2xl md:text-3xl font-regular mb-4">
           Cloud-based Capabilities
         </h3>
@@ -104,7 +119,12 @@ const PrivacySection = () => {
       </div>
 
       {/* Coirei AI */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-direction="up"
+        data-offset="60"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0"
+      >
         <h3 className="text-2xl md:text-3xl font-regular mb-4">Coirei AI</h3>
         <p className="text-base md:text-lg text-white leading-relaxed">
           Coirei AI provides execution-aware assistance across planning, code,
@@ -133,7 +153,12 @@ const PrivacySection = () => {
       </div>
 
       {/* Telemetry */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-direction="up"
+        data-offset="60"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0"
+      >
         <h3 className="text-2xl md:text-3xl font-regular mb-4">
           Telemetry (Opt-out)
         </h3>
@@ -146,7 +171,12 @@ const PrivacySection = () => {
       </div>
 
       {/* Login */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-direction="up"
+        data-offset="60"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0"
+      >
         <h3 className="text-2xl md:text-3xl font-regular mb-2.5">Login</h3>
         <p className="text-base md:text-lg text-white leading-relaxed">
           Coirei supports optional sign-in to provide a consistent and secure
@@ -163,7 +193,12 @@ const PrivacySection = () => {
       </div>
 
       {/* Business Model */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-direction="up"
+        data-offset="60"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0"
+      >
         <h3 className="text-2xl md:text-3xl font-regular mb-4">
           Coirei’s Business Model
         </h3>
@@ -175,7 +210,12 @@ const PrivacySection = () => {
       </div>
 
       {/* Open Practices */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-direction="up"
+        data-offset="60"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0"
+      >
         <h3 className="text-2xl md:text-3xl font-regular mb-2.5">
           Open & Verifiable Practices
         </h3>
@@ -191,7 +231,12 @@ const PrivacySection = () => {
       </div>
 
       {/* Contact */}
-      <div className="max-w-4xl mx-auto mt-16 px-4 sm:px-0">
+      <div
+        data-ns-animate
+        data-direction="up"
+        data-offset="60"
+        className="max-w-4xl mx-auto mt-16 px-4 sm:px-0"
+      >
         <h3 className="text-2xl md:text-3xl font-regular mb-2.5">
           Contact the Coirei Privacy Team
         </h3>

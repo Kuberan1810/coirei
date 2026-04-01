@@ -65,7 +65,11 @@ const LearningSection = () => {
 
       {/* ── Hero ── */}
       <div className="main-container">
-        <div className="max-w-3xl mx-auto text-center mb-20 px-4">
+        <div 
+          data-ns-animate 
+          data-offset="100" 
+          className="max-w-3xl mx-auto text-center mb-20 px-4"
+        >
           <span className="inline-block mb-5 text-xs font-semibold uppercase tracking-widest text-white/40 border border-white/10 px-4 py-1.5 rounded-full">
             Learning Hub
           </span>
@@ -78,21 +82,24 @@ const LearningSection = () => {
         </div>
 
         {/* ── Quote banner ── */}
-        <div className="border-t border-b border-white/10 py-12 mb-20 px-4">
+        <div 
+          data-ns-animate 
+          data-offset="60" 
+          className="border-t border-b border-white/10 py-12 mb-20 px-4"
+        >
           <p className="text-xl md:text-2xl font-medium text-[#E3E3E0] text-center max-w-4xl mx-auto leading-relaxed">
             "Our learning approach is built on{" "}
             <span className="text-white/50">clarity</span>,{" "}
             <span className="text-white/50">practice</span>, and{" "}
             <span className="text-white/50">real-world usage</span>."
           </p>
-
-          {/* <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-3xl mx-auto mt-6 text-center">
-            Coirei learning resources are designed to help you understand concepts through hands-on examples and guided explanations. Every topic focuses on how things work in practice, helping you build confidence as you learn. We believe effective learning should be transparent, structured, and directly applicable to real projects.
-          </p> */}
         </div>
 
         {/* ── Capabilities grid ── */}
-        <div className="mb-24 px-4">
+        <div
+          data-ns-animate
+          data-offset="100"
+          className="mb-24 px-4">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#E3E3E0] mb-2">
             Learning Capabilities
           </h2>
@@ -103,6 +110,9 @@ const LearningSection = () => {
             {capabilities.map((cap, i) => (
               <div
                 key={i}
+                data-ns-animate
+                data-delay={0.1 * i}
+                data-offset="40"
                 className="group rounded-2xl p-6 bg-white/4 border border-white/8 hover:bg-white/8 hover:border-white/15 transition-all duration-500"
               >
                 <div className="w-10 h-10 rounded-xl bg-white/8 border border-white/10 flex items-center justify-center text-white/70 mb-5 group-hover:text-white transition-colors duration-300">
@@ -118,7 +128,11 @@ const LearningSection = () => {
         </div>
 
         {/* ── Getting started highlight ── */}
-        <div className="mb-24 px-4">
+        <div 
+          data-ns-animate 
+          data-offset="80" 
+          className="mb-24 px-4"
+        >
           <div className="rounded-2xl border border-white/10 bg-white/4 p-8 md:py-15 flex flex-col md:flex-row md:items-center gap-8">
             <div className="flex-1">
               <h2 className="text-2xl md:text-3xl font-semibold text-[#E3E3E0] mb-3">
@@ -153,10 +167,15 @@ const LearningSection = () => {
         </div>
 
         {/* ── Editorial sections ── */}
-        <div className="max-w-3xl mx-auto px-4 pb-24">
+        <div className="max-w-7xl mx-auto px-4 pb-24">
           <div className="flex flex-col gap-14">
             {sections.map((sec, i) => (
-              <div key={i} className="border-t border-white/10 pt-10">
+              <div 
+                key={i} 
+                data-ns-animate 
+                data-offset="60" 
+                className="border-t border-white/10 pt-10"
+              >
                 <h2 className="text-xl md:text-2xl font-semibold text-[#E3E3E0] mb-4">
                   {sec.title}
                 </h2>
@@ -167,7 +186,11 @@ const LearningSection = () => {
             ))}
 
             {/* Contact entry */}
-            <div className="border-t border-white/10 pt-10">
+            <div 
+              data-ns-animate 
+              data-offset="60" 
+              className="border-t border-white/10 pt-10"
+            >
               <h2 className="text-xl md:text-2xl font-semibold text-[#E3E3E0] mb-4">
                 Contact the Coirei Team
               </h2>

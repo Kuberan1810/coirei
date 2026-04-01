@@ -11,14 +11,18 @@ const CareersRoles = () => {
       <div className="py-2">
 
         {/* HEADER */}
-        <h2 className="font-medium text-3xl sm:text-4xl md:text-5xl lg:text-[64px] mb-4">
+        <h2 
+          data-ns-animate 
+          data-offset="80" 
+          className="font-medium text-3xl sm:text-4xl md:text-5xl lg:text-[64px] mb-4"
+        >
           Open roles
         </h2>
 
         <p className="text-gray-200 text-lg lg:text-xl mb-1">
           If you’re passionate about helping developers get more done, we’d love to chat.
         </p>
-        <p className="text-gray-200 text-lg lg:text-xl mb-1 mb-8 sm:mb-10">
+        <p className="text-gray-200 text-lg lg:text-xl mb-8 sm:mb-10">
           We’re currently hiring for the following roles:
         </p>
 
@@ -29,6 +33,9 @@ const CareersRoles = () => {
 
               {/* ROLE ROW */}
               <div
+                data-ns-animate
+                data-delay={0.1 * index}
+                data-offset="20"
                 className="w-full px-4 sm:px-6 md:px-7.5 py-4 sm:py-5 text-left flex items-center justify-between hover:bg-white/5 transition"
               >
                 <div>

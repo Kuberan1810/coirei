@@ -4,8 +4,10 @@ import Navbar from "../../../component/Navbar";
 import CTABanner from "../../ContactUs/section/CTABanner";
 import ContentSection from "./section/ContentSection";
 import HeroSection from "./section/HeroSection";
+import useScrollAnimations from "../../../hooks/useScrollAnimations";
 
 const Company = () => {
+    useScrollAnimations();
     return (
         <div className="overflow-hidden">
             <SEO 
@@ -18,7 +20,7 @@ const Company = () => {
                     { name: "Company", url: "https://coirei.com/resources/company" }
                 ]}
             />
-            <div className="fixed w-full top-0 z-10">
+            <div className="fixed w-full top-0 z-50">
                 <Navbar />
             </div>
             <HeroSection />

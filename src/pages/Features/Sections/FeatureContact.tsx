@@ -14,7 +14,12 @@ const FeatureContact: React.FC = () => {
       <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
 
         {/* LEFT */}
-        <div className="max-w-xl">
+        <div 
+          data-ns-animate 
+          data-direction="left" 
+          data-offset="100" 
+          className="max-w-xl"
+        >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-2.5">
             Contact Us Now
           </h2>
@@ -27,6 +32,9 @@ const FeatureContact: React.FC = () => {
         {/* RIGHT */}
         <form
           onSubmit={handleSubmit}
+          data-ns-animate 
+          data-direction="right" 
+          data-offset="100" 
           className="flex flex-col gap-4 w-full sm:max-w-md md:w-120"
         >
           <input

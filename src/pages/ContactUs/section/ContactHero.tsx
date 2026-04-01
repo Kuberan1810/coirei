@@ -7,7 +7,11 @@ const ContactHero = () => {
   return (
     <section className="text-white px-5 sm:px-8 md:px-12 lg:px-15 pt-32 sm:pt-36 lg:pt-40 pb-16 sm:pb-20">
       {/* TITLE */}
-      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-[65px] font-medium mb-12 sm:mb-16 lg:mb-20">
+      <h1 
+        data-ns-animate 
+        data-offset="100" 
+        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-[65px] font-medium mb-12 sm:mb-16 lg:mb-20"
+      >
         Contact
       </h1>
 
@@ -15,7 +19,12 @@ const ContactHero = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 lg:gap-20">
         
         {/* LEFT CARD */}
-        <div className="relative pl-8 sm:pl-10 lg:pl-12">
+        <div 
+          data-ns-animate 
+          data-direction="left" 
+          data-offset="100" 
+          className="relative pl-8 sm:pl-10 lg:pl-12"
+        >
           <div className="absolute left-0 top-0 h-full w-px  bg-white/20" />
       
 
@@ -41,7 +50,13 @@ const ContactHero = () => {
         </div>
 
         {/* RIGHT CARD */}
-        <div className="relative pl-8 sm:pl-10 lg:pl-12">
+        <div 
+          data-ns-animate 
+          data-direction="right" 
+          data-offset="100" 
+          data-delay="0.2"
+          className="relative pl-8 sm:pl-10 lg:pl-12"
+        >
           <div className="absolute left-0 top-0 h-full w-px bg-white/20" />
 
           <div className="backdrop-blur-md border border-white/20 rounded-md p-3 sm:p-4 max-w-fit mb-2.5 bg-[#29292980]">

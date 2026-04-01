@@ -21,21 +21,40 @@ const IntegrationsSection: React.FC = () => {
 
             {/* TOP */}
             <div className="flex flex-col items-center justify-center mb-20 max-sm:mb-12">
-                <h2 className="inline-flex items-center justify-center text-xl max-sm:text-base text-white py-2.5 px-10 max-sm:px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 rounded-full shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] mb-10 max-sm:mb-6">
+                <h2 
+                    data-ns-animate
+                    data-offset="40"
+                    className="inline-flex items-center justify-center text-xl max-sm:text-base text-white py-2.5 px-10 max-sm:px-6 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 rounded-full shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] mb-10 max-sm:mb-6"
+                >
                     Seamless Integrations
                 </h2>
 
-                <p className="text-center text-[#E3E3E0] font-normal text-[32px] md:text-[60px] max-sm:text-[26px] max-w-220 mb-5 leading-tight">
+                <p 
+                    data-ns-animate
+                    data-delay="0.2"
+                    data-offset="80"
+                    className="text-center text-[#E3E3E0] font-normal text-[32px] md:text-[60px] max-sm:text-[26px] max-w-220 mb-5 leading-tight"
+                >
                     Native Integrations Across Your Execution Stack
                 </p>
 
-                <p className="text-center text-xl max-sm:text-base text-[#CECECE] max-w-3xl">
+                <p 
+                    data-ns-animate
+                    data-delay="0.4"
+                    data-offset="60"
+                    className="text-center text-xl max-sm:text-base text-[#CECECE] max-w-3xl"
+                >
                     Connect repositories, cloud providers, internal tools, and services into a single intelligent execution fabric.
                 </p>
             </div>
 
             {/* GRAPH */}
-            <div className="relative w-full flex justify-center items-center">
+            <div 
+                data-ns-animate
+                data-direction="up"
+                data-offset="100"
+                className="relative w-full flex justify-center items-center"
+            >
                
                     <IntegrationsMobile />
             

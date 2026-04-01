@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { ArrowLeft, ChevronDown, X } from "lucide-react";
+import useScrollAnimations from "../../../../hooks/useScrollAnimations";
 
 interface RequestDemoFormProps {
     onBack: () => void;
 }
 
 const RequestDemoForm: React.FC<RequestDemoFormProps> = ({ onBack }) => {
+    useScrollAnimations();
     const [engineerOpen, setEngineerOpen] = useState(false);
     const [helpOpen, setHelpOpen] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -119,7 +121,11 @@ const RequestDemoForm: React.FC<RequestDemoFormProps> = ({ onBack }) => {
 
     /* ---------------- FORM ---------------- */
     return (
-        <div className="w-full px-4">
+        <div
+            data-ns-animate
+            data-offset="60"
+            className="w-full px-4"
+        >
             <button
                 onClick={onBack}
                 className="flex items-center gap-2 text-lg text-white/80 hover:text-white transition mb-8 cursor-pointer"
@@ -134,8 +140,13 @@ const RequestDemoForm: React.FC<RequestDemoFormProps> = ({ onBack }) => {
                     { key: "email", label: "Email" },
                     { key: "company", label: "Company" },
                     { key: "jobTitle", label: "Job Title" }
-                ].map(({ key, label }) => (
-                    <div key={key}>
+                ].map(({ key, label }, index) => (
+                    <div
+                        key={key}
+                        data-ns-animate
+                        data-delay={0.05 * index}
+                        data-offset="20"
+                    >
                         <label className="block text-lg text-white/50 mb-2.5">
                             {label}
                         </label>
@@ -182,7 +193,11 @@ const RequestDemoForm: React.FC<RequestDemoFormProps> = ({ onBack }) => {
                     }}
                 />
 
-                <div>
+                <div
+                    data-ns-animate
+                    data-delay="0.3"
+                    data-offset="20"
+                >
                     <label className="block text-lg text-white/50 mb-2">Message</label>
                     <textarea
                         name="message"
@@ -206,7 +221,9 @@ const RequestDemoForm: React.FC<RequestDemoFormProps> = ({ onBack }) => {
 
 /* ---------------- DROPDOWN COMPONENT ---------------- */
 const Dropdown = ({ label, open, setOpen, value, error, options, onSelect }: any) => (
-    <div>
+    <div data-ns-animate
+        data-delay="0.3"
+        data-offset="20">
         <label className="block text-lg text-white/50 mb-3">{label}</label>
 
         <div className="relative">
@@ -234,8 +251,8 @@ const Dropdown = ({ label, open, setOpen, value, error, options, onSelect }: any
                                 setOpen(false);
                             }}
                             className={`px-4 py-3 text-sm cursor-pointer transition ${value === o
-                                    ? "bg-[#292929] text-white"
-                                    : "text-white/80 hover:bg-white/5"
+                                ? "bg-[#292929] text-white"
+                                : "text-white/80 hover:bg-white/5"
                                 }`}
                         >
                             {o}

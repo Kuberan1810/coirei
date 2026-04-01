@@ -9,8 +9,10 @@ import WorksFlow from "./Sections/WorksFlow";
 import FeatureContact from "./Sections/FeatureContact";
 import "./Features.css"
 import IntegrationSection from "./Sections/IntegrationSection";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Features() {
+    useScrollAnimations();
     return (
         <>
             <SEO 

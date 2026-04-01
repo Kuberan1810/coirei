@@ -9,10 +9,13 @@ const BlogList: React.FC = () => {
     <section className="md:py-20 py-0 ">
       <div className="mx-6 sm:mx-10 md:mx-15 py-16 sm:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-5">
-          {blogs.map((blog) => (
+          {blogs.map((blog, index) => (
             <article
               key={blog.id}
-              onClick={() => navigate(`/resources/blog/${blog.id}`)}
+              onClick={() => navigate(`/resources/blog/${blog.slug}`)}
+              data-ns-animate
+              data-delay={0.1 * index}
+              data-offset="40"
               className="group cursor-pointer rounded-2xl p-5 bg-transparent 
       hover:bg-[#29292950] active:bg-[#29292980]
       transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]

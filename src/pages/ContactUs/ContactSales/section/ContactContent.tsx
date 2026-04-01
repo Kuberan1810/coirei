@@ -4,7 +4,10 @@ const ContactContent = () => {
             <div>
 
                 {/* HEADING */}
-                <div>
+                <div 
+                  data-ns-animate 
+                  data-offset="80"
+                >
                     <h2 className="text-white lg:text-[64px] md:text-5xl text-[32px] leading-10 sm:leading-14  md:leading-tight mb-8 md:mb-6 max-sm:mb-5">
                         Why teams choose <br />
                         <span className="text-[#FC7C04]">Coirei</span>
@@ -13,7 +16,11 @@ const ContactContent = () => {
 
                 {/* CONTENT GRID */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 max-sm:gap-6">
-                    <div>
+                    <div 
+                      data-ns-animate 
+                      data-delay="0.1" 
+                      data-offset="40"
+                    >
                         <h4 className=" lg:text-3xl  sm:text-2xl text-xl text-white/80 mb-4 md:mb-3">
                             Execution at scale
                         </h4>
@@ -22,7 +29,11 @@ const ContactContent = () => {
                         </p>
                     </div>
 
-                    <div>
+                    <div 
+                      data-ns-animate 
+                      data-delay="0.2" 
+                      data-offset="40"
+                    >
                         <h4 className="lg:text-3xl  sm:text-2xl text-xl  text-white/80 mb-4 md:mb-3">
                             Built for real workflows
                         </h4>
@@ -31,7 +42,11 @@ const ContactContent = () => {
                         </p>
                     </div>
 
-                    <div>
+                    <div 
+                      data-ns-animate 
+                      data-delay="0.3" 
+                      data-offset="40"
+                    >
                         <h4 className=" lg:text-3xl  sm:text-2xl text-xl  text-white/80 mb-4 md:mb-3">
                             Enterprise-ready by design
                         </h4>

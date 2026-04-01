@@ -47,6 +47,8 @@ const FeaturesGlass = () => {
       {/* HEADER */}
       <div className="text-white text-center">
         <h2
+          data-ns-animate
+          data-offset="40"
           className="
             inline-flex items-center justify-center
             text-xl max-sm:text-base
@@ -63,6 +65,9 @@ const FeaturesGlass = () => {
         </h2>
 
         <p
+          data-ns-animate
+          data-delay="0.2"
+          data-offset="80"
           className="
             mx-auto leading-18 max-sm:leading-tight
             text-[#E3E3E0]
@@ -74,7 +79,12 @@ const FeaturesGlass = () => {
           Execute Smarter with an All-in-One Platform
         </p>
 
-        <p className="text-white/50 font-light text-xl max-sm:text-base mb-5">
+        <p 
+          data-ns-animate
+          data-delay="0.4"
+          data-offset="60"
+          className="text-white/50 font-light text-xl max-sm:text-base mb-5"
+        >
           Insight, action, and validation flow together without handoffs or tool hopping.
         </p>
       </div>
@@ -87,6 +97,9 @@ const FeaturesGlass = () => {
             return (
               <div
                 key={index}
+                data-ns-animate
+                data-delay={0.1 * index}
+                data-offset="40"
                 className="
                   relative rounded-2xl
                   p-6 max-sm:p-5

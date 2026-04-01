@@ -1,7 +1,9 @@
 import { useState } from "react";
 import RequestDemoForm from "./RequestDemoForm";
+import useScrollAnimations from "../../../../hooks/useScrollAnimations";
 
 const ContactList = () => {
+  useScrollAnimations();
   const [showRequestDemo, setShowRequestDemo] = useState(false);
 
   return (
@@ -9,8 +11,11 @@ const ContactList = () => {
       <div className="flex flex-col lg:flex-col justify-between gap-12 lg:gap-16">
 
         {/* LEFT CONTENT */}
-        <div className="w-full sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-2xl">
-
+        <div 
+          data-ns-animate 
+          data-offset="80" 
+          className="w-full sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-2xl"
+        >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl text-white/80 mb-4 font-medium">
             Contact Sales
           </h1>
@@ -34,7 +39,11 @@ const ContactList = () => {
 
           <div className="w-full">
             {!showRequestDemo ? (
-              <div className="flex flex-col gap-4 sm:gap-6 lg:grid lg:grid-cols-2">
+              <div 
+                data-ns-animate 
+                data-offset="100" 
+                className="flex flex-col gap-4 sm:gap-6 lg:grid lg:grid-cols-2"
+              >
                 <div
                   onClick={() => setShowRequestDemo(true)}
                   className="group bg-[#1e1e1e] px-6 sm:px-8 py-7 sm:py-10 rounded-lg space-y-3 hover:bg-[#29292950] cursor-pointer transition-all duration-300"

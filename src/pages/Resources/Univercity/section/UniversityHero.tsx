@@ -2,7 +2,11 @@ const UniversityHero = () => {
   return (
     <section className="pt-50 pb-15">
 
-      <div className="text-center mb-10">
+      <div 
+        data-ns-animate 
+        data-offset="100" 
+        className="text-center mb-10"
+      >
         <p className="text-[#CECBCB] text-[40px] font-light mb-2">
           Coirei UNIVERSITY
         </p>

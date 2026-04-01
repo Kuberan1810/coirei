@@ -1,6 +1,7 @@
 import SEO from "../../../component/SEO";
 import Footer from "../../../component/Footer/Footer";
 import Navbar from "../../../component/Navbar";
+import useScrollAnimations from "../../../hooks/useScrollAnimations";
 import CTABanner from "../section/CTABanner";
 import ContactContent from "./section/ContactContent";
 import ContactList from "./section/ContactList";
@@ -8,7 +9,7 @@ import ContactList from "./section/ContactList";
 
 
 function ContactSales() {
-
+  useScrollAnimations();
 
   return (
     <>

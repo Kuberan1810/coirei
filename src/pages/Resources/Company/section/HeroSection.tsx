@@ -6,11 +6,20 @@ const HeroSection = () => {
 
       <div className="relative z-10 px-6 sm:px-10 md:px-15">
         <div className="flex flex-col items-center lg:justify-center justify-center">
-          <p className="text-white/60 uppercase tracking-[0.2em] text-xs sm:text-sm mb-6 font-medium">
+          <p 
+            data-ns-animate 
+            data-offset="40" 
+            className="text-white/60 uppercase tracking-[0.2em] text-xs sm:text-sm mb-6 font-medium"
+          >
             Our Mission
           </p>
-          <h1 className="text-[#E3E3E0] text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] text-center max-w-[1000px] font-medium leading-[1.1] tracking-tight">
-            We’re building the platform for <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/90 to-white/50">agentic software execution</span>
+          <h1 
+            data-ns-animate 
+            data-delay="0.2" 
+            data-offset="80" 
+            className="text-[#E3E3E0] text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] text-center max-w-[1000px] font-medium leading-[1.1] tracking-tight"
+          >
+            We’re building the platform for <span className="text-transparent bg-clip-text bg-linear-to-r from-white via-white/90 to-white/50">agentic software execution</span>
           </h1>
         </div>
       </div>

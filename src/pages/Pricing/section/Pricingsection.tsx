@@ -20,7 +20,10 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
             <div className="relative mx-20 grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch ">
 
                 {/* STARTER */}
-                <div className="group relative rounded-3xl
+                <div 
+                    data-ns-animate 
+                    data-offset="80"
+                    className="group relative rounded-3xl
                     bg-white/10 backdrop-blur-3xl
                     border border-white/20
                     shadow-[0_30px_80px_rgba(0,0,0,0.1)]
@@ -29,7 +32,7 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
 
                     {/* liquid shine */}
                     <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100
-                        bg-gradient-to-br from-white/20 via-transparent to-transparent
+                        bg-linear-to-br from-white/20 via-transparent to-transparent
                         transition-all duration-500" />
 
                     <div className="relative p-10 flex flex-col h-full text-white">
@@ -66,7 +69,11 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
                 </div>
 
                 {/* PROFESSIONAL – LIQUID HERO */}
-                <div className="group relative rounded-3xl
+                <div 
+                    data-ns-animate 
+                    data-delay="0.2" 
+                    data-offset="80"
+                    className="group relative rounded-3xl
                     bg-white/10 backdrop-blur-3xl
                     border border-white/20
                     shadow-[0_30px_80px_rgba(0,0,0,0.6)]
@@ -117,7 +124,11 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
                 </div>
 
                 {/* ENTERPRISE */}
-                <div className="group relative rounded-3xl
+                <div 
+                    data-ns-animate 
+                    data-delay="0.4"
+                    data-offset="80" 
+                    className="group relative rounded-3xl
                     bg-white/10 backdrop-blur-3xl
                     border border-white/20
                     shadow-[0_30px_80px_rgba(0,0,0,0.6)]
@@ -125,7 +136,7 @@ const Pricingsection = ({ isAnnual }: PricingsectionProps) => {
                     hover:scale-[1.05] hover:border-white/40">
 
                     <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100
-                        bg-gradient-to-br from-white/20 via-transparent to-transparent
+                        bg-linear-to-br from-white/20 via-transparent to-transparent
                         transition-all duration-500" />
 
                     <div className="relative p-10 flex flex-col h-full text-white">

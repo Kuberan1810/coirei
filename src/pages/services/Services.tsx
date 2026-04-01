@@ -5,8 +5,10 @@ import OurServices from "./section/OurServices";
 import ServiceAbout from "./section/ServiceAbout";
 import ServicesHero from "./section/ServicesHero";
 import ServicesWorkFlow from "./section/ServicesWorkFlow";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Services() {
+    useScrollAnimations();
     return (
         <>
             <SEO 

@@ -9,17 +9,31 @@ const Topsection = ({ isAnnual, setIsAnnual }: TopsectionProps) => {
     return (
         <section className="pt-50  text-center  px-4">
             <div className="flex justify-center mb-10">
-                <p className="backdrop-blur-md border border-white/20 rounded-full py-3 px-10 text-white">
+                <p 
+                    data-ns-animate 
+                    data-offset="40" 
+                    className="backdrop-blur-md border border-white/20 rounded-full py-3 px-10 text-white"
+                >
                     Pricing
                 </p>
             </div>
 
-            <h1 className="text-7xl text-[#E3E3E0] font-medium mb-6">
+            <h1 
+                data-ns-animate 
+                data-delay="0.2" 
+                data-offset="80" 
+                className="text-7xl text-[#E3E3E0] font-medium mb-6"
+            >
                 Plans that scale with your usage
             </h1>
 
             {/* TOGGLE */}
-            <div className="flex items-center justify-center gap-4 text-gray-300 ">
+            <div 
+                data-ns-animate 
+                data-delay="0.4" 
+                data-offset="60" 
+                className="flex items-center justify-center gap-4 text-gray-300 "
+            >
 
                 <span className={`text-[28px] ${!isAnnual ? "text-white" : "opacity-50"}`}>
                     Monthly

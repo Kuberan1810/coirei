@@ -20,7 +20,10 @@ const CareersWorkFlow = () => {
 
 
         {/* LEFT COLUMN */}
-        <div>
+        <div 
+          data-ns-animate 
+          data-offset="80"
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-medium">
             How we work
           </h2>
@@ -41,7 +44,11 @@ const CareersWorkFlow = () => {
         </div>
 
         {/* TOP GRID */}
-        <div className="max-w-350 mx-auto  pb-36">
+        <div 
+          data-ns-animate 
+          data-offset="100" 
+          className="max-w-350 mx-auto  pb-36"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 lg:gap-y-24 gap-y-10 ">
 
             {/* LEFT COLUMN */}
@@ -131,8 +138,11 @@ const CareersWorkFlow = () => {
         </div>
 
         {/* IMAGES – 2x2 FROM MOBILE, OLD LG POSITION SAFE */}
-        <div className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_2fr] gap-6 sm:gap-8 h-auto lg:h-[630px]">
-
+        <div 
+          data-ns-animate 
+          data-offset="100" 
+          className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_2fr] gap-6 sm:gap-8 h-auto lg:h-[630px]"
+        >
           {/* IMAGE 1 */}
           <img
             src={workflow_img}
@@ -141,22 +151,27 @@ const CareersWorkFlow = () => {
 
           {/* IMAGE 2 */}
           <img
+            data-ns-animate
+            data-delay="0.2"
             src={Workflow_img_2}
             className="self-end rounded-xl object-cover w-full grayscale mt-0 mb:mb-35 h-auto lg:h-[200px]"
           />
 
           {/* IMAGE 3 */}
           <img
+            data-ns-animate
+            data-delay="0.3"
             src={workflow_img_3}
             className="rounded-xl object-cover w-full grayscale mt-0 md:mt-30 h-auto lg:h-[200px]"
           />
 
           {/* IMAGE 4 */}
           <img
+            data-ns-animate
+            data-delay="0.4"
             src={workflow_img_4}
             className="self-end rounded-xl object-cover w-full grayscale h-auto lg:h-[387px]"
           />
-
         </div>
 
 

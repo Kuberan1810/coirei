@@ -60,10 +60,13 @@ const VideoSection = () => {
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto pb-4 [&::-webkit-scrollbar]:hidden"
           >
-            {allVideoImages.map((item) => (
+            {allVideoImages.map((item, index) => (
               <div
                 key={item.id}
                 onClick={() => setActiveVideo(item.youtubeId)}
+                data-ns-animate
+                data-delay={0.1 * index}
+                data-offset="40"
                 className="min-w-[450px] h-60 bg-black rounded-xl overflow-hidden relative cursor-pointer"
               >
                 <img
@@ -95,10 +98,13 @@ const VideoSection = () => {
 
         {showAllVideos && (
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {allVideoImages.map((item) => (
+            {allVideoImages.map((item, index) => (
               <div
                 key={item.id}
                 onClick={() => setActiveVideo(item.youtubeId)}
+                data-ns-animate
+                data-delay={0.1 * index}
+                data-offset="40"
                 className="h-[300px] bg-black rounded-xl overflow-hidden relative cursor-pointer"
               >
                 <img

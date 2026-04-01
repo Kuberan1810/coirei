@@ -2,8 +2,11 @@ import SEO from "../../component/SEO";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/Navbar";
 import LearningSection from "./section/LearningSection";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 const Learning = () => {
+    useScrollAnimations();
+
   return (
     <div className="overflow-hidden">
       <SEO 

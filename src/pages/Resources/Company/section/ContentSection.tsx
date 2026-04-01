@@ -18,7 +18,12 @@ const ContentSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
 
         {/* Sticky Title Column */}
-        <div className="w-full lg:w-1/3 lg:sticky lg:top-32">
+        <div 
+          data-ns-animate 
+          data-direction="left" 
+          data-offset="80" 
+          className="w-full lg:w-1/3 lg:sticky lg:top-32"
+        >
           <div className="flex flex-col mb-8 lg:mb-0">
             <span className="w-12 h-1 bg-white mb-6" />
             <h2 className="text-[#E3E3E0] text-4xl lg:text-5xl font-medium tracking-tight mb-4">
@@ -35,6 +40,9 @@ const ContentSection = () => {
           {ethosParagraphs.map((text, index) => (
             <div
               key={index}
+              data-ns-animate
+              data-delay={0.1 * index}
+              data-offset="40"
               className="group relative pl-6 sm:pl-8 border-l border-white/10 hover:border-white/50 transition-colors duration-500"
             >
               {/* Subtle hover dot indicator */}
@@ -50,7 +58,11 @@ const ContentSection = () => {
       </div>
 
       {/* ── Join Us Banner ── */}
-      <div className="py-10 border-t border-b border-white/10 mt-10">
+      <div 
+        data-ns-animate 
+        data-offset="100" 
+        className="py-10 border-t border-b border-white/10 mt-10"
+      >
         <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-6 py-8 max-w-6xl mx-auto px-6 sm:px-0">
           <div className="w-full lg:w-1/2 mt-2">
             <h2 className="text-2xl md:text-4xl text-white/80 font-normal mb-4">

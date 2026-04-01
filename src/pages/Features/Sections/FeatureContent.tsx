@@ -4,6 +4,9 @@ const WorksFlow: React.FC = () => {
   return (
     <section className="py-16 sm:py-20 mx-6 sm:mx-10 md:mx-15 flex items-center justify-center">
       <div
+        data-ns-animate
+        data-offset="100"
+        data-duration="1.2"
         className="relative group px-6 sm:px-10 md:px-14 py-10 sm:py-14 md:py-16
                    max-w-full md:max-w-350
                    text-white/90

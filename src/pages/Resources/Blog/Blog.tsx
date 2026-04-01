@@ -4,8 +4,10 @@ import Footer from "../../../component/Footer/Footer";
 import BlogHero from "./Section/BlogHero";
 import BlogList from "./Section/BlogList";
 // import BlogCTA from "./Section/BlogCTA";
+import useScrollAnimations from "../../../hooks/useScrollAnimations";
 
 function Blog() {
+    useScrollAnimations();
     return (
         <>
             <SEO 

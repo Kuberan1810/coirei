@@ -3,11 +3,10 @@ import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer/Footer";
 import ContactHero from "./section/ContactHero";
 import CTABanner from "./section/CTABanner";
-
-
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 function Contact() {
-
+    useScrollAnimations();
     return (
         <>
             <SEO 

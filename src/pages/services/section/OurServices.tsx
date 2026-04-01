@@ -57,16 +57,24 @@ const OurServices = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>
 
-            <h2 className="text-[16px] sm:text-lg md:text-xl lg:text-2xl  text-white  inline-flex items-center justify-center
-           py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10">Our Services</h2>
+            <h2 
+              data-ns-animate 
+              data-offset="40" 
+              className="text-[16px] sm:text-lg md:text-xl lg:text-2xl  text-white  inline-flex items-center justify-center py-2.5 px-10 bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20 w-fit shadow-[inset_1px_2px_4px_rgba(255,255,255,0.10)] rounded-full mb-10"
+            >
+              Our Services
+            </h2>
 
-            <p className="text-[40px] md:text-4xl max-sm:text-[28px] font-medium leading-tight mb-0">
+            <p 
+              data-ns-animate 
+              data-delay="0.2" 
+              data-offset="80" 
+              className="text-[40px] md:text-4xl max-sm:text-[28px] font-medium leading-tight mb-0"
+            >
               Services We Provide to{" "}
               <span className="block text-orange-500">Elevate Your Business</span>
             </p>
           </div>
-
-
         </div>
 
         {/* SERVICE CARDS */}
@@ -77,6 +85,9 @@ const OurServices = () => {
               <div
                 key={index}
                 onClick={() => navigate(`/services/${service.slug}`)}
+                data-ns-animate
+                data-delay={0.1 * index}
+                data-offset="40"
                 className="
                   rounded-2xl p-6
                   bg-white/5 backdrop-blur-xl

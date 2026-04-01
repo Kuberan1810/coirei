@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import ParticleBackground from "./component/ParticleBackground";
+import { OrgSchema } from "./component/StructuredData";
 
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Contact from "./pages/ContactUs/Contact";
 
 // Resources pages
-// import Blog from "./pages/Resources/Blog/Blog";
-// import BlogDetails from "./pages/Resources/Blog/BlogDetails";
+import Blog from "./pages/Resources/Blog/Blog";
+import BlogDetails from "./pages/Resources/Blog/BlogDetails";
 // import Docs from "./pages/Resources/Docs";
 // import University from "./pages/Resources/Univercity/University";
 // import Changelog from "./pages/Resources/Changelog";
@@ -28,6 +29,8 @@ import Learning from "./pages/Learning/Learning";
 function App() {
   return (
     <>
+      {/* Global Organization + WebSite JSON-LD schema */}
+      <OrgSchema />
       {/* Global white particle background — visible across all pages */}
       <ParticleBackground />
 
@@ -42,8 +45,8 @@ function App() {
         <Route path="/services/:slug" element={<ServiceDetails />} />
         <Route path="/learning" element={<Learning />} />
         {/* RESOURCES (NO parent page) */}
-        {/* <Route path="/resources/blog" element={<Blog />} /> */}
-        {/* <Route path="/resources/blog/:id" element={<BlogDetails />} /> */}
+        <Route path="/resources/blog" element={<Blog />} />
+        <Route path="/resources/blog/:slug" element={<BlogDetails />} />
         <Route path="/resources/company" element={<Company />} />
         {/* <Route path="/resources/university" element={<University />} /> */}
         <Route path="/contactsales" element={<ContactSales />} />

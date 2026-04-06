@@ -35,7 +35,7 @@ const tabContentVariants: Variants = {
         y: 0,
         filter: "blur(0px)",
         transition: {
-            duration: 0.4,
+            duration: 0.75,
             ease: "easeOut"
         }
     },
@@ -44,7 +44,7 @@ const tabContentVariants: Variants = {
         y: -20,
         filter: "blur(10px)",
         transition: {
-            duration: 0.25,
+            duration: 0.5,
             ease: "easeIn"
         }
     }
@@ -120,7 +120,7 @@ export default function FeaturesSection(): JSX.Element {
                                     className={`relative z-10 flex items-center justify-center gap-1 px-5 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-xl md:rounded-full text-sm sm:text-base transition-colors cursor-pointer ${activeTab === tab.id ? "text-white" : "text-white/70 hover:text-white"}`}
                                 >
                                     {activeTab === tab.id && (
-                                        <motion.span layoutId="activeTab" className="absolute inset-0 rounded-xl md:rounded-full backdrop-blur-3xl shadow-[inset_-1px_1px_2px_#ffffff20]" transition={{ type: "spring", stiffness: 500, damping: 35 }} />
+                                        <motion.span layoutId="activeTab" className="absolute inset-0 rounded-xl md:rounded-full backdrop-blur-3xl shadow-[inset_-1px_1px_2px_#ffffff20]" transition={{ type: "spring", stiffness: 150, damping: 30 }} />
                                     )}
                                     <CardSim size={16} className="relative z-10 shrink-0" />
                                     <span className="relative z-10">{tab.label}</span>
@@ -157,7 +157,7 @@ export default function FeaturesSection(): JSX.Element {
                                 </div>
                             </div>
 
-                            {/* RIGHT (TEXT) */}
+                            {/* RIGHT ]*/}
                             <div data-ns-animate data-delay="0.5" data-offset="80" className="space-y-4">
                                 <span className="inline-block px-3 py-1.5 bg-[#FFF7A5] text-black rounded-full text-xs sm:text-sm font-medium tracking-wide uppercase">
                                     {activeContent.badge}
@@ -170,7 +170,7 @@ export default function FeaturesSection(): JSX.Element {
                                 {Array.isArray(activeContent.description) ? (
                                     <ul className="space-y-2 text-white/80 text-sm sm:text-base">
                                         {activeContent.description.map((point, index) => (
-                                            <motion.li key={index} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 + index * 0.1 }}>
+                                            <motion.li key={index} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 + index * 0.15, duration: 0.5 }}>
                                                 • {point}
                                             </motion.li>
                                         ))}

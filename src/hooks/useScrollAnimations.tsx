@@ -14,7 +14,7 @@ const useScrollAnimations = (): void => {
             elements.forEach((el) => {
                 /* ---------- READ DATA ATTRIBUTES ---------- */
                 const delay = parseFloat(el.dataset.delay ?? "0");
-                const duration = parseFloat(el.dataset.duration ?? "0.8");
+                const duration = parseFloat(el.dataset.duration ?? "1.4");
                 const offset = parseFloat(el.dataset.offset ?? "60");
                 const direction = (el.dataset.direction ?? "up") as Direction;
                 const rotate = parseFloat(el.dataset.rotate ?? "0");

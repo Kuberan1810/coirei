@@ -18,7 +18,7 @@ const mobileMenuVariants: Variants = {
         y: 0,              // ⬇️ correct position
         filter: "blur(0px)",
         transition: {
-            duration: 0.35,
+            duration: 0.6,
             ease: "easeOut"
         }
     },
@@ -27,7 +27,7 @@ const mobileMenuVariants: Variants = {
         y: -20,            // ⬆️ back to top while closing
         filter: "blur(8px)",
         transition: {
-            duration: 0.25,
+            duration: 0.45,
             ease: "easeIn"
         }
     }

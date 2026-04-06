@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import ParticleBackground from "./component/ParticleBackground";
 import { OrgSchema } from "./component/StructuredData";
+import Lms from "./pages/products/Lms/Lms";
 
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
@@ -53,6 +54,7 @@ function App() {
         <Route path="/resources/privacy" element={<Privacy />} />
         <Route path="/resources/contact" element={<Contact />} />
         <Route path="/resources/careers" element={<Careers />} />
+        <Route path="/products/coireilms" element={<Lms />} />
 
         {/* FEATURES (NO parent page) */}
         <Route path="/features" element={<Features />} />

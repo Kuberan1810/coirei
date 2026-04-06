@@ -57,6 +57,12 @@ function Navbar() {
                             </Link>
                         </li>
 
+                        <li>
+                            <Link to="/products/coireilms" className="p-2.5 rounded hover:bg-[#7B7B7B20] transition-colors">
+                                Products
+                            </Link>
+                        </li>
+
                         <ResourcesDropdown />
 
                         <li>

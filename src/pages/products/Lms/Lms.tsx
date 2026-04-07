@@ -1,7 +1,7 @@
 import Navbar from "../../../component/Navbar";
 import Footer from "../../../component/Footer/Footer";
 import LmsHero from "./section/LmsHero";
-import WhyLms from "./section/Whylms";
+// import WhyLms from "./section/Whylms";
 import Progresstrack from "./section/Progresstrack"
 import Timeline from "./section/Timeline"
 import Lmsroadmap from './section/Lmsroadmap'
@@ -22,7 +22,7 @@ function Lms() {
 
 
            <LmsHero/>
-            <WhyLms/>
+            {/* <WhyLms/> */}
             <Progresstrack/>
             <Timeline/>
             <Lmsroadmap/>

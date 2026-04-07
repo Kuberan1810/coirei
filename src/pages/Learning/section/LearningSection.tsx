@@ -273,7 +273,7 @@ const LearningSection = () => {
   const timelineRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: timelineRef,
-    offset: ["start 25%", "end 70%"],
+    offset: ["start 30%", "end end"],
   });
 
   const smoothProgress = useSpring(scrollYProgress, {
@@ -360,7 +360,7 @@ const LearningSection = () => {
       </div>
 
       <div ref={timelineRef} className="mt-4">
-        <div className="sticky top-24 md:top-32">
+        <div>
           <div className="p-4 sm:p-8 md:p-14">
             <h3
               data-ns-animate
@@ -435,134 +435,140 @@ const LearningSection = () => {
         </div>
       </div>
 
-      <div className="px-6 md:px-10 lg:px-15 mb-24 text-center">
-        <h3
-          data-ns-animate
-          data-direction="up"
-          data-offset="80"
-          data-duration="3"
-          className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4"
-        >
-          {existingPartners.title}
-        </h3>
-        <p
-          data-ns-animate
-          data-delay="0.15"
-          data-offset="60"
-          data-duration="3"
-          className="text-[#B5B4B2] text-base sm:text-[20px] md:text-[25px] mx-auto mb-12"
-        >
-          {existingPartners.desc}
-        </p>
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
-          {existingPartners.logos.map((logo, i) => (
-            <img
-              key={i}
-              src={logo}
-              alt="Partner logo"
-              className="h-[35px] sm:h-[45px] md:h-[50px] w-[200px] sm:w-[250px] md:w-[300px] object-contain"
-              data-ns-animate
-              data-delay={0.2 * i}
-              data-offset="40"
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* ── Partner With Us ── */}
-      <div className="px-6 md:px-10 lg:px-15 mb-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div
-            className="rounded-2xl overflow-hidden"
+      <motion.div
+        animate={{
+          opacity: activeIndex === 3 ? 1 : 0,
+          pointerEvents: activeIndex === 3 ? "auto" : "none"
+        }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <div className="px-6 md:px-10 lg:px-15 mb-24 text-center">
+          <h3
             data-ns-animate
-            data-direction="left"
-            data-offset="100"
-            data-duration="3.5"
-          >
-            <img
-              src={Img4}
-              alt="Partner with us"
-              className="w-full h-[300px] sm:h-[450px] md:h-[550px] lg:h-[660px] object-cover rounded-[15px]"
-            />
-          </div>
-
-          <div
-            data-ns-animate
-            data-direction="right"
-            data-offset="100"
+            data-direction="up"
+            data-offset="80"
             data-duration="3"
+            className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4"
           >
-            <h4 className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4">
-              {partnerWithUs.title}
-            </h4>
-            <p className="text-[#B5B4B2] text-base sm:text-[20px] md:text-[25px] mb-8 max-w-md">
-              {partnerWithUs.desc}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {partnerWithUs.cards.map((card, i) => (
-                <div
-                  key={i}
-                  className="group w-full h-auto min-h-[140px] md:min-h-[210px]
+            {existingPartners.title}
+          </h3>
+          <p
+            data-ns-animate
+            data-delay="0.15"
+            data-offset="60"
+            data-duration="3"
+            className="text-[#B5B4B2] text-base sm:text-[20px] md:text-[25px] mx-auto mb-12"
+          >
+            {existingPartners.desc}
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+            {existingPartners.logos.map((logo, i) => (
+              <img
+                key={i}
+                src={logo}
+                alt="Partner logo"
+                className="h-[35px] sm:h-[45px] md:h-[50px] w-[200px] sm:w-[250px] md:w-[300px] object-contain"
+                data-ns-animate
+                data-delay={0.2 * i}
+                data-offset="40"
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="px-6 md:px-10 lg:px-15 mb-28">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div
+              className="rounded-2xl overflow-hidden"
+              data-ns-animate
+              data-direction="left"
+              data-offset="100"
+              data-duration="3.5"
+            >
+              <img
+                src={Img4}
+                alt="Partner with us"
+                className="w-full h-[300px] sm:h-[450px] md:h-[550px] lg:h-[660px] object-cover rounded-[15px]"
+              />
+            </div>
+
+            <div
+              data-ns-animate
+              data-direction="right"
+              data-offset="100"
+              data-duration="3"
+            >
+              <h4 className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4">
+                {partnerWithUs.title}
+              </h4>
+              <p className="text-[#B5B4B2] text-base sm:text-[20px] md:text-[25px] mb-8 max-w-md">
+                {partnerWithUs.desc}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {partnerWithUs.cards.map((card, i) => (
+                  <div
+                    key={i}
+                    className="group w-full h-auto min-h-[140px] md:min-h-[210px]
                             rounded-[10px] p-[15px] bg-white/4 border border-white/8 
                             transition-all duration-500 ease-out cursor-default hover:-translate-y-2"
-                  data-ns-animate
-                  data-delay={0.2 * i}
-                  data-offset="40"
-                  data-duration="2"
-                >
-                  <p className="text-white text-base md:text-[20px] font-medium mb-3 md:mb-[60px] transition-colors duration-500 ">{card.num}</p>
-                  <h5 className="text-[#E3E3E0] text-base md:text-[20px] font-semibold mb-2 transition-colors duration-500">
-                    {card.title}
-                  </h5>
-                  <p className="text-white/50 text-sm md:text-[16px] font-medium leading-relaxed transition-colors duration-500">{card.desc}</p>
-                </div>
-              ))}
+                    data-ns-animate
+                    data-delay={0.2 * i}
+                    data-offset="40"
+                    data-duration="2"
+                  >
+                    <p className="text-white text-base md:text-[20px] font-medium mb-3 md:mb-[60px] transition-colors duration-500 ">{card.num}</p>
+                    <h5 className="text-[#E3E3E0] text-base md:text-[20px] font-semibold mb-2 transition-colors duration-500">
+                      {card.title}
+                    </h5>
+                    <p className="text-white/50 text-sm md:text-[16px] font-medium leading-relaxed transition-colors duration-500">{card.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* ── Apply for Collaboration ── */}
-      <div className="px-6 md:px-10 lg:px-15 mb-4">
-        <div className="rounded-2xl border border-[#444444] bg-[#2A2A2A] px-5 sm:pl-8 md:pl-[87px] sm:pr-5 py-5 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-10">
-          <div
-            data-ns-animate
-            data-direction="left"
-            data-offset="80"
-            data-duration="2.5"
-            className="w-full md:w-1/2 py-8 md:py-0"
-          >
-            <h3 className="text-[28px] sm:text-[38px] md:text-[50px] font-normal text-[#E3E3E0] mb-4 sm:mb-6 md:mb-8">
-              Apply for Collaboration
-            </h3>
-            <p className="text-xl sm:text-[24px] md:text-[30px] font-medium text-white mb-2">
-              Interested in partnering with <span className="text-[#F18D37]">Coirei?</span>
-            </p>
-            <p className="text-[#B5B4B2] text-sm sm:text-base md:text-[20px] leading-relaxed mb-6 sm:mb-8 max-w-[340px]">
-              Share your details and proposal to explore collaboration opportunities.
-            </p>
+        <div className="px-6 md:px-10 lg:px-15 mb-4">
+          <div className="rounded-2xl border border-[#444444] bg-[#2A2A2A] px-5 sm:pl-8 md:pl-[87px] sm:pr-5 py-5 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-10">
+            <div
+              data-ns-animate
+              data-direction="left"
+              data-offset="80"
+              data-duration="2.5"
+              className="w-full md:w-1/2 py-8 md:py-0"
+            >
+              <h3 className="text-[28px] sm:text-[38px] md:text-[50px] font-normal text-[#E3E3E0] mb-4 sm:mb-6 md:mb-8">
+                Apply for Collaboration
+              </h3>
+              <p className="text-xl sm:text-[24px] md:text-[30px] font-medium text-white mb-2">
+                Interested in partnering with <span className="text-[#F18D37]">Coirei?</span>
+              </p>
+              <p className="text-[#B5B4B2] text-sm sm:text-base md:text-[20px] leading-relaxed mb-6 sm:mb-8 max-w-[340px]">
+                Share your details and proposal to explore collaboration opportunities.
+              </p>
 
-            <button className="bg-white text-[#111111] font-semibold text-sm sm:text-[16px] py-2.5 sm:py-3 px-4 sm:px-5 rounded-md hover:bg-gray-200 transition-colors">
-              contact our team to get started
-            </button>
-          </div>
+              <button className="bg-white text-[#111111] font-semibold text-sm sm:text-[16px] py-2.5 sm:py-3 px-4 sm:px-5 rounded-md hover:bg-gray-200 transition-colors">
+                contact our team to get started
+              </button>
+            </div>
 
-          <div
-            data-ns-animate
-            data-direction="right"
-            data-offset="100"
-            data-duration="2.5"
-            className="w-full md:w-1/2 flex justify-end h-full p-4"
-          >
-            <img
-              src={Img5}
-              alt="Contract signing handshake"
-              className="w-full h-[200px] sm:h-[250px] md:h-[450px] object-cover rounded-[10px]"
-            />
+            <div
+              data-ns-animate
+              data-direction="right"
+              data-offset="100"
+              data-duration="2.5"
+              className="w-full md:w-1/2 flex justify-end h-full p-4"
+            >
+              <img
+                src={Img5}
+                alt="Contract signing handshake"
+                className="w-full h-[200px] sm:h-[250px] md:h-[450px] object-cover rounded-[10px]"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
+      </motion.div>
     </section >
   );
 };

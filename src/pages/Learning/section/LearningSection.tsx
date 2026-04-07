@@ -273,15 +273,20 @@ const LearningSection = () => {
   const timelineRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: timelineRef,
-    offset: ["start 30%", "end end"],
+    offset: ["start 10%", "end end"],
   });
 
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 12,
-    damping: 25,
+    stiffness: 10,
+    damping: 35,
+    restDelta: 0.001
   });
 
-  const lineWidth = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
+  // Map progress to discrete jumps: [0-25% -> step 0, 25-50% -> step 1, etc.]
+  const lineWidth = useTransform(smoothProgress,
+    [0, 0.25, 0.26, 0.5, 0.51, 0.75, 0.76, 1],
+    ["0%", "0%", "33.3%", "33.3%", "66.6%", "66.6%", "100%", "100%"]
+  );
   const [activeIndex, setActiveIndex] = useState(0);
 
   useMotionValueEvent(smoothProgress, "change", (latest) => {
@@ -359,88 +364,85 @@ const LearningSection = () => {
         </div>
       </div>
 
-      <div ref={timelineRef} className="mt-4">
-        <div>
-          <div className="p-4 sm:p-8 md:p-14">
-            <h3
-              data-ns-animate
-              data-direction="up"
-              data-offset="80"
-              data-duration="2.5"
-              className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-2"
-            >
-              Our Collaboration Network
-            </h3>
-            <p
-              data-ns-animate
-              data-delay="0.15"
-              data-offset="60"
-              data-duration="2.5"
-              className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-12 sm:mb-16 md:mb-24"
-            >
-              We actively partner with a diverse ecosystem to bridge the gap between academic learning and industry requirements.
-            </p>
+      <div ref={timelineRef} className="relative mt-8">
+        <div className="sticky top-[100px] p-4 sm:p-8 md:p-14">
+          <h3
+            data-ns-animate
+            data-direction="up"
+            data-offset="80"
+            data-duration="2.5"
+            className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-2"
+          >
+            Our Collaboration Network
+          </h3>
+          <p
+            data-ns-animate
+            data-delay="0.15"
+            data-offset="60"
+            data-duration="2.5"
+            className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-12 sm:mb-16 md:mb-24"
+          >
+            We actively partner with a diverse ecosystem to bridge the gap between academic learning and industry requirements.
+          </p>
 
-            <div className="relative">
-              <div className="absolute top-[30px] sm:top-[40px] md:top-[50px] left-[30px] sm:left-[38px] md:left-[64px] right-[30px] sm:right-[38px] md:right-[64px] h-[2px] bg-white/20 -translate-y-1/2 z-0">
-                <motion.div
-                  className="h-full bg-[#F18D37] origin-left"
-                  style={{ width: lineWidth }}
-                />
-              </div>
-
-              {/* Steps */}
-              <div className="relative flex flex-row justify-between gap-1 sm:gap-0">
-                {Steps.map((step, idx) => {
-                  const isActive = activeIndex >= idx;
-                  return (
-                    <div key={idx} className="flex flex-col items-center relative z-10 w-[60px] sm:w-[76px] md:w-32">
-
-                      <div className="relative mb-3 sm:mb-4">
-                        <div className={`absolute -top-1 sm:-top-3 -right-2 sm:-right-3 w-[28px] h-[28px] sm:w-[34px] sm:h-[34px] md:w-[40px] md:h-[40px] rounded-full flex items-center justify-center text-[8px] sm:text-[9px] md:text-[11px] font-bold border-2 transition-all duration-100 z-20
-                           ${isActive
-                            ? "bg-[#F18D37] text-black border-white"
-                            : "bg-[#E3E3E0] text-black border-black"
-                          }`}>
-                          {step.num}
-                        </div>
-
-                        <div className={`w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] rounded-full flex items-center justify-center shadow-lg transition-all duration-500 relative z-10 ${isActive
-                          ? "bg-[#F18D37]"
-                          : "bg-[#E3E3E0]"
-                          }`}>
-                          <Notebook className={`w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 ${isActive ? "text-black" : "text-[#1c1c1c]"}`} />
-                        </div>
-                      </div>
-                      <p className="text-center text-[11px] sm:text-sm md:text-base leading-tight font-medium text-[#E3E3E0]">
-                        {step.title}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
+          <div className="relative">
+            <div className="absolute top-[30px] sm:top-[40px] md:top-[50px] left-[30px] sm:left-[38px] md:left-[64px] right-[30px] sm:right-[38px] md:right-[64px] h-[2px] bg-white/20 -translate-y-1/2 z-0">
+              <motion.div
+                className="h-full bg-[#F18D37] origin-left"
+                style={{ width: lineWidth }}
+              />
             </div>
 
-            <div className="mt-12 sm:mt-16 md:mt-24 min-h-[100px] bg-[#1c1c1c]/0">
-              <div>
-                <h4 className="text-[22px] sm:text-[30px] md:text-[40px] font-semibold text-[#E3E3E0] mb-2 transition-all">
-                  {Steps[activeIndex].title}:
-                </h4>
-                <p className="text-[#B5B4B2] text-base sm:text-[22px] md:text-[30px] max-w-3xl transition-all">
-                  {Steps[activeIndex].desc}
-                </p>
-              </div>
+            {/* Steps */}
+            <div className="relative flex flex-row justify-between gap-1 sm:gap-0">
+              {Steps.map((step, idx) => {
+                const isActive = activeIndex >= idx;
+                return (
+                  <div key={idx} className="flex flex-col items-center relative z-10 w-[60px] sm:w-[76px] md:w-32">
+
+                    <div className="relative mb-3 sm:mb-4">
+                      <div className={`absolute -top-1 sm:-top-3 -right-2 sm:-right-3 w-[28px] h-[28px] sm:w-[34px] sm:h-[34px] md:w-[40px] md:h-[40px] rounded-full flex items-center justify-center text-[8px] sm:text-[9px] md:text-[11px] font-bold border-2 transition-all duration-100 z-20
+                           ${isActive
+                          ? "bg-[#F18D37] text-black border-white"
+                          : "bg-[#E3E3E0] text-black border-black"
+                        }`}>
+                        {step.num}
+                      </div>
+
+                      <div className={`w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] rounded-full flex items-center justify-center shadow-lg transition-all duration-500 relative z-10 ${isActive
+                        ? "bg-[#F18D37]"
+                        : "bg-[#E3E3E0]"
+                        }`}>
+                        <Notebook className={`w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 ${isActive ? "text-black" : "text-[#1c1c1c]"}`} />
+                      </div>
+                    </div>
+                    <p className="text-center text-[11px] sm:text-sm md:text-base leading-tight font-medium text-[#E3E3E0]">
+                      {step.title}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="mt-12 sm:mt-16 md:mt-24 min-h-[100px] bg-[#1c1c1c]/0">
+            <div>
+              <h4 className="text-[22px] sm:text-[30px] md:text-[40px] font-semibold text-[#E3E3E0] mb-2 transition-all">
+                {Steps[activeIndex].title}:
+              </h4>
+              <p className="text-[#B5B4B2] text-base sm:text-[22px] md:text-[30px] max-w-3xl transition-all">
+                {Steps[activeIndex].desc}
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <motion.div
-        animate={{
-          opacity: activeIndex === 3 ? 1 : 0,
-          pointerEvents: activeIndex === 3 ? "auto" : "none"
+        style={{
+          opacity: useTransform(smoothProgress, [0.8, 0.95], [0, 1]),
+          y: useTransform(smoothProgress, [0.8, 0.95], [100, 0])
         }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <div className="px-6 md:px-10 lg:px-15 mb-24 text-center">
           <h3

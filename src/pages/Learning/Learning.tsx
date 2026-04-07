@@ -8,7 +8,7 @@ const Learning = () => {
   useScrollAnimations();
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       <SEO
         title="Learning Resources | AI, Software & Web Development Guides"
         description="Learn about AI development, web technologies, automation and software engineering through tutorials, guides and educational resources"
@@ -18,7 +18,7 @@ const Learning = () => {
           { name: "Learning", url: "https://coirei.com/learning" }
         ]}
       />
-      <div className="fixed w-full top-0 z-10">
+      <div className="fixed w-full top-0 z-50">
         <Navbar />
       </div>
       <LearningSection />

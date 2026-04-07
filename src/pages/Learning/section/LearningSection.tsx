@@ -213,7 +213,7 @@
 //       </div>
 
 //     </section>
-//   );
+//   ); 
 // };
 
 // export default LearningSection;
@@ -309,8 +309,7 @@ const LearningSection = () => {
           data-delay="0.15"
           data-offset="60"
           data-duration="2.5"
-          className="text-base sm:text-xl md:text-[30px] text-white leading-relaxed"
-        >
+          className="text-base sm:text-xl md:text-[30px] text-white leading-relaxed">
           Coirei delivers practical learning to master <br className="hidden sm:block" /> workflows and build career-ready skills.
         </p>
       </div>
@@ -318,7 +317,6 @@ const LearningSection = () => {
       {/* ── Collaborate Section ── */}
       <div className="px-6 md:px-10 lg:px-15">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
           <div
             data-ns-animate
             data-direction="left"
@@ -362,7 +360,7 @@ const LearningSection = () => {
       </div>
 
       <div ref={timelineRef} className="mt-4">
-        <div className="sticky">
+        <div className="sticky top-24 md:top-32">
           <div className="p-4 sm:p-8 md:p-14">
             <h3
               data-ns-animate
@@ -384,7 +382,7 @@ const LearningSection = () => {
             </p>
 
             <div className="relative">
-              <div className="absolute top-6 sm:top-8 left-[38px] sm:left-16 right-[38px] sm:right-16 h-[2px] bg-white/20 -translate-y-1/2 rounded-full overflow-hidden">
+              <div className="absolute top-[30px] sm:top-[40px] md:top-[50px] left-[30px] sm:left-[38px] md:left-[64px] right-[30px] sm:right-[38px] md:right-[64px] h-[2px] bg-white/20 -translate-y-1/2 z-0">
                 <motion.div
                   className="h-full bg-[#F18D37] origin-left"
                   style={{ width: lineWidth }}
@@ -398,7 +396,7 @@ const LearningSection = () => {
                   return (
                     <div key={idx} className="flex flex-col items-center relative z-10 w-[60px] sm:w-[76px] md:w-32">
 
-                      <div className="relative mb-3 sm:mb-4 pt-2 sm:pt-0">
+                      <div className="relative mb-3 sm:mb-4">
                         <div className={`absolute -top-1 sm:-top-3 -right-2 sm:-right-3 w-[28px] h-[28px] sm:w-[34px] sm:h-[34px] md:w-[40px] md:h-[40px] rounded-full flex items-center justify-center text-[8px] sm:text-[9px] md:text-[11px] font-bold border-2 transition-all duration-100 z-20
                            ${isActive
                             ? "bg-[#F18D37] text-black border-white"
@@ -423,7 +421,7 @@ const LearningSection = () => {
               </div>
             </div>
 
-            <div className="mt-8 min-h-[100px] bg-[#1c1c1c]/0">
+            <div className="mt-12 sm:mt-16 md:mt-24 min-h-[100px] bg-[#1c1c1c]/0">
               <div>
                 <h4 className="text-[22px] sm:text-[30px] md:text-[40px] font-semibold text-[#E3E3E0] mb-2 transition-all">
                   {Steps[activeIndex].title}:
@@ -462,7 +460,7 @@ const LearningSection = () => {
               key={i}
               src={logo}
               alt="Partner logo"
-              className="h-[35px] sm:h-[45px] md:h-[50px] w-[120px] sm:w-[250px] md:w-[300px] object-contain"
+              className="h-[35px] sm:h-[45px] md:h-[50px] w-[200px] sm:w-[250px] md:w-[300px] object-contain"
               data-ns-animate
               data-delay={0.2 * i}
               data-offset="40"
@@ -504,17 +502,19 @@ const LearningSection = () => {
               {partnerWithUs.cards.map((card, i) => (
                 <div
                   key={i}
-                  className="group w-full sm:w-[280px] md:w-[322px] h-[140px] sm:h-[140px] md:h-[210px] rounded-[10px] p-[15px] bg-white/4 border border-white/8 hover:bg-white/10 hover:border-white/20 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 ease-out cursor-default hover:-translate-y-2"
+                  className="group w-full h-auto min-h-[140px] md:min-h-[210px]
+                            rounded-[10px] p-[15px] bg-white/4 border border-white/8 
+                            transition-all duration-500 ease-out cursor-default hover:-translate-y-2"
                   data-ns-animate
                   data-delay={0.2 * i}
                   data-offset="40"
                   data-duration="2"
                 >
-                  <p className="text-white text-base md:text-[20px] font-medium mb-3 md:mb-[22px] transition-colors duration-500 group-hover:text-orange-400">{card.num}</p>
-                  <h5 className="text-[#E3E3E0] text-base md:text-[20px] font-semibold mb-2 transition-colors duration-500 group-hover:text-orange-400">
+                  <p className="text-white text-base md:text-[20px] font-medium mb-3 md:mb-[60px] transition-colors duration-500 ">{card.num}</p>
+                  <h5 className="text-[#E3E3E0] text-base md:text-[20px] font-semibold mb-2 transition-colors duration-500">
                     {card.title}
                   </h5>
-                  <p className="text-white/50 text-sm md:text-[16px] font-medium leading-relaxed transition-colors duration-500 group-hover:text-white/90">{card.desc}</p>
+                  <p className="text-white/50 text-sm md:text-[16px] font-medium leading-relaxed transition-colors duration-500">{card.desc}</p>
                 </div>
               ))}
             </div>

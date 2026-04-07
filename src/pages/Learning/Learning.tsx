@@ -22,7 +22,7 @@ const Learning = () => {
         <Navbar />
       </div>
       <LearningSection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

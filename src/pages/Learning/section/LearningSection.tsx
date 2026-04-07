@@ -277,12 +277,11 @@ const LearningSection = () => {
   });
 
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 10,
-    damping: 35,
+    stiffness: 50,
+    damping: 25,
     restDelta: 0.001
   });
 
-  // Map progress to discrete jumps: [0-25% -> step 0, 25-50% -> step 1, etc.]
   const lineWidth = useTransform(smoothProgress,
     [0, 0.25, 0.26, 0.5, 0.51, 0.75, 0.76, 1],
     ["0%", "0%", "33.3%", "33.3%", "66.6%", "66.6%", "100%", "100%"]
@@ -440,16 +439,16 @@ const LearningSection = () => {
 
       <motion.div
         style={{
-          opacity: useTransform(smoothProgress, [0.8, 0.95], [0, 1]),
-          y: useTransform(smoothProgress, [0.8, 0.95], [100, 0])
+          opacity: useTransform(smoothProgress, [0.76, 0.81], [0, 1]),
+          y: useTransform(smoothProgress, [0.76, 0.81], [20, 0])
         }}
       >
         <div className="px-6 md:px-10 lg:px-15 mb-24 text-center">
           <h3
             data-ns-animate
             data-direction="up"
-            data-offset="80"
-            data-duration="3"
+            data-offset="60"
+            data-duration="2.5"
             className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4"
           >
             {existingPartners.title}
@@ -458,7 +457,7 @@ const LearningSection = () => {
             data-ns-animate
             data-delay="0.15"
             data-offset="60"
-            data-duration="3"
+            data-duration="2.5"
             className="text-[#B5B4B2] text-base sm:text-[20px] md:text-[25px] mx-auto mb-12"
           >
             {existingPartners.desc}

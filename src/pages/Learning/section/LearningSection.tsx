@@ -219,9 +219,9 @@
 // export default LearningSection;
 
 
-import { BookOpen, Layers, Zap, Users, BarChart2, ShieldCheck, Notebook } from "lucide-react";
-import { useRef, useState } from "react";
-import { motion, useScroll, useTransform, useMotionValueEvent, useSpring } from "framer-motion";
+import { Notebook } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform, useSpring, useMotionValue, animate, useInView } from "framer-motion";
 import Img from "../../../assets/images/Learning/img1.jpg";
 import Img2 from "../../../assets/images/Learning/img2.png";
 import Img3 from "../../../assets/images/Learning/img3.png";
@@ -271,29 +271,40 @@ const partnerWithUs = {
 const LearningSection = () => {
 
   const timelineRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(timelineRef, { once: true, amount: 0.3 });
+  const [activeIndex, setActiveIndex] = useState(0);
+  const lineWidth = useMotionValue("0%");
+
   const { scrollYProgress } = useScroll({
     target: timelineRef,
-    offset: ["start 10%", "end end"],
+    offset: ["start end", "end start"]
   });
 
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 50,
-    damping: 25,
+    stiffness: 100,
+    damping: 30,
     restDelta: 0.001
   });
 
-  const lineWidth = useTransform(smoothProgress,
-    [0, 0.25, 0.26, 0.5, 0.51, 0.75, 0.76, 1],
-    ["0%", "0%", "33.3%", "33.3%", "66.6%", "66.6%", "100%", "100%"]
-  );
-  const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    if (isInView) {
+      const sequence = async () => {
+        const targets = ["0%", "33.3%", "66.6%", "100%"];
+        const durations = [0, 4, 4, 4];
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
-  useMotionValueEvent(smoothProgress, "change", (latest) => {
-    if (latest < 0.25) setActiveIndex(0);
-    else if (latest < 0.5) setActiveIndex(1);
-    else if (latest < 0.75) setActiveIndex(2);
-    else setActiveIndex(3);
-  });
+        for (let i = 1; i < targets.length; i++) {
+          await animate(lineWidth, targets[i], {
+            duration: durations[i],
+            ease: "easeInOut"
+          });
+          setActiveIndex(i);
+          await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+      };
+      sequence();
+    }
+  }, [isInView, lineWidth]);
 
   return (
     <section className="instrument-sans text-white pt-24 sm:pt-28 md:pt-32 pb-0">
@@ -379,7 +390,7 @@ const LearningSection = () => {
             data-delay="0.15"
             data-offset="60"
             data-duration="2.5"
-            className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-12 sm:mb-16 md:mb-24"
+            className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-18 sm:mb-24 md:mb-30"
           >
             We actively partner with a diverse ecosystem to bridge the gap between academic learning and industry requirements.
           </p>
@@ -439,8 +450,8 @@ const LearningSection = () => {
 
       <motion.div
         style={{
-          opacity: useTransform(smoothProgress, [0.76, 0.81], [0, 1]),
-          y: useTransform(smoothProgress, [0.76, 0.81], [20, 0])
+          opacity: useTransform(smoothProgress, [0.85, 0.95], [0, 1]),
+          y: useTransform(smoothProgress, [0.85, 0.95], [20, 0])
         }}
       >
         <div className="px-6 md:px-10 lg:px-15 mb-24 text-center">

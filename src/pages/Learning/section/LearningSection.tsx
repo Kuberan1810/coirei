@@ -220,8 +220,8 @@
 
 
 import { Notebook } from "lucide-react";
-import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, useSpring, useMotionValue, animate, useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useScroll, useTransform, useMotionValueEvent, useSpring } from "framer-motion";
 import Img from "../../../assets/images/Learning/img1.jpg";
 import Img2 from "../../../assets/images/Learning/img2.png";
 import Img3 from "../../../assets/images/Learning/img3.png";
@@ -271,40 +271,26 @@ const partnerWithUs = {
 const LearningSection = () => {
 
   const timelineRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(timelineRef, { once: true, amount: 0.3 });
-  const [activeIndex, setActiveIndex] = useState(0);
-  const lineWidth = useMotionValue("0%");
-
   const { scrollYProgress } = useScroll({
     target: timelineRef,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end center"]
   });
-
+  const [activeIndex, setActiveIndex] = useState(0);
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
 
-  useEffect(() => {
-    if (isInView) {
-      const sequence = async () => {
-        const targets = ["0%", "33.3%", "66.6%", "100%"];
-        const durations = [0, 4, 4, 4];
-        await new Promise(resolve => setTimeout(resolve, 1000));
+  const lineWidth = useTransform(smoothProgress, [0.3, 0.8], ["0%", "100%"]);
 
-        for (let i = 1; i < targets.length; i++) {
-          await animate(lineWidth, targets[i], {
-            duration: durations[i],
-            ease: "easeInOut"
-          });
-          setActiveIndex(i);
-          await new Promise(resolve => setTimeout(resolve, 1000));
-        }
-      };
-      sequence();
-    }
-  }, [isInView, lineWidth]);
+  useMotionValueEvent(smoothProgress, "change", (latest) => {
+    if (latest < 0.42) setActiveIndex(0);
+    else if (latest < 0.55) setActiveIndex(1);
+    else if (latest < 0.68) setActiveIndex(2);
+    else setActiveIndex(3);
+  });
+
 
   return (
     <section className="instrument-sans text-white pt-24 sm:pt-28 md:pt-32 pb-0">
@@ -390,7 +376,7 @@ const LearningSection = () => {
             data-delay="0.15"
             data-offset="60"
             data-duration="2.5"
-            className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-18 sm:mb-24 md:mb-30"
+            className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-12 sm:mb-16 md:mb-20"
           >
             We actively partner with a diverse ecosystem to bridge the gap between academic learning and industry requirements.
           </p>
@@ -435,7 +421,7 @@ const LearningSection = () => {
             </div>
           </div>
 
-          <div className="mt-12 sm:mt-16 md:mt-24 min-h-[100px] bg-[#1c1c1c]/0">
+          <div className="mt-3 sm:mt-8 md:mt-12 min-h-[100px] bg-[#1c1c1c]/0">
             <div>
               <h4 className="text-[22px] sm:text-[30px] md:text-[40px] font-semibold text-[#E3E3E0] mb-2 transition-all">
                 {Steps[activeIndex].title}:

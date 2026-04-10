@@ -300,16 +300,16 @@ const LearningSection = () => {
           data-ns-animate
           data-direction="up"
           data-offset="80"
-          data-duration="2.5"
+          data-duration="2"
           className="text-[28px] sm:text-4xl md:text-[50px] font-normal text-transparent bg-clip-text bg-gradient-to-r from-white to-[#999999] leading-tight mb-4"
         >
           Master Workflows, Pipelines & AI-<br className="hidden md:block" /> Assisted Development
         </h1>
         <p
           data-ns-animate
-          data-delay="0.15"
+          data-delay="0.08"
           data-offset="60"
-          data-duration="2.5"
+          data-duration="2"
           className="text-base sm:text-xl md:text-[30px] text-white leading-relaxed">
           Coirei delivers practical learning to master <br className="hidden sm:block" /> workflows and build career-ready skills.
         </p>
@@ -322,7 +322,7 @@ const LearningSection = () => {
             data-ns-animate
             data-direction="left"
             data-offset="80"
-            data-duration="2.5"
+            data-duration="2"
           >
             <h2 className="text-[30px] sm:text-[40px] md:text-[55px] font-normal text-[#E3E3E0] leading-tight mb-5">
               Collaborate with <span className="text-[#F18D37]">Coirei</span>
@@ -347,7 +347,7 @@ const LearningSection = () => {
             data-ns-animate
             data-direction="right"
             data-offset="100"
-            data-duration="2.5"
+            data-duration="2"
           >
             <div className="rounded-2xl bg-[#1c1c1c]">
               <img
@@ -366,16 +366,16 @@ const LearningSection = () => {
             data-ns-animate
             data-direction="up"
             data-offset="80"
-            data-duration="2.5"
+            data-duration="2"
             className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-2"
           >
             Our Collaboration Network
           </h3>
           <p
             data-ns-animate
-            data-delay="0.15"
+            data-delay="0.08"
             data-offset="60"
-            data-duration="2.5"
+            data-duration="2"
             className="text-[#B5B4B2] font-instrumental-Sans text-base sm:text-[20px] md:text-[25px] leading-relaxed max-w-3xl mb-12 sm:mb-16 md:mb-20"
           >
             We actively partner with a diverse ecosystem to bridge the gap between academic learning and industry requirements.
@@ -436,8 +436,8 @@ const LearningSection = () => {
 
       <motion.div
         style={{
-          opacity: useTransform(smoothProgress, [0.85, 0.95], [0, 1]),
-          y: useTransform(smoothProgress, [0.85, 0.95], [20, 0])
+          opacity: useTransform(smoothProgress, [0.85, 0.90], [0, 1]),
+          y: useTransform(smoothProgress, [0.85, 0.90], [15, 0])
         }}
       >
         <div className="px-6 md:px-10 lg:px-15 mb-24 text-center">
@@ -445,16 +445,16 @@ const LearningSection = () => {
             data-ns-animate
             data-direction="up"
             data-offset="60"
-            data-duration="2.5"
+            data-duration="2"
             className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4"
           >
             {existingPartners.title}
           </h3>
           <p
             data-ns-animate
-            data-delay="0.15"
+            data-delay="0.08"
             data-offset="60"
-            data-duration="2.5"
+            data-duration="2"
             className="text-[#B5B4B2] text-base sm:text-[20px] md:text-[25px] mx-auto mb-12"
           >
             {existingPartners.desc}
@@ -467,7 +467,7 @@ const LearningSection = () => {
                 alt="Partner logo"
                 className="h-[35px] sm:h-[45px] md:h-[50px] w-[200px] sm:w-[250px] md:w-[300px] object-contain"
                 data-ns-animate
-                data-delay={0.2 * i}
+                data-delay={0.1 * i}
                 data-offset="40"
               />
             ))}
@@ -481,7 +481,7 @@ const LearningSection = () => {
               data-ns-animate
               data-direction="left"
               data-offset="100"
-              data-duration="3.5"
+              data-duration="2"
             >
               <img
                 src={Img4}
@@ -494,7 +494,7 @@ const LearningSection = () => {
               data-ns-animate
               data-direction="right"
               data-offset="100"
-              data-duration="3"
+              data-duration="2"
             >
               <h4 className="text-[26px] sm:text-[36px] md:text-[50px] font-normal text-[#E3E3E0] mb-4">
                 {partnerWithUs.title}
@@ -510,7 +510,7 @@ const LearningSection = () => {
                             rounded-[10px] p-[15px] bg-white/4 border border-white/8 
                             transition-all duration-500 ease-out cursor-default hover:-translate-y-2"
                     data-ns-animate
-                    data-delay={0.2 * i}
+                    data-delay={0.1 * i}
                     data-offset="40"
                     data-duration="2"
                   >
@@ -532,7 +532,7 @@ const LearningSection = () => {
               data-ns-animate
               data-direction="left"
               data-offset="80"
-              data-duration="2.5"
+              data-duration="2"
               className="w-full md:w-1/2 py-8 md:py-0"
             >
               <h3 className="text-[28px] sm:text-[38px] md:text-[50px] font-normal text-[#E3E3E0] mb-4 sm:mb-6 md:mb-8">
@@ -554,7 +554,7 @@ const LearningSection = () => {
               data-ns-animate
               data-direction="right"
               data-offset="100"
-              data-duration="2.5"
+              data-duration="2"
               className="w-full md:w-1/2 flex justify-end h-full p-4"
             >
               <img

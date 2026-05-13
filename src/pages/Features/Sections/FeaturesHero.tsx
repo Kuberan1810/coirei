@@ -1,6 +1,6 @@
 const FeaturesHero = () => {
   return (
-    <section className="mt-30 sm:mt-32 md:mt-40 lg:mt-50 mb-10 sm:mb-20 md:mb-25">
+    <section className="mt-30 sm:mt-32 md:mt-10 lg:mt-15 mb-10 sm:mb-20 md:mb-5">
       <div className="mx-6 sm:mx-10 md:mx-15">
         <div className="max-w-5xl">
 

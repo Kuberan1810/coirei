@@ -39,7 +39,7 @@ const CTASection = () => {
               className="text-base md:text-lg text-[#d4d4d3] mb-8 leading-relaxed"
             >
               Start building and shipping software in a unified execution environment.
-              Whether you’re a startup or an enterprise, ORCA keeps execution fast, visible, and controlled.
+              Whether you’re a startup or an enterprise, Execa keeps execution fast, visible, and controlled.
             </p>
 
             {/* BUTTONS */}

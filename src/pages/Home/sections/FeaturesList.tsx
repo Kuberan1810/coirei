@@ -15,14 +15,19 @@ const FeaturesList = () => {
 
   return (
     <>
-      <section className=" py-15 w-full">
+      <section className="mx-6 sm:mx-10 md:mx-15 py-10 sm:py-20 w-full">
         <div className="flex flex-col items-center">
           <div className="heading-section mb-5">
-            <h2 className="leading-none text-[#E3E3E0] text-[30px] font-small md:text-[60px] max-w-5xl text-center">
+            <h2 data-ns-animate data-offset="40" className="leading-none text-[#E3E3E0] text-[30px] font-small md:text-[60px] max-w-5xl text-center">
               Everything you need to succeed. Fast
             </h2>
           </div>
-          <div className="h-150 w-[80%] main-section flex gap-8 border border-[#8D8D8D]">
+          <div 
+            data-ns-animate
+            data-delay="0.1"
+            data-offset="40"
+            className="h-150 w-[80%] main-section flex gap-8 border border-[#8D8D8D]"
+          >
             <div className="navigation">
               
               <ul className="w-56 h-150 flex flex-col justify-start border divide-y divide-[#676767]">

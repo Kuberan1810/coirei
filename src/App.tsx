@@ -23,6 +23,11 @@ import Services from "./pages/services/Services";
 import ServiceDetails from "./pages/services/ServiceDetails";
 import Learning from "./pages/Learning/Learning";
 
+// Product pages
+import Execa from "./pages/Products/Execa/Execa";
+import Follei from "./pages/Products/Follei/Follei";
+import LMS from "./pages/Products/lms/LMS";
+
 // import Analytics from "./pages/Features/Analytics";
 // import Integrations from "./pages/Features/Integrations";
 
@@ -56,6 +61,11 @@ function App() {
 
         {/* FEATURES (NO parent page) */}
         <Route path="/features" element={<Features />} />
+
+        {/* PRODUCTS */}
+        <Route path="/products/execa" element={<Execa />} />
+        <Route path="/products/follei" element={<Follei />} />
+        <Route path="/products/coireilms" element={<LMS />} />
       </Routes>
     </>
   );

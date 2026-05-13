@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type Direction = "up" | "down" | "left" | "right";
+type Direction = "up" | "down" | "left" | "right" | "line-left" | "line-right";
 
 const useScrollAnimations = (): void => {
     useEffect(() => {
@@ -22,9 +22,10 @@ const useScrollAnimations = (): void => {
                 const blur = el.dataset.blur !== "false";
                 const once = el.dataset.once !== "false";
 
-                /* ---------- CALCULATE AXIS ---------- */
+                /* ---------- CALCULATE AXIS & SPECIALS ---------- */
                 let x = 0;
                 let y = 0;
+                let origin = "center center";
 
                 switch (direction) {
                     case "up":
@@ -39,16 +40,24 @@ const useScrollAnimations = (): void => {
                     case "right":
                         x = -offset;
                         break;
+                    case "line-left":
+                        origin = "right center";
+                        break;
+                    case "line-right":
+                        origin = "left center";
+                        break;
                 }
 
                 /* ---------- INITIAL STATE ---------- */
                 gsap.set(el, {
-                    opacity: 0,
+                    opacity: direction.startsWith("line") ? 1 : 0,
                     x,
                     y,
                     scale,
+                    scaleX: direction.startsWith("line") ? 0 : 1,
                     rotate,
-                    filter: blur ? "blur(16px)" : "none",
+                    transformOrigin: origin,
+                    filter: !direction.startsWith("line") && blur ? "blur(16px)" : "none",
                     willChange: "transform, opacity, filter"
                 });
 
@@ -58,14 +67,15 @@ const useScrollAnimations = (): void => {
                     x: 0,
                     y: 0,
                     scale: 1,
+                    scaleX: 1,
                     rotate: 0,
                     filter: "blur(0px)",
                     duration,
                     delay,
-                    ease: "power3.out",
+                    ease: "power2.out",
                     scrollTrigger: {
                         trigger: el,
-                        start: "top 85%",
+                        start: "top 95%",
                         end: "top 40%",
                         toggleActions: once
                             ? "play none none none"
@@ -78,6 +88,7 @@ const useScrollAnimations = (): void => {
         /* ---------- CLEANUP ---------- */
         return () => {
             ctx.revert();
+            ScrollTrigger.getAll().forEach(st => st.kill());
         };
     }, []);
 };

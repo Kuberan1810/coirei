@@ -17,7 +17,7 @@ function Hero() {
                         {/* Badge */}
                         <p
                             data-ns-animate
-                            data-offset="40"
+                            data-offset="80"
                             className="backdrop-blur-md border border-white/20 rounded-xl p-2 max-w-fit text-base text-[#959493] mx-auto sm:mx-0 mb-2.5"
                         >
                             Orca AI
@@ -26,8 +26,7 @@ function Hero() {
                         {/* Title */}
                         <h1
                             data-ns-animate
-                            data-offset="120"
-                            data-duration="1.2"
+                            data-offset="80"
                             className="text-[#E3E3E0] text-4xl sm:text-5xl lg:text-6xl font-medium leading-tight mb-5"
                         >
                             Execution, Reimagined.
@@ -36,7 +35,7 @@ function Hero() {
                         {/* Description */}
                         <p
                             data-ns-animate
-                            data-delay="0.2"
+                            data-delay="0.1"
                             data-offset="80"
                             className="text-[#B5B4B2] text-base sm:text-lg lg:text-xl max-w-2xl mb-8"
                         >
@@ -48,8 +47,8 @@ function Hero() {
                         {/* Buttons */}
                         <div
                             data-ns-animate
-                            data-delay="0.4"
-                            data-offset="40"
+                            data-delay="0.2"
+                            data-offset="80"
                             className="flex justify-center sm:justify-start gap-4"
                         >
                             <button 
@@ -72,8 +71,7 @@ function Hero() {
                     <div
                         data-ns-animate
                         data-direction="right"
-                        data-offset="120"
-                        data-duration="1.1"
+                        data-offset="80"
                         className="relative h-80 sm:h-130 lg:h-full xl:h-130 rounded-2xl overflow-hidden max-w-full"
                     >
                         {/* Background Image */}

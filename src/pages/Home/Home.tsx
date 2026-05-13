@@ -3,23 +3,24 @@ import { FaqSchema } from "../../component/StructuredData";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer/Footer";
 
-import Hero from "./sections/Hero";
-import ProblemSection from "./sections/ProblemSection";
-import FeaturesSection from "./sections/FeaturesSection";
-import ContentSection from "./sections/ContentSection";
-import SecondContent from "./sections/SecondContent";
-import { CeoSection } from "./sections/CeoSection";
+import NewHero from "./sections/NewHero";
+import AboutUs from "./sections/AboutUs";
+import WhatWeDo from "./sections/WhatWeDo";
+import WhyChooseUs from "./sections/WhyChooseUs";
 import useScrollAnimations from "../../hooks/useScrollAnimations";
+import { CeoSection } from "./sections/CeoSection";
+import SecondContent from "./sections/SecondContent";
+import OurProducts from "./sections/OurProducts";
+import { DataPrivacySection } from "./sections/DataPrivacySection";
 
 function Home() {
     useScrollAnimations();
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-x-clip bg-[#161616] min-h-screen">
             <SEO 
-                title="Coirei – Intelligence Engineered"
-                description="Coirei – Intelligence Engineered. We build AI-native systems, deep-tech engineering platforms, and scalable software solutions that transform ideas into intelligent digital products."
-                keywords="Coirei, AI-native systems, deep tech engineering, intelligent software development, enterprise software solutions, AI platform development, software engineering company"
+                title="Coirei - Custom Web Development & Digital Solutions"
+                description="Coirei specializes in AI agents and software development, delivering scalable web solutions, custom CRM/ERP systems, AI chatbots, and process automation to drive efficient business growth."
             />
             <FaqSchema />
 
@@ -27,15 +28,15 @@ function Home() {
                 <Navbar />
             </div>
 
-
-            <Hero />
-            <ProblemSection />
-            <FeaturesSection />
-            <ContentSection />
-            <SecondContent />
-            <CeoSection />
+            <NewHero />
+            <AboutUs />
+            <WhatWeDo />
+            <WhyChooseUs />
+            <OurProducts />
+            <SecondContent/>
+            <CeoSection/>
+            <DataPrivacySection />
             <Footer />
-
         </div>
     );
 }

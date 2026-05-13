@@ -27,7 +27,7 @@ const GlassCard: React.FC<GlassCardProps> = ({
         transition-all duration-300
         p-5 sm:p-6 md:p-7
         animate-fadeUp
-        flex flex-col justify-evenly
+        flex flex-col justify-evenly h-full
       "
         >
             {/* IMAGE FIRST */}

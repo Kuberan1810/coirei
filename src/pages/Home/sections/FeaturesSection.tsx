@@ -104,12 +104,12 @@ export default function FeaturesSection(): JSX.Element {
             <div className="px-6 sm:px-10 md:px-15">
 
                 {/* ---------- Heading (SCROLL) ---------- */}
-                <h2 data-ns-animate data-offset="80" data-duration="1.2" className="text-2xl md:text-5xl text-center mb-10 sm:mb-14 md:mb-16 font-normal leading-tight max-w-5xl mx-auto text-white/80">
+                <h2 data-ns-animate data-offset="80" className="text-2xl md:text-5xl text-center mb-10 sm:mb-14 md:mb-16 font-normal leading-tight max-w-5xl mx-auto text-white/80">
                     ORCA AI unifies the entire software execution lifecycle into a single AI-native platform.
                 </h2>
 
                 {/* ---------- Tabs (SCROLL) ---------- */}
-                <div data-ns-animate data-delay="0.2" data-offset="40" className="flex justify-center mb-10 sm:mb-12">
+                <div data-ns-animate data-delay="0.1" data-offset="80" className="flex justify-center mb-10 sm:mb-12">
                     <LayoutGroup>
                         <div className="relative grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-15 w-full lg:w-auto p-2.5 rounded-2xl lg:rounded-full bg-[#7B7B7B]/10 backdrop-blur-3xl border border-white/20">
 
@@ -140,14 +140,14 @@ export default function FeaturesSection(): JSX.Element {
                         animate="animate"
                         exit="exit"
                         data-ns-animate
-                        data-delay="0.3"
+                        data-delay="0.2"
                         data-offset="80"
                         className="bg-[#1E1E1E] rounded-[20px] px-5 sm:px-8 md:px-13 pt-5 pb-8"
                     >
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
 
                             {/* LEFT (IMAGE / ANIMATION) */}
-                            <div data-ns-animate data-delay="0.4" data-offset="100" className="relative w-full">
+                            <div data-ns-animate data-delay="0.3" data-offset="80" className="relative w-full">
                                 <div className="bg-linear-to-br from-white/70 to-gray-600 rounded-3xl px-6 sm:px-8 pt-10 sm:pt-15 shadow-2xl">
                                     <Suspense fallback={<div className="w-full py-24 flex items-center justify-center text-white/40 text-sm">Loading animation...</div>}>
                                         <div className="w-full flex items-center justify-center">
@@ -158,7 +158,7 @@ export default function FeaturesSection(): JSX.Element {
                             </div>
 
                             {/* RIGHT (TEXT) */}
-                            <div data-ns-animate data-delay="0.5" data-offset="80" className="space-y-4">
+                            <div data-ns-animate data-delay="0.4" data-offset="80" className="space-y-4">
                                 <span className="inline-block px-3 py-1.5 bg-[#FFF7A5] text-black rounded-full text-xs sm:text-sm font-medium tracking-wide uppercase">
                                     {activeContent.badge}
                                 </span>

@@ -36,7 +36,8 @@ function Home() {
             <SecondContent/>
             <CeoSection/>
             <DataPrivacySection />
-            <Footer />
+            <Footer /> 
+            
         </div>
     );
 }

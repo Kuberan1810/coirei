@@ -1,5 +1,5 @@
 import { BarChart2, Cpu } from "lucide-react";
-import {Teacher} from "iconsax-react"
+import { Teacher } from "iconsax-react"
 import { Link } from "react-router-dom";
 
 const products = [
@@ -55,7 +55,7 @@ function OurProducts() {
                     className="text-[32px] sm:text-[40px] md:text-[48px] font-medium tracking-tight leading-[1.2] mb-6"
                 >
                     <span className="text-[#F67300]">Execa, Follei </span>{" "}
-             
+
                     <span className="text-white"> & Coirei LMS</span>
                 </h2>
                 <p
@@ -64,7 +64,7 @@ function OurProducts() {
                     data-offset="80"
                     className="text-[#B5B4B2] text-[16px] sm:text-[18px] leading-relaxed"
                 >
-                   Build, launch, and scale intelligent digital products designed for real-world performance and growth.
+                    Build, launch, and scale intelligent digital products designed for real-world performance and growth.
                 </p>
             </div>
 

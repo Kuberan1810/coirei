@@ -12,13 +12,15 @@ import { CeoSection } from "./sections/CeoSection";
 import SecondContent from "./sections/SecondContent";
 import OurProducts from "./sections/OurProducts";
 import { DataPrivacySection } from "./sections/DataPrivacySection";
+import TestimonialSection from "./sections/Testimonal";
+import HomeContact from "./sections/HomeContact";
 
 function Home() {
     useScrollAnimations();
 
     return (
         <div className="overflow-x-clip bg-[#161616] min-h-screen">
-            <SEO 
+            <SEO
                 title="Coirei - Custom Web Development & Digital Solutions"
                 description="Coirei specializes in AI agents and software development, delivering scalable web solutions, custom CRM/ERP systems, AI chatbots, and process automation to drive efficient business growth."
             />
@@ -33,11 +35,13 @@ function Home() {
             <WhatWeDo />
             <WhyChooseUs />
             <OurProducts />
-            <SecondContent/>
-            <CeoSection/>
-            <DataPrivacySection />
-            <Footer /> 
-            
+            <SecondContent />
+            <CeoSection />
+            {/* <DataPrivacySection /> */}
+            <TestimonialSection />
+            <HomeContact />
+            <Footer />
+
         </div>
     );
 }

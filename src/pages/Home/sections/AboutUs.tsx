@@ -12,10 +12,10 @@ function AboutUs() {
                     data-offset="80"
                     className="w-full lg:w-1/2 flex justify-center lg:justify-start lg:mt-6"
                 >
-                    <img 
-                        src={coireihome} 
-                        alt="Coirei Team" 
-                        className="w-full h-auto object-cover shrink-0 rounded-xl" 
+                    <img
+                        src={coireihome}
+                        alt="Coirei Team"
+                        className="w-full h-auto object-cover shrink-0 rounded-xl"
                     />
                 </div>
 
@@ -24,20 +24,20 @@ function AboutUs() {
 
                     {/* Badge / Pill */}
                     <div className="flex items-center w-full mb-8">
-                        <div 
-                               data-ns-animate
+                        <div
+                            data-ns-animate
                             data-offset="80"
                             className="h-[1.5px] flex-1 bg-linear-to-r from-[#161616] to-white"
                         ></div>
-                        <div 
+                        <div
                             data-ns-animate
                             data-offset="80"
                             className="px-8 py-2 border border-white/10 rounded-xl bg-transparent text-white text-[16px] mx-4"
                         >
                             About us
                         </div>
-                        <div 
-                         data-ns-animate
+                        <div
+                            data-ns-animate
                             data-offset="80"
                             className="h-[1.5px] flex-1 bg-linear-to-l from-[#161616] to-white"
                         ></div>

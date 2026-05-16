@@ -104,7 +104,7 @@ function WhyChooseUs() {
                         <br />
 
                         <span className="text-white">AI-Driven Digital Products</span>
-                  
+
                     </h2>
                     <p
                         data-ns-animate
@@ -122,7 +122,7 @@ function WhyChooseUs() {
                 {reasons.map((reason, index) => (
                     <div
                         key={index}
-                        
+
                         className="group rounded-2xl border border-white/15 bg-[#292929] px-5 py-5 flex flex-col justify-between shadow-[0_-20px_40px_-20px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(255,255,255,0.05)] w-full min-h-[280px] hover:bg-[#323232] hover:border-white/25 transition-all duration-500"
                     >
                         <div className="w-14 h-14 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-white/70 group-hover:text-white transition-colors duration-300">
@@ -138,8 +138,8 @@ function WhyChooseUs() {
 
             {/* Tablet+ — pinned GSAP animation */}
             <div
-                   data-ns-animate
-                            data-offset="80"
+                data-ns-animate
+                data-offset="80"
                 className="relative w-full overflow-visible hidden sm:block"
                 style={{ height: "60vh", minHeight: "450px" }}
             >
@@ -147,7 +147,7 @@ function WhyChooseUs() {
                     {reasons.map((reason, index) => (
                         <div
                             key={index}
-                            
+
                             ref={(el) => { if (el) cardsRef.current[index] = el; }}
                             className="absolute rounded-[20px] border border-white/15 bg-[#292929] px-[20px] py-[20px] flex flex-col justify-between shadow-[0_-20px_40px_-20px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(255,255,255,0.05)] w-[85vw] sm:w-[380px] md:w-[440px] h-[320px] sm:h-[360px] group hover:bg-[#323232] hover:border-white/25  transition-colors duration-300 glass"
                         >

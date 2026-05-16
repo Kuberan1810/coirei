@@ -21,3 +21,9 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+*.sw?
+
+# Build artifacts
+dist.zip
+build_output.txt
+tsc_output.txt

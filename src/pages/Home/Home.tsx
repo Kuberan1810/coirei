@@ -13,6 +13,7 @@ import ValuesSection from "./sections/ValuesSection";
 import IndustriesServing from "./sections/IndustriesServing";
 import OurProducts from "./sections/OurProducts";
 import OurMission from "./sections/OurMission";
+import FAQSection from "./sections/FAQSection";
 
 function Home() {
     useScrollAnimations();
@@ -24,7 +25,7 @@ function Home() {
                 description="Coirei is AI powered solutions company. We create AI apps and chatbots. AI automation and AI web and platform. AI products and customized LMS for business."
             />
             <FaqSchema />
-
+            
             <div className="fixed top-0 left-0 w-full z-50">
                 <Navbar />
             </div>
@@ -37,6 +38,7 @@ function Home() {
             <OurProducts />
             <ValuesSection />
             <IndustriesServing />
+            <FAQSection />
             <CeoSection />
             <Footer />
 

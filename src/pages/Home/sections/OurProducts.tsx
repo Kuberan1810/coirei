@@ -69,7 +69,7 @@ function OurProducts() {
             </div>
 
             {/* Products */}
-            <div className="flex flex-wrap justify-center gap-[30px] mt-16">
+            <div className="flex lg:flex-row flex-col flex-wrap justify-center gap-[30px] mt-16">
                 {products.map((product, index) => {
                     const CardWrapper = product.to ? Link : "div";
                     const wrapperProps = product.to ? { to: product.to } : {};
@@ -80,17 +80,17 @@ function OurProducts() {
                             data-ns-animate
                             data-delay={`${index * 0.1}`}
                             data-offset="80"
-                            className="relative w-[440px] h-[360px]  rounded-[20px] overflow-hidden cursor-pointer group bg-[#29292980] border border-white/15 hover:bg-[#323232] hover:border-white/25 transition-all duration-500 no-underline "
+                            className="relative flex-1   rounded-[20px] overflow-hidden cursor-pointer group bg-[#29292980] border border-white/15 hover:bg-[#323232] hover:border-white/25 transition-all duration-500 no-underline "
                             style={{
                                 boxShadow: "0 -20px 40px -20px rgba(0,0,0,0.6), inset 0 1px 0 0 rgba(255,255,255,0.05)",
                             }}
                         >
 
                             {/* Card content */}
-                            <div className="relative z-10 flex flex-col h-full p-[28px]">
+                            <div className="relative z-10 flex  flex-col h-full p-[28px] ">
                                 {/* Icon */}
                                 <div
-                                    className="w-[48px] h-[48px] rounded-full flex items-center justify-center"
+                                    className="w-[48px] h-[48px] rounded-full flex items-center justify-center mb-20"
                                     style={{
                                         background: "rgba(255,255,255,0.07)",
                                         border: "1px solid rgba(255,255,255,0.12)",

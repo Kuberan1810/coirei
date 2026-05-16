@@ -71,6 +71,7 @@ function WhyChooseUs() {
     }, []);
 
     return (
+        <>
         <div ref={wrapperRef}>
             {/* Header */}
             <section className="mx-6 sm:mx-10 md:mx-15 pt-12 md:pt-16 pb-20 md:pb-6">
@@ -94,29 +95,36 @@ function WhyChooseUs() {
                     ></div>
                 </div>
 
-                <div className="flex flex-col items-center text-center gap-6">
-                                        <div
+
+            </section>
+            <div className="flex flex-col items-center text-center gap-6">
+                    <h2
+                        data-ns-animate
+                        data-offset="80"
+                        className="text-[32px] sm:text-[40px] md:text-[48px] font-medium tracking-tight leading-[1.2]"
+                    >
+                        <span className="text-[#F67300]">A Smart Approach to Building </span>{" "}
+                        <br />
+
+                        <span className="text-white">AI-Driven Digital Products</span>
+                  
+                    </h2>
+                    <p
                         data-ns-animate
                         data-delay="0.1"
                         data-offset="80"
-                        className="text-[#B5B4B2] text-[16px] sm:text-[18px] leading-relaxed max-w-3xl space-y-4"
+                        className="text-[#B5B4B2] text-[16px] sm:text-[18px] leading-relaxed max-w-2xl"
                     >
-                        <p>
-                            Our AI experts integrate advanced machine learning with real-time technology strategies, turning complex business challenges profitable outcomes.
-                        </p>
-                        <p>
-                            By combining AI-driven insights with practical, real-world application, we empower businesses to innovate, adapt, and achieve lasting success in business.
-                        </p>
-                    </div>
+                        We focus on innovation, scalability, and real-world impact, helping you build smarter solutions and grow your business with confidence.
+                    </p>
                 </div>
-            </section>
 
             {/* Mobile — vertical stack, no animation */}
             <div className="flex sm:hidden flex-col gap-6 mx-6 md:pb-16  ">
                 {reasons.map((reason, index) => (
                     <div
                         key={index}
-                        
+
                         className="group rounded-2xl border border-white/15 bg-[#292929] px-5 py-5 flex flex-col justify-between shadow-[0_-20px_40px_-20px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(255,255,255,0.05)] w-full min-h-[280px] hover:bg-[#323232] hover:border-white/25 transition-all duration-500"
                     >
                         <div className="w-14 h-14 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-white/70 group-hover:text-white transition-colors duration-300">
@@ -132,16 +140,16 @@ function WhyChooseUs() {
 
             {/* Tablet+ — pinned GSAP animation */}
             <div
-                   data-ns-animate
-                            data-offset="80"
+                data-ns-animate
+                data-offset="80"
                 className="relative w-full overflow-visible hidden sm:block"
-                style={{ height: "60vh", minHeight: "450px" }}
+                style={{ height: "50vh", minHeight: "400px" }}
             >
                 <div className="absolute inset-0 flex items-center justify-center overflow-visible">
                     {reasons.map((reason, index) => (
                         <div
                             key={index}
-                            
+
                             ref={(el) => { if (el) cardsRef.current[index] = el; }}
                             className="absolute rounded-[20px] border border-white/15 bg-[#292929] px-[20px] py-[20px] flex flex-col justify-between shadow-[0_-20px_40px_-20px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(255,255,255,0.05)] w-[85vw] sm:w-[380px] md:w-[440px] h-[320px] sm:h-[360px] group hover:bg-[#323232] hover:border-white/25  transition-colors duration-300 glass"
                         >
@@ -152,11 +160,13 @@ function WhyChooseUs() {
                                 <h3 className="text-white font-semibold tracking-wide text-[20px] mb-3">{reason.title}</h3>
                                 <p className="text-[#a1a1aa] text-[16px] leading-relaxed">{reason.description}</p>
                             </div>
+                            
                         </div>
                     ))}
                 </div>
             </div>
         </div>
+    </>
     );
 }
 

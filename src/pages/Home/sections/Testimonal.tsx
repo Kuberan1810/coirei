@@ -79,14 +79,33 @@ export default function TestimonialSection() {
     const n = TESTIMONIALS.length;
 
     /* Intersection Observer — reveal + start auto-scroll */
+    // useEffect(() => {
+    //     const el = sectionRef.current;
+    //     if (!el) return;
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => setIsVisible(entry.isIntersecting),
+    //         { threshold: 0.5}
+    //     );
+    //     observer.observe(el);
+    //     return () => observer.disconnect();
+    // }, []);
+
     useEffect(() => {
         const el = sectionRef.current;
         if (!el) return;
+
         const observer = new IntersectionObserver(
-            ([entry]) => setIsVisible(entry.isIntersecting),
-            { threshold: 0.5}
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect(); // reveal once only
+                }
+            },
+            { threshold: 0.5 }
         );
+
         observer.observe(el);
+
         return () => observer.disconnect();
     }, []);
 

@@ -8,20 +8,25 @@ gsap.registerPlugin(ScrollTrigger);
 const reasons = [
     {
         icon: <Lightbulb size={18} className="text-white/80" />,
-        title: " Industry-Focused Solutions",
-        description: "Tailored digital solutions built to match real business needs and industry demands.",
+
+        title: "Industry-Leading Solutions",
+        description: "Delivering top-tier digital products built with precision and modern technology.",
+
         index: "01",
     },
     {
         icon: <BarChart2 size={18} className="text-white/80" />,
-        title: "Scalable Development",
-        description: "Designed to grow with your business using modern, future-ready technologies.",
+
+        title: "AI-Driven Innovation",
+        description: "Smart AI-powered systems to automate processes and drive business efficiency.",
         index: "02",
     },
     {
         icon: <Wrench size={18} className="text-white/80" />,
-        title: "AI-Driven Innovation",
-        description: "Smart AI-powered solutions to automate processes and improve efficiency.",
+
+        title: "Cost effective",
+        description: "High-quality, scalable solutions designed to fit your business budget and goals.",
+
         index: "03",
     },
 ];
@@ -47,7 +52,7 @@ function WhyChooseUs() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: wrapper,
-                start: "top 40px", // Pin it a bit below the top, accounting for fixed navbars
+                start: "top -50px", // Pin it a bit below the top, accounting for fixed navbars
                 end: "+=1200",
                 pin: true,
                 scrub: 1.2,
@@ -71,6 +76,9 @@ function WhyChooseUs() {
     }, []);
 
     return (
+
+        <>
+
         <div ref={wrapperRef}>
             {/* Header */}
             <section className="mx-6 sm:mx-10 md:mx-15 pt-12 md:pt-16 pb-20 md:pb-6">
@@ -85,7 +93,9 @@ function WhyChooseUs() {
                         data-offset="80"
                         className="px-5 py-1.5 border border-white/10 rounded-md bg-transparent text-white text-[14px] whitespace-nowrap shrink-0"
                     >
-                        Why Choose Us
+
+                        Why Choose Coirei?
+
                     </div>
                     <div
                         data-ns-animate
@@ -94,7 +104,11 @@ function WhyChooseUs() {
                     ></div>
                 </div>
 
-                <div className="flex flex-col items-center text-center gap-6">
+
+
+            </section>
+            <div className="flex flex-col items-center text-center gap-6">
+
                     <h2
                         data-ns-animate
                         data-offset="80"
@@ -104,6 +118,8 @@ function WhyChooseUs() {
                         <br />
 
                         <span className="text-white">AI-Driven Digital Products</span>
+
+                  
 
                     </h2>
                     <p
@@ -115,7 +131,8 @@ function WhyChooseUs() {
                         We focus on innovation, scalability, and real-world impact, helping you build smarter solutions and grow your business with confidence.
                     </p>
                 </div>
-            </section>
+
+
 
             {/* Mobile — vertical stack, no animation */}
             <div className="flex sm:hidden flex-col gap-6 mx-6 md:pb-16  ">
@@ -141,7 +158,9 @@ function WhyChooseUs() {
                 data-ns-animate
                 data-offset="80"
                 className="relative w-full overflow-visible hidden sm:block"
-                style={{ height: "60vh", minHeight: "450px" }}
+
+                style={{ height: "50vh", minHeight: "400px" }}
+
             >
                 <div className="absolute inset-0 flex items-center justify-center overflow-visible">
                     {reasons.map((reason, index) => (
@@ -158,11 +177,17 @@ function WhyChooseUs() {
                                 <h3 className="text-white font-semibold tracking-wide text-[20px] mb-3">{reason.title}</h3>
                                 <p className="text-[#a1a1aa] text-[16px] leading-relaxed">{reason.description}</p>
                             </div>
+
+                            
+
                         </div>
                     ))}
                 </div>
             </div>
         </div>
+
+    </>
+
     );
 }
 

@@ -1,42 +1,42 @@
-import coireihome from "../../../assets/images/homepage/coireihome.png";
+import coireimg from "../../../assets/images/homepage/coireimg.png";
 
-function AboutUs() {
+function OurMission() {
     return (
         <section className="mx-6 sm:mx-10 md:mx-15 py-10 sm:py-15">
-            <div className="flex flex-col lg:flex-row items-center  gap-12 lg:gap-14">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-14">
 
-                {/* LEFT VISUAL (Team Image) */}
+                {/* RIGHT VISUAL (Mission Image) */}
                 <div
                     data-ns-animate
                     data-direction="up"
                     data-offset="80"
-                    className="w-full lg:w-1/2 flex justify-center lg:justify-start lg:mt-6"
+                    className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:mt-6"
                 >
-                    <img
-                        src={coireihome}
-                        alt="Coirei Team"
-                        className="w-full h-auto object-cover shrink-0 rounded-xl"
+                    <img 
+                        src={coireimg} 
+                        alt="Our Mission" 
+                        className="w-full h-auto object-cover shrink-0 rounded-xl" 
                     />
                 </div>
 
-                {/* RIGHT CONTENT */}
+                {/* LEFT CONTENT */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
 
                     {/* Badge / Pill */}
                     <div className="flex items-center w-full mb-8">
-                        <div
+                        <div 
                             data-ns-animate
                             data-offset="80"
                             className="h-[1.5px] flex-1 bg-linear-to-r from-[#161616] to-white"
                         ></div>
-                        <div
+                        <div 
                             data-ns-animate
                             data-offset="80"
-                            className="px-8 py-2 border border-white/10 rounded-xl bg-transparent text-white text-[16px] mx-4"
+                            className="px-8 py-2 border border-white/10 rounded-xl bg-transparent text-white text-[16px] mx-4 whitespace-nowrap"
                         >
-                            About us
+                            Our mission is simple
                         </div>
-                        <div
+                        <div 
                             data-ns-animate
                             data-offset="80"
                             className="h-[1.5px] flex-1 bg-linear-to-l from-[#161616] to-white"
@@ -49,21 +49,17 @@ function AboutUs() {
                         data-offset="80"
                         className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] text-[#E3E3E0] font-medium leading-[1.2] max-w-2xl"
                     >
-
-                        Create <span className="text-[#F67300]">Real Time Business</span> with  AI Strategy.<br className="hidden lg:block" />
-                    
-
+                        Your vision meets the <br className="hidden lg:block" />
+                        <span className="text-[#F67300]">future of AI.</span>
                     </h2>
 
                     {/* Paragraphs */}
-                    <div className="mt-8 space-y-2.5 text-[#B5B4B2] text-[16px] md:text-[18px] max-w-lg font-light leading-relaxed">
+                    <div className="mt-8 space-y-4 text-[#B5B4B2] text-[16px] md:text-[18px] max-w-lg font-light leading-relaxed">
                         <p data-ns-animate data-delay="0.1" data-offset="80">
-
-                            At Coirei, we are passionate about transforming businesses with AI-powered solutions.
+                            We help you unlock the full potential of AI, creating custom AI solutions that scale with your business. Whether it’s AI agent development, Gen AI innovations, we deliver intelligent, scalable digital solutions that drive real impact.
                         </p>
                         <p data-ns-animate data-delay="0.2" data-offset="80">
-                            We are leading AI solutions company, we specialize in custom AI app development, from web platforms to AI-powered systems, and building intelligent automation for businesses of all sizes.
-
+                            Join us on a journey of innovation.
                         </p>
                     </div>
                 </div>
@@ -73,4 +69,4 @@ function AboutUs() {
     );
 }
 
-export default AboutUs;
+export default OurMission;

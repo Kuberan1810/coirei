@@ -58,9 +58,14 @@ const IndustriesServing = () => {
                         <div
                             key={index}
                             data-ns-animate
-                            data-delay={`${(index * 0.1 + 0.1).toFixed(1)}`}
+                          data-delay={`${(index * 0.15 + 0.1).toFixed(2)}`}
                             data-offset="80"
-                            className="flex items-center gap-4 sm:gap-6 px-5 py-4 bg-[#1E1E1E] border-[0.5px] border-white/15 rounded-[12px] w-full max-w-[420px] h-[96px] sm:h-[110px] cursor-pointer transition-transform hover:scale-[1.02]"
+                            className="flex items-center gap-4 sm:gap-6 px-5 py-4 bg-[#1E1E1E] border-[0.5px] border-white/15 rounded-[12px] w-full max-w-[420px] h-[96px] sm:h-[110px] cursor-pointer transition-transform hover:scale-[1.02] transform-gpu
+will-change-transform 
+duration-700
+ease-[cubic-bezier(0.22,1,0.36,1)]
+
+"
                         >
                             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-[26px] bg-white/5 border border-white/15 flex items-center justify-center text-[#F67300] shrink-0">
                                 {item.icon}

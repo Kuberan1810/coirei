@@ -82,12 +82,12 @@ export default function ServicesDropdown() {
             >
                 <ul className="py-3 relative z-10">
                     {[
-                        { label: "Web & Platform Development", to: "/services/custom-web-platform-development" },
-                        { label: "Custom Business Applications", to: "/services/custom-business-application-development" },
+                        // { label: "Web & Platform Development", to: "/services/custom-web-platform-development" },
+                        // { label: "Custom Business Applications", to: "/services/custom-business-application-development" },
                         { label: "AI Chatbots & Virtual Assistants", to: "/services/ai-chatbot-development" },
-                        { label: "Process Automation & Integration", to: "/services/process-automation-system-integration" },
-                        { label: "Data, Dashboards & BI", to: "/services/business-intelligence-dashboard-development" },
-                        { label: "UI/UX, Branding & Design", to: "/services/ui-ux-branding-product-design" },
+                        // { label: "Process Automation & Integration", to: "/services/process-automation-system-integration" },
+                        // { label: "Data, Dashboards & BI", to: "/services/business-intelligence-dashboard-development" },
+                        // { label: "UI/UX, Branding & Design", to: "/services/ui-ux-branding-product-design" },
                     ].map((item, index) => (
                         <li
                             key={item.label}

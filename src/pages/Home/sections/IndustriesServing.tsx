@@ -17,7 +17,7 @@ const IndustriesServing = () => {
                 <div
                     data-ns-animate
                     data-offset="80"
-                    className="h-[1.5px] flex-1 bg-gradient-to-r from-[#161616] to-white hidden sm:block" 
+                    className="h-[1.5px] flex-1 bg-gradient-to-r from-[#161616] to-white hidden sm:block"
                 />
                 <div
                     data-ns-animate
@@ -29,7 +29,7 @@ const IndustriesServing = () => {
                 <div
                     data-ns-animate
                     data-offset="80"
-                    className="h-[1.5px] flex-1 bg-gradient-to-l from-[#161616] to-white hidden sm:block" 
+                    className="h-[1.5px] flex-1 bg-gradient-to-l from-[#161616] to-white hidden sm:block"
                 />
             </div>
 
@@ -39,15 +39,15 @@ const IndustriesServing = () => {
                     data-ns-animate
                     className="text-[24px] sm:text-[32px] md:text-[40px] font-normal text-[#E3E3E0] leading-tight mb-6 max-w-4xl tracking-tight text-center"
                 >
-                   <span className="text-[#F67300]">Industries </span>
-                   <span className="text-white"> we are serving</span>
+                    <span className="text-[#F67300]">Industries </span>
+                    <span className="text-white"> we are serving</span>
                 </h2>
 
                 <p
                     data-ns-animate
                     className="text-[#FFFFFF] text-[16px] sm:text-[18px] md:text-[20px] max-w-[908px] font-normal leading-relaxed md:leading-[32.5px] text-center"
                 >
-                   At Coirei, our <span className="text-[#F67300]">LMS product</span> is designed to accelerate growth, productivity, and workforce development that empowers business with <span className="text-[#F67300]">AI Solutions.</span>
+                    At Coirei, our <span className="text-[#F67300]">LMS product</span> is designed to accelerate growth, productivity, and workforce development that empowers business with <span className="text-[#F67300]">AI Solutions.</span>
                 </p>
             </div>
 
@@ -57,6 +57,9 @@ const IndustriesServing = () => {
                     {industries.map((item, index) => (
                         <div
                             key={index}
+                            data-ns-animate
+                            data-delay={`${(index * 0.1 + 0.1).toFixed(1)}`}
+                            data-offset="80"
                             className="flex items-center gap-4 sm:gap-6 px-5 py-4 bg-[#1E1E1E] border-[0.5px] border-white/15 rounded-[12px] w-full max-w-[420px] h-[96px] sm:h-[110px] cursor-pointer transition-transform hover:scale-[1.02]"
                         >
                             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-[26px] bg-white/5 border border-white/15 flex items-center justify-center text-[#F67300] shrink-0">

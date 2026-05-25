@@ -30,14 +30,16 @@ function SmartJourney() {
     return (
         <section className="mx-6 sm:mx-10 md:mx-15 pt-10 sm:pt-20 pb-0">
 
-         {/* Header Section */}
+            {/* Header Section */}
             <div className="flex flex-col items-center text-center px-6 mb-16">
                 <h2
                     data-ns-animate
+                    data-delay="0.2"
+                    data-offset="80"
                     className="text-[20px] sm:text-[20px] md:text-[40px] font-normal text-[#E3E3E0] leading-[1.13] md:leading-[68px] mb-8 max-w-4xl tracking-tight text-center"
                 >
-                   <span className="text-[#F67300]">Smart <span className="text-white">Journey</span></span>
-                   <span className="text-white"> with Our <span className="text-[#F67300]">AI Team</span></span>
+                    <span className="text-[#F67300]">Smart <span className="text-white">Journey</span></span>
+                    <span className="text-white"> with Our <span className="text-[#F67300]">AI Team</span></span>
                 </h2>
             </div>
 
@@ -81,7 +83,10 @@ function SmartJourney() {
 
             {/* Centered Button */}
             <div className="flex justify-center mt-12">
-                <button 
+                <button
+                    data-ns-animate
+                    data-delay="0.2"
+                    data-offset="80"
                     onClick={() => navigate("/contactsales")}
                     className="text-[#252525] py-2 px-5 bg-[#FAF9F6] rounded-md font-semibold border border-transparent hover:bg-[#F67300] hover:text-white hover:border-[#F67300] transition-all duration-500 ease-out cursor-pointer text-xs sm:text-sm w-fit"
                 >

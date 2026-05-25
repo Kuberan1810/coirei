@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import ResourcesDropdown from "../component/NavDropdown/ResourcesDropdown";
 import ProductsDropdown from "../component/NavDropdown/ProductsDropdown";
 import { useState } from "react";
-import { Menu, X, ChevronRight, ChevronUp} from "lucide-react";
+import { Menu, X, ChevronRight, ChevronUp } from "lucide-react";
 import { AnimatePresence, motion, type Variants } from "framer-motion";
+import ServicesDropdown from "./NavDropdown/ServicesDropdown";
 
 
 /* ---------------- MOBILE MENU ANIMATION ---------------- */
@@ -67,12 +68,12 @@ function Navbar() {
                                 Careers
                             </Link>
                         </li>
-
-                        <li>
+                        <ServicesDropdown />
+                        {/* <li>
                             <Link to="/services" className="p-2.5 rounded hover:bg-[#7B7B7B20] transition-colors">
                                 Services
                             </Link>
-                        </li>
+                        </li> */}
 
                         <li>
                             <Link to="/Learning" className="p-2.5 rounded hover:bg-[#7B7B7B20] transition-colors">
@@ -122,7 +123,6 @@ function Navbar() {
 
                                     <div className={`overflow-hidden transition-all duration-300 ${productsOpen ? "max-h-75 opacity-100" : "max-h-0 opacity-0"}`}>
                                         {[
-                                            { label: "Execa", to: "/products/execa" },
                                             { label: "Follei", to: "/products/follei" },
                                             { label: "CoireiLMS", to: "/products/coireilms" },
                                         ].map((item, index) => (

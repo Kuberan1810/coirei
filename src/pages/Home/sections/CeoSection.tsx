@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Ceo from "../../../assets/images/homepage/Ceo-img.png";  
+import Ceo from "../../../assets/images/homepage/Ceo-img.png";
 
 export const CeoSection = () => {
     const navigate = useNavigate();
@@ -8,7 +8,7 @@ export const CeoSection = () => {
             <div>
 
                 {/* HEADING */}
-                <h2 
+                <h2
                     data-ns-animate
                     data-offset="80"
                     data-direction="up"
@@ -35,7 +35,11 @@ export const CeoSection = () => {
                             className="w-[240px] sm:w-[280px] md:w-[300px] lg:w-[320px] rounded-xl"
                         />
 
-                        <p className="text-white font-medium text-[17px] text-center whitespace-nowrap">Naveen kumar S <br></br>Coirei, CEO</p>
+                        <p
+                          data-ns-animate
+                            data-delay="0.2"
+                            data-offset="80"
+                        className="text-white font-medium text-[17px] text-center whitespace-nowrap">Naveen kumar S <br></br>Coirei, CEO</p>
 
                     </div>
 
@@ -59,10 +63,15 @@ export const CeoSection = () => {
                         >
                             It's about systems that can execute, verify, and adapt on their own without losing trust."
                         </p>
-                     
-                        <button 
+
+                        <button
+
+
+                            data-ns-animate
+                            data-delay="0.2"
+                            data-offset="80"
                             onClick={() => navigate("/contactsales")}
-                            className="text-[#252525] py-2 px-5 bg-[#FAF9F6] rounded-md font-semibold border border-transparent hover:bg-[#F67300] hover:text-white hover:border-[#F67300] transition-all duration-500 ease-out cursor-pointer text-xs sm:text-sm w-fit mt-12"
+                            className="text-[#252525] py-2 px-5 bg-[#FAF9F6] rounded-md font-semibold border border-transparent hover:bg-[#F67300] hover:text-white hover:border-[#F67300] transition-all duration-500 ease-out cursor-pointer text-xs sm:text-sm w-fit mt-12 mx-auto sm:mx-0" 
                         >
                             Talk to Expert
                         </button>

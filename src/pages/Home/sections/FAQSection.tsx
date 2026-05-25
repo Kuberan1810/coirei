@@ -32,7 +32,11 @@ const FAQSection = () => {
                 <div className="flex-1">
                     
 
-                    <h2 className="text-4xl md:text-5xl leading-tight tracking-tight space-x-3">
+                    <h2
+                      data-ns-animate
+                            data-delay="0.2"
+                            data-offset="80"
+                    className="text-4xl md:text-5xl leading-tight tracking-tight space-x-3">
                         <span className="text-white ">
                             Frequently Asked 
                         </span>

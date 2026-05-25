@@ -34,7 +34,7 @@ const TESTIMONIALS = [
         rating: 5,
         quote: 'Working with Coirei was a Game-changer. They delivered ahead of schedule and the quality is unmatched.',
         avatar: TestimonialImage2,
-        
+
     },
     {
         id: 3,
@@ -161,35 +161,39 @@ export default function TestimonialSection() {
             <div className="">
 
                 {/* ── Header row ── */}
-                        <div className="flex items-center justify-center w-full mx-auto mb-12 gap-4">
-                <div
-                    data-ns-animate
-                    data-offset="80"
-                    className="h-[1.5px] w-full max-w-[342px] bg-linear-to-r from-[#161616] to-white hidden sm:block"
-                ></div>
-                <div
-                    data-ns-animate
-                    data-offset="80"
-                    className="px-5 py-1.5 border border-white/10 rounded-md bg-transparent text-white text-[16px] sm:text-[22px] whitespace-nowrap"
-                >
-                    Testimonial
-                </div>
-                <div
-                    data-ns-animate
-                    data-offset="80"
-                    className="h-[1.5px] w-full max-w-[342px] bg-linear-to-l from-[#161616] to-white hidden sm:block"
-                ></div>
-            </div>
-
-                    <div className="flex items-start justify-center  flex-wrap gap-4 mb-16">
-                        <div>
-                            <h2 className="text-[#FFFFFF] text-[20px] sm:text-[40px] max-w-[908px] font-normal leading-[30px] md:leading-[40px] text-center">
-                                <span className="text-white">What <span className="text-[#F67300]">clients</span> say about</span>
-                                <span className="text-white"> our <span className="text-[#F67300]">AI solutions?</span></span>
-                            </h2>
-                        </div>
-                        
+                <div className="flex items-center justify-center w-full mx-auto mb-12 gap-4">
+                    <div
+                        data-ns-animate
+                        data-offset="80"
+                        className="h-[1.5px] w-full max-w-[342px] bg-linear-to-r from-[#161616] to-white hidden sm:block"
+                    ></div>
+                    <div
+                        data-ns-animate
+                        data-offset="80"
+                        className="px-5 py-1.5 border border-white/10 rounded-md bg-transparent text-white text-[16px] sm:text-[22px] whitespace-nowrap"
+                    >
+                        Testimonial
                     </div>
+                    <div
+                        data-ns-animate
+                        data-offset="80"
+                        className="h-[1.5px] w-full max-w-[342px] bg-linear-to-l from-[#161616] to-white hidden sm:block"
+                    ></div>
+                </div>
+
+                <div
+                    data-ns-animate
+                    data-delay="0.2"
+                    data-offset="80"
+                    className="flex items-start justify-center  flex-wrap gap-4 mb-16">
+                    <div>
+                        <h2 className="text-[#FFFFFF] text-[20px] sm:text-[40px] max-w-[908px] font-normal leading-[30px] md:leading-[40px] text-center">
+                            <span className="text-white">What <span className="text-[#F67300]">clients</span> say about</span>
+                            <span className="text-white"> our <span className="text-[#F67300]">AI solutions?</span></span>
+                        </h2>
+                    </div>
+
+                </div>
 
                 {/* Shake keyframe */}
                 <style>{`
@@ -204,12 +208,16 @@ export default function TestimonialSection() {
                 `}</style>
 
                 {/* ── Cards row ── */}
-                <div className="relative">
+                <div
+                    data-ns-animate
+                    data-delay="0.2"
+                    data-offset="80"
+                    className="relative">
                     {/* Left fade */}
-                    <div className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
+                    <div className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none hidden md:block"
                         style={{ background: "linear-gradient(to right, #161616 0%, transparent 100%)" }} />
                     {/* Right fade */}
-                    <div className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
+                    <div className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none hidden md:block"
                         style={{ background: "linear-gradient(to left, #161616 0%, transparent 100%)" }} />
 
                     <div className="overflow-hidden">

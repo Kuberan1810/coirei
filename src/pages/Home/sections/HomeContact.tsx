@@ -196,7 +196,7 @@ const HomeContact = () => {
                         <img
                           src={selectedCountry.flagUrl}
                           alt={selectedCountry.alt}
-                          className="w-5 h-auto object-contain shrink-0"
+                          className="w-5 h-auto object-contain "
                         />
 
                         <span>
